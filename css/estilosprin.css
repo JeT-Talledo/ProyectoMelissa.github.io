@@ -190,7 +190,40 @@ body{
 }
 
 
+/**************Estilos para la galeria de 4 fotos***************/
+div.galeria{
+    margin: 10x 10px;
+
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 100%;display: inline-block;margin: auto;
+    width: 300px;
+}
+
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+
+div.galeria:hover{
+}
+div.pie{
+    text-align: center;
+
+}
 
 
+.btn{
+    display: block;
+    width: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: orangered;
+    border-radius: 3px;
+    padding: 18px 80px;
+    margin: 20px 30px;
+    color: white;
+    text-decoration: none;
+
+}
 
 
