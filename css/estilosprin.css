@@ -168,6 +168,9 @@ body{
 }
 
 /**************Estilos para la letra Novedades y Favoritos***************/
+#contenNovFav{
+    width: 100%;
+}
 .noveyfavo{
     list-style: none;
     padding: 10px;
@@ -191,35 +194,32 @@ body{
 
 
 /**************Estilos para la galeria de 4 fotos***************/
-div.galeria{
-    margin: 10x 10px;
-
+#contenGaleria{
+    width: 80%;margin: auto;display: flex; justify-content: space-between;
+}
+.galeria{
     box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
-    height: 100%;display: inline-block;margin: auto;
-    width: 300px;
+    height: 350px;width: 250px;
+}
+.foto{
+    height: 200px;width: 100%;
+}
+.foto img{
+    width: 100%;height: 100%;
 }
 
-div.galeria img{
-    width: 100%;
-    height: auto;
+.pie{
+    height: 100px;width: 100%;text-align: center;color: black;
 }
-
-div.galeria:hover{
-}
-div.pie{
-    text-align: center;
-
+.pie p{
+    padding: 5px;
 }
 
 
 .btn{
-    display: block;
-    width: 50px;
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 18px 80px;
+    display: block;font-family: sans-serif;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 20px 20px;
     margin: 20px 30px;
     color: white;
     text-decoration: none;
