@@ -109,7 +109,7 @@ body{
 
 /**************Estilos para el BANNER***************/
 #baner{
-	width: 100%;overflow: hidden;display: flex
+	width: 80%;overflow: hidden;display: flex
 }
 #baner ul{
 	padding: 0;display: flex;width: 400%;
@@ -121,7 +121,7 @@ body{
 #baner img{
 	width: 100%;
 }
-@keyframes cambio{
+/**@keyframes cambio{
 	0%{ margin-left: 0; }
 	20%{ margin-left: 0; }
 
@@ -133,69 +133,64 @@ body{
 
 	75%{ margin-left: -300%; }
 	100%{ margin-left: -300%; }
-}
+}**/
+
+
 
 .botones{
     font-size: 30px;
     width: 70px;
     height: 70px;
     line-height: 70px;
-}
-
-
-
-}
-#progress-bar-container{
-    position: absolute;
-    height: 10px;
-    background-color: rgba(0,0,0, .2);
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-progress-bar{
-    height: 100%;
-    background-color: rgba(288,69,69, 0.7);
-    border-radius: 0 3px 3px 0;
-    transition: width 0.8s;
-}
-slideshow{
-    position: relative;
-    z-index: 998;
-    height: 600px;
-}
-.slideshow img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-#img2 {
-    left: 100%;
-}
-.active{
-    left: 0 !important;
-}
-
-#indicadores{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    z-index: 999;
-}
-.circles{
-    border: white 2px solid;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    margin: 0 5px 0 5px;
-    background-color: transparent;
     border-radius: 50%;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
 }
-.resaltado{
-    background-color: rgba(288, 69, 69, 1);
-    transition: background-color .8s;
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
 }
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px);
+}
+
+/**************Estilos para la letra Novedades y Favoritos***************/
+.noveyfavo{
+    list-style: none;
+    padding: 10px;
+    background: white;
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+.noveyfavo li a{
+
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    display: block;
+    font-size: 30px;
+}
+.noveyfavo li{
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+
