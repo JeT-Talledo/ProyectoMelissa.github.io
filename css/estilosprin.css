@@ -108,32 +108,34 @@ body{
 }
 
 /**************Estilos para el BANNER***************/
-#baner{
-	width: 80%;overflow: hidden;display: flex
+.baner{
+	overflow: hidden;display: flex;
+
 }
 #baner ul{
 	padding: 0;display: flex;width: 400%;
 	animation: cambio 20s infinite alternate;
 }
-#baner li{
+.baner li{
 	list-style: none;width: 100%;
 }
 #baner img{
 	width: 100%;
+    height: 500px;
 }
-@keyframes cambio{
-	150%{ margin-left: -200%; }
-	150%{ margin-left: -200%; }
+/*@keyframes cambio{
+	100%{ margin-left: -200%; }
+	100%{ margin-left: -200%; }
 
-	150%{ margin-left: -200%; }
-	150%{ margin-left: -200%; }
+	100%{ margin-left: -200%; }
+	100%{ margin-left: -200%; }
 
-	150%{ margin-left: -200%; }
-	150%{ margin-left: -200%; }
+	100%{ margin-left: -200%; }
+	100%{ margin-left: -200%; }
 
-	150%{ margin-left: -400%; }
-	150%{ margin-left: -400%; }
-}
+	400%{ margin-left: -400%; }
+	400%{ margin-left: -400%; }
+}*/
 
 
 
@@ -172,6 +174,7 @@ body{
     width: 100%;
 }
 .noveyfavo{
+
     list-style: none;
     padding: 10px;
     background: white;
@@ -180,7 +183,7 @@ body{
     margin: auto;
 }
 .noveyfavo li a{
-
+    color: red;
     text-decoration: none;
     color: black;
     padding: 0px;
@@ -220,8 +223,9 @@ body{
     display: block;font-family: sans-serif;
     font-weight: 700;background-color: orangered;border-radius: 3px;
     padding: 20px 20px;
-    margin: 20px 30px;
+    margin: 15px 21px;
     color: white;
+    /*border: 1px solid black;*/
     text-decoration: none;
 
 }
