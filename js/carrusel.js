@@ -1,4 +1,4 @@
-var img = ["1.png", "2.png", "3.png"];
+/*var img = ["1.png", "2.png", "3.png"];
 var c = 0;
 var t;
 var baner = document.getElementById("baner1");
@@ -9,4 +9,4 @@ function rotacion() {
     if (c >= 3) c = 0;
     t = setTimeout("rotacion()", 1000);
 }
-rotacion();
+rotacion();*/
