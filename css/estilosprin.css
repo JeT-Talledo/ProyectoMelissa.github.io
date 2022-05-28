@@ -240,13 +240,37 @@ body{
     margin: auto;
 }
 
-/**************letra para ultimos productos***************/
+/**************estilos para las fotos grandes***************/
+
+#banerGRANDE{
+	overflow: hidden;display: flex;
+
+}
+#banerGRANDE ul{
+	padding: 0;display: flex;width: 100%;
+	animation: cambio 20s infinite alternate;
+}
+#banerGRANDE li{
+	list-style: none;width: 50%;
+}
+#banerGRANDE img{
+	width: 200%;
+    height: 590px;
+}
+
+
+
+
+/**************letra para ultimos videos***************/
 
 #ultimosvideos{
     text-align: center;
     color: orangered;
     font-size: 35px;
 }
+
+
+
 
 
 /**************galeria para ultimos videos***************/
