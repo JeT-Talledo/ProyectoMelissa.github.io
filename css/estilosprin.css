@@ -199,9 +199,10 @@ body{
 /**************Estilos para la galeria de 4 fotos***************/
 #contenGaleria{
     width: 80%;margin: auto;display: flex; justify-content: space-between;
+
 }
 .galeria{
-    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0);
     height: 350px;width: 250px;
 }
 .foto{
