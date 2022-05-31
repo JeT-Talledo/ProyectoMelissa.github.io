@@ -50,6 +50,7 @@ table {
 /*END RESET*/
 
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
 *{
@@ -202,7 +203,7 @@ body{
 
 }
 .galeria{
-    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0);
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.0);
     height: 350px;width: 250px;
 }
 .foto{
@@ -409,4 +410,129 @@ body{
     transition: 1s;
         transition-delay: 0.25s;
 
+}
+
+/******Footer ********/
+
+
+footer{
+    background-color: black;
+
+}
+.logoFOOTER{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/*.logoFOOTER img{
+    width: 100px;
+}*/
+.contenedorFOOTER{
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    color: orange;
+}
+.col1{
+    width: 400px;
+
+}
+.col1 h1{
+    color: white;
+    margin-bottom: 15px;
+
+}
+.col1 p{
+    color: white;
+    margin-bottom: 10px;
+}
+.col2{
+    width: 400px;
+
+}
+.col2 img{
+
+    background-color: white;
+    width: 40px;
+    margin: 5px;
+}
+
+
+.col2 .yt{
+color: white;
+    display: flex;
+    align-items: center;
+}
+.col2 .ig{
+   color: white;
+        display: flex;
+    align-items: center;
+
+}
+.col2 .fb{
+   color: white;
+    display: flex;
+    align-items: center;
+}
+
+.col2 h1{
+
+    color: white;
+    margin-bottom: 15px;
+
+}
+.col3{
+    width: 400px;
+}
+
+.col3 h1{
+    color: white;
+    margin-bottom: 15px;
+
+}
+.final{
+
+    margin: auto;
+    color:white;
+    width: 1200px;
+    height: 100px;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.copy img{
+background-color: white;
+    width: 36px;
+    height: 36px;
+}
+
+.politic{
+    display: flex;
+    width: 400px;
+    float: right;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+.politic p{
+    color: white;
+    font-size: 15px;
+}
+
+.politic img{
+    background-color: white;
+    position: relative;
+    left: 2px;
+    top: -8px;
+    width: auto;
+    height: 36px;
 }
