@@ -245,7 +245,7 @@ body{
 /**************estilos para las fotos grandes***************/
 
 #banerGRANDE{
-	overflow: hidden;display: flex;
+	overflow: hidden;display: contents;
 
 }
 #banerGRANDE ul{
