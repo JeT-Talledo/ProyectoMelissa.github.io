@@ -1,0 +1,499 @@
+.banner {
+    background-image: url("joyoreriaPrinci/joyeriaBanner.jpg");
+    display: flex;
+    width: 100%;
+    height: 77vh;
+}
+
+
+.bannertexto p{
+    border: 1px solid black;
+    text-decoration: inherit;
+    text-decoration-style: dashed;
+    background-color: white;
+    padding: 60px 75px;
+    position: absolute;
+    left: 23%;
+    top: 40%;
+    text-align: left;
+    font-size: 25px;
+}
+
+.p p{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+.section {
+    height: 500px;
+
+}
+
+.nuestrahisto h1 {
+    text-align: center;
+
+    font-size: 32px;
+}
+
+.nuestrahisto p {
+    height: 200px;
+    padding: 0px 180px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuestrahisto img{
+    display: flex;
+    padding: 0px 200px;
+    margin: 0px;
+    border: 0px solid black;
+    float: left;
+    width: 430px;
+
+}
+
+.nuestrahisto p{
+    text-align: left;
+}
+
+.nuestrahisto .pe p{
+    background-color: transparent;
+    font-family: sans-serif;
+    padding: 5px 2px;
+    color: white;
+    position: absolute;
+    top: 1080px;
+    left: 240px;
+    text-align: center;
+}
+
+.boton {
+    position: absolute;
+     top: 1200px;
+    left: 290px;
+}
+
+.btn-neon{
+
+     background-color: transparent;
+    display: block;
+    position: relative;
+    right: auto;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid white;
+}
+.btn-neon:hover{
+     color: black;
+    background-color: white;
+    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px; #a945c7;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: 0;
+    right: 0%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span2{
+
+    top: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+#span4{
+
+    bottom: -100%;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span4{
+
+    bottom: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+
+
+#contenGaleria{
+
+    padding: 10px 40px;
+    position: absolute;
+    top: 780px;
+    left: 650px;
+    width: 260px;margin: auto;display: block; justify-content: space-between;
+
+}
+.galeria{
+     padding: 20px 20px;
+    height: 400px;
+    width: 250px;
+}
+.foto{
+     padding: 10px 0px;
+    height: 225px;width: 250px;
+}
+.foto img{
+
+     padding: 0px 0px;
+    width: 250px;height: 230px;
+}
+
+.pie{
+    padding: 1px 0px;
+    height: 120px;width: 260px;text-align: center;color: black;
+}
+.pie p{
+    font-size: 15px;
+    text-align: center;
+    height: 100px; width: 250px;
+    padding: 0px 10px;
+}
+
+
+.btn{
+    font-family: sans-serif;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 15px 20px;
+    margin: 15px 21px;
+    color: white;
+    /*border: 1px solid black;*/
+    text-decoration: none;
+}
+
+
+
+
+
+#contenGaleria1{
+    padding: 10px 30px;
+    position: absolute;
+    top: 780px;
+    left: 970px;
+
+}
+.galeria1{
+     padding: 20px 20px;
+    height: 400px;
+    width: 250px;
+}
+.foto1{
+
+     padding: 10px 0px;
+    height: 225px;width: 250px;
+}
+.foto1 img{
+     padding: 0px 0px;
+    width: 250px;height: 230px;
+}
+
+.pie1{
+    padding: 1px 0px;
+    height: 120px;width: 260px;text-align: center;color: black;
+}
+.pie1 p{
+    font-size: 15px;
+    text-align: center;
+    height: 100px; width: 250px;
+    padding: 0px 10px;
+}
+
+
+.btn1{
+     font-family: sans-serif;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 15px 20px;
+    margin: 15px 21px;
+    color: white;
+    /*border: 1px solid black;*/
+    text-decoration: none;
+}
+
+
+
+
+.section1 {
+    height: 500px;
+
+}
+
+.nuestrahisto1 h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.nuestrahisto1 p {
+    height: 200px;
+    padding: 0px 180px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuestrahisto1 img{
+
+    display: flex;
+    padding: 0px 200px;
+    margin: 0px;
+    border: 0px solid black;
+    float: right;
+    width: 430px;
+
+}
+
+.nuestrahisto1 p{
+    text-align: left;
+}
+
+.nuestrahisto1 .pe1 p{
+
+    background-color: transparent;
+    font-family: sans-serif;
+    padding: 5px 2px;
+    color: white;
+    position: absolute;
+    top: 1656px;
+    left: 940px;
+    text-align: center;
+}
+
+.boton1{
+    position: absolute;
+     top: 1780px;
+    left: 980px;
+}
+
+.btn-neon1{
+
+     background-color: transparent;
+    display: block;
+    position: relative;
+    right: auto;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid white;
+}
+.btn-neon1:hover{
+     color: black;
+    background-color: white;
+    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px; #a945c7;
+    transition-delay: 1s;
+}
+.btn-neon1 span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: 0;
+    right: 0%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span2{
+
+    top: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+#span4{
+
+    bottom: -100%;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon1:hover #span4{
+
+    bottom: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+#contenGaleria11{
+
+    padding: 10px 40px;
+    position: absolute;
+    top: 1350px;
+    left: 190px;
+    width: 260px;margin: auto;display: block; justify-content: space-between;
+
+}
+.galeria11{
+     padding: 20px 20px;
+    height: 400px;
+    width: 250px;
+}
+.foto11{
+     padding: 10px 0px;
+    height: 225px;width: 250px;
+}
+.foto11 img{
+
+     padding: 0px 0px;
+    width: 250px;height: 230px;
+}
+
+.pie11{
+    padding: 1px 0px;
+    height: 120px;width: 260px;text-align: center;color: black;
+}
+.pie11 p{
+    font-size: 15px;
+    text-align: center;
+    height: 100px; width: 250px;
+    padding: 0px 10px;
+}
+
+
+.btn11{
+    font-family: sans-serif;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 15px 20px;
+    margin: 15px 21px;
+    color: white;
+    /*border: 1px solid black;*/
+    text-decoration: none;
+}
+
+
+
+#contenGaleria111{
+    padding: 10px 30px;
+    position: absolute;
+    top: 1350px;
+    left: 480px;
+
+}
+.galeria111{
+     padding: 20px 20px;
+    height: 400px;
+    width: 250px;
+}
+.foto111{
+
+     padding: 10px 0px;
+    height: 225px;width: 250px;
+}
+.foto111 img{
+     padding: 0px 0px;
+    width: 250px;height: 230px;
+}
+
+.pie111{
+    padding: 1px 0px;
+    height: 120px;width: 260px;text-align: center;color: black;
+}
+.pie111 p{
+    font-size: 15px;
+    text-align: center;
+    height: 100px; width: 250px;
+    padding: 0px 10px;
+}
+
+
+.btn111{
+     font-family: sans-serif;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 15px 20px;
+    margin: 15px 21px;
+    color: white;
+    /*border: 1px solid black;*/
+    text-decoration: none;
+}
+
+
+
+
+
+
