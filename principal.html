@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Melissa</title>
     <link rel="stylesheet" href="css/estilosprin.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,16 +33,18 @@
         </header>
         <!--navegacion-->
 
-        <ul class="menu">
-            <li><a href="#">Carteras</a></li>
-            <li><a href="#">Cuidado facial</a></li>
-            <li><a href="#">Joyeria</a></li>
-            <li><a href="#">Maquillaje</a></li>
-            <li><a href="#">Personalizable</a></li>
-            <li><a id="colorn" href="#">|</a></li>
-            <li><a id="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-            <li><a id="colorn" href="#">Catálogo</a></li>
-        </ul>
+        <nav id="navegacion">
+            <ul class="menu">
+                <li><a class="colorr" href="#">Carteras</a></li>
+                <li><a class="colorr" href="#">Cuidado facial</a></li>
+                <li><a class="colorr" href="#">Joyeria</a></li>
+                <li><a class="colorr" href="#">Maquillaje</a></li>
+                <li><a class="colorr" href="#">Personalizable</a></li>
+                <li><a class="colorn" href="#">|</a></li>
+                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+                <li><a class="colorn" href="#">Catálogo</a></li>
+            </ul>
+        </nav>
 
         <!--Banner-->
 
@@ -48,28 +54,20 @@
             </div>
             <ul>
                 <li><img src="img/banner/banner1.jpeg" alt=""></li>
-
             </ul>
             <div class="adelante botones">
                 &#62
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
 
         <!--Novedades y Favoritos LETRA-->
 
         <div id="contenNovFav">
             <ul class=noveyfavo>
-                <li><a href="#">novedades</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="#">los favoritos</a></li>
+                <li><a class="titunoveyfav colororange" href="#">novedades</a></li>
+                <li><a class="titunoveyfav" href="#">|</a></li>
+                <li><a class="titunoveyfav" href="#">los favoritos</a></li>
             </ul>
-            <br>
-            <br>
-            <br>
             <!--Galeria de 4 fotos-->
             <div id="contenGaleria">
                 <div class="galeria">
@@ -77,12 +75,8 @@
                         <img src="img/JOYERIA/aretes/aretesrosaplata.jpg" alt="">
                     </div>
                     <div class="pie">
-                        <p>Aretes Rosa Plata</p>
-                        <br>
-                        <br>
-
-
-                        <p>S/80.00</p>
+                        <p class="descripie">Aretes Rosa Plata</p>
+                        <p class="prepie">S/80.00</p>
                         <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
                     </div>
                 </div>
@@ -91,12 +85,8 @@
                         <img src="img/JOYERIA/collares/collaatrapasue%C3%B1osplata.jpg" alt="">
                     </div>
                     <div class="pie">
-                        <p>Collar Atrapasueño Plata</p>
-                        <br>
-                        <br>
-
-
-                        <p>S/80.00</p>
+                        <p class="descripie">Collar Atrapasueño Plata</p>
+                        <p class="prepie">S/80.00</p>
                         <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
                     </div>
                 </div>
@@ -105,12 +95,8 @@
                         <img src="img/MAQUILLAJE/brochas/brochasneonturquesa.jpg" alt="">
                     </div>
                     <div class="pie">
-                        <p>Brocha Neon</p>
-                        <br>
-                        <br>
-
-
-                        <p>S/80.00</p>
+                        <p class="descripie">Brocha Neon</p>
+                        <p class="prepie">S/80.00</p>
                         <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
                     </div>
                 </div>
@@ -119,12 +105,8 @@
                         <img src="img/MAQUILLAJE/corrector/CorrectorChanleevi.png" alt="">
                     </div>
                     <div class="pie">
-                        <p>Corrector Chanlevi</p>
-                        <br>
-                        <br>
-
-
-                        <p>S/80.00</p>
+                        <p class="descripie">Corrector Chanlevi</p>
+                        <p class="prepie">S/80.00</p>
                         <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
 
 
@@ -132,20 +114,25 @@
                 </div>
             </div>
         </div>
+
+        <!--Imagenes de publicidad 1-->
+        <div id="contfavorite">
+            <section class="favo">
+                <div class="primercontfavo">
+                    <a href=""><img class="imggrandefavo" src="img/favoritos/publicidad1.jpg" alt=""></a>
+                </div>
+                <div class="primercontfavo">
+                    <div class="primecontfavopeq">
+                        <a href=""><img class="imgpquefavo" src="img/favoritos/publicidad2.jpg" alt=""></a>
+                    </div>
+                    <div class="segcontfavopeq">
+                        <a href=""><img style="padding-bottom: 0;" class="imgpquefavo" src="img/favoritos/publicidad3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <!--Imagenes de publicidad 1-->
-
-    <section class="favo">
-        <a href=""><img src="img/favoritos/publicidad1.jpg" alt=""></a>
-        <a href=""><img src="img/favoritos/publicidad2.jpg" alt=""></a>
-        <!--<a href=""><img src="img/favoritos/publicidad3.jpg" alt=""></a>-->
-    </section>
 
     <!--Imagenes 4 GRANDE EN EL PRINCIPAL-->
     <div id="banerGRANDE">
@@ -157,10 +144,10 @@
             <li><img src="img/PRINCIPALGRANDE/joyeriaprincipalgrande.jpg" alt=""></li>
         </ul>
 
-         <ul>
+        <ul>
             <li><img src="img/PRINCIPALGRANDE/cuidadofacialprincipagrande.jpg" alt=""></li>
         </ul>
-         <ul>
+        <ul>
             <li><img src="img/PRINCIPALGRANDE/maquillajeprincipalgrande.jpg" alt=""></li>
         </ul>
     </div>
