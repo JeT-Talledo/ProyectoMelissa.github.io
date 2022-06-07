@@ -1500,3 +1500,115 @@
     transition-delay: 0.25s;
 
 }
+
+.conocemas .letra1 {
+    text-align: center;
+    font-family: inherit;
+}
+
+.conocemas .letra2 {
+    line-height: 26px;
+    text-align: center;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.conocemas .letra3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.conocemas img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 60%;
+}
+
+.letradescrubre .letra1 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.letradescrubre .letra2 {
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+
+}
+
+#contenGaleria6 {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.galeria6 {
+    height: 380px;
+    width: 280px;
+}
+
+.foto6 {
+    height: 220px;
+    width: 100%;
+}
+
+.foto6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.pie6 {
+
+
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.descripie6 {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.prepie6 {
+    line-height: 17px;
+
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn6 {
+    display: block;
+    font-weight: 800;
+    background-color: white;
+    border-radius: 0px;
+    padding: 15px 20px;
+    margin: 20 21px;
+    font-family: inherit;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn6:hover {
+    background-color: black;
+    color: white;
+    transition-delay: 0s;
+}
+
+.ultimo img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
