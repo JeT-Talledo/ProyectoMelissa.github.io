@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilosprin.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
 
     <style type="text/css">
-        footer {
+        .productos {
             background-color: white;
         }
 
-        .contenedorFOOTER {
+        .contenedorFOOTERProduc {
             margin: auto;
             width: 1050px;
             display: flex;
             color: orange;
         }
 
-        .col1 {
+        .col1Pro {
+
             width: 150px;
             height: 600px;
 
         }
 
-        .col1 img {
+        .col1Pro img {
+
             border: 1px solid rgba(0, 0, 0, .2);
             padding: 8px;
             margin: 10px 10px 15px;
@@ -34,7 +38,7 @@
             height: 150px;
         }
 
-        .col2 {
+        .col2Pro {
 
             width: 450px;
             height: 600px;
@@ -44,7 +48,7 @@
 
         }
 
-        .col2 img {
+        .col2Pro img {
 
             border: 0px;
 
@@ -52,99 +56,431 @@
             height: 380px;
 
         }
-        .col2 img:hover{
-             transform: scale(1.2);
+
+        .col2Pro img:hover {
+            transform: scale(1.2);
             cursor: pointer;
         }
 
 
 
 
-        .col3 {
+        .col3Pro {
+
             width: 500px;
         }
 
-        .col3 h1 {
+        .col3Pro h1 {
             color: black;
             margin-bottom: 15px;
+            font-size: 33px;
+            font-weight: bold;
 
         }
 
-        .col3 p {
+        .col3Pro .detallesProduc {
             color: black;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .col3Pro p {
+            color: black;
+            line-height: 28px;
+        }
+
+        .reseña {
+            background-color: antiquewhite;
+        }
+
+        .reseña h1 {
+            font-size: 38px;
+            text-align: left;
+            padding: 85px;
+        }
+
+
+        .testimonios {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .testimonios_header {
+            margin: 50px 0px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonios_header h1 {
+            font-size: 2.9rem;
+            font-weight: 500;
+            background-color: #202020;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .testimonios_header span {
+            font-size: 0.7rem;
+            color: #252525;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .testimonios_contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .testimonios_caja {
+            width: 500px;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        .perfil-img {
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+
+        .perfil-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: center;
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+        }
+
+        .name-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-user strong {
+            color: #3d3d3d;
+            font-size: 1.3rem;
+        }
+
+        .name-user span {
+            color: #979797;
+            font-size: 1.1rem;
+        }
+
+        .reseñas {
+            color: #f9d71c;
+
+        }
+
+        .caja-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .comentarios_clientes {
+            color: #4b4b4b;
+
+        }
+
+        ::selection {
+            color: white;
+            background-color: #252525;
         }
 
     </style>
 </head>
 
 <body>
+
     <div id="rectprincipal">
         <p>consultas gratis</p>
     </div>
-
-    <header id="header">
-        <div class="blokhead"></div>
-        <div class="blokhead">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="blokheadredes">
-            <div id="contredesup">
-                <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
-                <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
-                <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
+    <div id="contenedor">
+        <header id="header">
+            <div class="blokhead"></div>
+            <div class="blokhead">
+                <img src="img/logo.png" alt="">
             </div>
-        </div>
-    </header>
+            <div class="blokheadredes">
+                <div id="contredesup">
+                    <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
+                    <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
+                    <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+    </div>
     <!--navegacion-->
 
-    <ul class="menu">
-        <li><a href="#">Carteras</a></li>
-        <li><a href="#">Cuidado facial</a></li>
-        <li><a href="#">Joyeria</a></li>
-        <li><a href="#">Maquillaje</a></li>
-        <li><a href="#">Personalizable</a></li>
-        <li><a id="colorn" href="#">|</a></li>
-        <li><a id="colorn" href="#">Quiénes somos</a></li>
-        <li><a id="colorn" href="#">Catálogo</a></li>
-    </ul>
-    <br>
-    <br>
-    <br>
+    <nav id="navegacion">
+        <ul class="menu">
+            <li><a class="colorr" href="#">Carteras</a></li>
+            <li><a class="colorr" href="#">Cuidado facial</a></li>
+            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
+            <li><a class="colorr" href="#">Maquillaje</a></li>
+            <li><a class="colorr" href="#">Personalizable</a></li>
+            <li><a class="colorn" href="#">|</a></li>
+            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+            <li><a class="colorn" href="#">Catálogo</a></li>
 
-    <footer>
+        </ul>
+        <hr color="#E5E8EC" size="1px">
+    </nav>
+    <br><br><br>
+
+    <footer class="productos">
 
 
-        <div class="contenedorFOOTER">
-            <div class="col1">
+        <div class="contenedorFOOTERProduc">
+            <div class="col1Pro">
                 <img src="img/JOYERIA/anillos/anillo%20con%20incial%20plata%20950.jpg" onclick="myFuction(this)">
                 <img src="img/JOYERIA/collares/collar%20angelito%20plata%20950.jpg" onclick="myFuction(this)">
 
             </div>
-            <div class="col2">
+            <div class="col2Pro">
 
                 <img id="imageBox" src="img/JOYERIA/anillos/anillo%20con%20incial%20plata%20950.jpg">
 
 
             </div>
 
-            <div class="col3">
+            <div class="col3Pro">
 
-                <h1>Vibranza Perfume de Mujer</h1>
-                <h1>↓Descripción</h1>
+                <h1>Limpiador efecto detox</h1>
+                <br>
+                <p>★★★★★</p>
+                <br><br>
+                <h1 class="detallesProduc">Descripcion</h1>
                 <p>
-                    Exclusivo perfume de mujer más vendido de ésika*, con aroma oriental dulce de muy alta concentración** y muy larga duración, con irresistibles notas de orquídea de vainilla y flor de café. Ganador de los premios Best Beauty Buys México 2021 de la revista InStyle. Este perfume de mujer ha sido creado con el proceso Essent Tech*** que maximiza la calidad y duración de su aroma. Capacidad: 45 ml. NSOC80200-17CO.</p>
-                <h1>¿Como usarlo?</h1>
-                <p>• Paso 1: Agítalo antes de usar y traza una línea sobre el borde de las pestañas, desde el lagrimal hacia fuera.
+                    Estuche de aretes x3 bañados en oro 24k con mas de 20 cristales traslucidos y tralucidos con efecto tarnosal.</p>
+                <br><br>
 
-                    • Paso 2: Varía el grosor del trazo según el acabado que desees.
 
-                    ésika PRO te trae la renovación de sus delineadores líquidos: alta intensidad de color en una sola pasada y hasta 24 horas de duración. Tu eliges el look que quieres hoy, con dos nuevas versiones de aplicadores: TRAZO GRUESO: para un look intenso y audaz TRAZO FINO: para un look chic y de mayor precisión Esto es porque su fórmula mejorada con alta concentración de pigmentos asegura una fijación de color que no se corre, no transfiere y no se desvanece.</p>
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">Medidas</h1>
+                <p>Aretes mas largo de 3.5 cm. </p>
+                <br><br>
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">Material</h1>
+                <p>Piexas bañadas en oro 24k y mas de 20 cristales tralucidos y traslucidos con efecto tarnosal. </p>
+                <br><br>
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">Conbinalo con</h1>
+                <p>Completa tu look con la pulsera More Luck. </p>
+            </div>
+        </div>
+    </footer>
+    <br><br><br><br>
+
+    <div class="reseña">
+
+        <h1> En general<br>
+            <br>
+            ★★★★★ 5
+        </h1>
+
+    </div>
+
+
+
+    <section class="testimonios">
+        <div class="testimonios_header">
+            <h1>Testimonios</h1>
+            <br>
+            <br>
+            <br>
+            <div class="testimonios_contenedor">
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/tendencia.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Armando Perez</strong>
+                                <span>@Perez@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                             <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Muy bonito el producto me encanto</p>
+                    </div>
+                </div>
+
+
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/aretes.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Kenny Iman</strong>
+                                <span>@kennyIman</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Demasiado Genial</p>
+                    </div>
+                </div>
+
+
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/collares.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Joel Yman</strong>
+                                <span>@Joel Yman</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                             <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Lorem Impus dolor sit emet adisce elt nill,contnet</p>
+                    </div>
+                </div>
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/especiales.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Armando Perez</strong>
+                                <span>@Perezdo</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Lorem Impus dolor sit emet adisce elt nill,contnet</p>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
 
+    </section>
 
 
+    <footer>
+
+        <!--<div class="logoFOOTER"><img src="img/logo.png"></div>-->
+        <br>
+        <br>
+        <br>
+        <div class="contenedorFOOTER">
+            <div class="col1">
+                <h1> CONTACTO </h1>
+                <p>Tel.. 982025167</p>
+                <p>Email: kenny4602@gmail.com</p>
+                <p></p>
+            </div>
+            <div class="col2">
+
+                <h1>Nuestras Redes Sociales</h1>
+                <div class="yt"><img src="img/redes/whatsapp.png">
+                    <p>Youtube/empresa</p>
+                </div>
+                <div class="ig"><img src="img/redes/instagram.png">
+                    <p>@empresa</p>
+                </div>
+                <div class="fb"><img src="img/MetodoDePago/facebook2.png">
+                    <p>Facebook/empresa</p>
+                </div>
+            </div>
+
+            <div class="col3">
+
+                <h1>Explorar Mas</h1>
+                <h1>Nuestro Catalogo</h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="final">
+            <hr>
+            <div class="copy">
+                <img src="img/MetodoDePago/efectivo.png">
+                <p>Pagos 100 % Seguros</p>
+
+                <img src="img/MetodoDePago/candado.png">
+
+                <img src="img/MetodoDePago/favorito.png">
+
+            </div>
+            <br>
+            <div class="politic">
+                <p>Operamos Con    </p>
+                <img src="img/MetodoDePago/visa.png">
+
+            </div>
+
+        </div>
     </footer>
 
     <script type="text/javascript">
