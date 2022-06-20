@@ -1,0 +1,510 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    margin: 0;padding: 0;
+}
+#rectprincipal{
+    background-color: orangered;width: 100%;height: 25px;
+    color: white;text-align: center;
+}
+/***************header*****************/
+#contenedor{
+    width: 100%;
+}
+#header{
+    width: 90%;height: 90px;display: flex;margin:auto;font-family: 'Open Sans', sans-serif;
+}
+.blokhead, .blokheadredes, .blokheada{
+    width: 33.3%;
+}
+.blokheada {
+    display: flex;align-items: center;justify-content: center;
+}
+.blokheada a{
+    text-decoration: none;color:black;font-size: 13px;
+}
+.blokhead img{
+    height: 100%;display: block;margin: auto;
+}
+/*********estilos de redes logos ***************/
+.blokheadredes{
+    display: flex;justify-content: space-around;
+}
+#contredesup{
+    width: 30%;margin: auto;justify-content: space-between;display: flex;
+}
+.imgredes img{
+    width: 25px;
+}
+
+
+/************Menu estilos***************/
+#navegacion{
+    width: 100%;font-family: 'Open Sans', sans-serif;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: white;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+.colorr{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 13px;
+    color: black;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.colorn{
+    color: orangered;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+/**************Estilos para el BANNER***************/
+/*baner*/
+#baner{
+	width: 100%;overflow: hidden;
+}
+#baner ul{
+	padding: 0;display: flex;width: 400%;
+	animation: cambio 20s infinite alternate;
+}
+#baner li{
+	list-style: none;width: 100%;
+}
+#baner img{
+	width: 100%;
+}
+@keyframes cambio{
+	0%{ margin-left: 0; }
+	20%{ margin-left: 0; }
+
+	25%{ margin-left: -100%; }
+	45%{ margin-left: -100%; }
+
+	50%{ margin-left: -200%; }
+	70%{ margin-left: -200%; }
+
+	75%{ margin-left: -300%; }
+	100%{ margin-left: -300%; }
+}
+
+
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px);
+}
+
+/**************Estilos para la letra Novedades y Favoritos***************/
+#contenNovFav{
+    width: 100%;padding-top: 50px;
+}
+.noveyfavo{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+}
+#titunoveyfavn, #titunoveyfavf{
+    text-decoration: none;
+    padding: 0px;
+    display: block;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#titunoveyfavf{
+    color: black;
+}
+.colororange{
+    color: orangered;
+}
+.noveyfavo li{
+    display: inline-block;
+    text-align: center;
+}
+
+/*segundo boque*/
+#contenNovFavdos{
+    width: 100%;padding-top: 50px;display: none;
+}
+
+
+/**************Estilos para la galeria de 4 fotos***************/
+#contenGaleria{
+    width: 70%;margin: auto;display: flex; justify-content: space-between;
+    padding-top: 30px;
+}
+.galeria{
+    height: 350px;width: 280px;
+}
+.foto{
+    height: 200px;width: 100%;
+}
+.foto img{
+    width: 100%;height: 100%;
+}
+
+.pie{
+    height: 100px;width: 100%;text-align: center;
+}
+.descripie{
+    padding: 5px;font-size: 11px;margin-bottom: 40px;
+}
+.prepie{
+    font-size: 12px;font-weight: bold;margin-bottom: 10px;
+}
+
+.btn{
+    display: block;
+    font-weight: 700;background-color: orangered;border-radius: 3px;
+    padding: 15px 20px;
+    margin: 0 21px;
+    color: white;
+    /*border: 1px solid black;*/
+    text-decoration: none;
+}
+
+
+/**************Estilos las 3 fotos que estan abajo de los 3 productos***************/
+
+#contfavorite{
+    width: 100%;padding-top: 50px;
+}
+.favo{
+    display: flex;
+    width: 70%;height: 500px;
+    margin: auto;
+}
+.primercontfavo{
+    display: block;width: 50%;
+}
+.primecontfavopeq, .segcontfavopeq{
+    height: 50%;width: 100%;
+}
+.imggrandefavo{
+    width: 100%;height: 100%;
+}
+.imgpquefavo{
+    width: 90%;margin-left: 10%;
+}
+
+/**************estilos para las fotos grandes***************/
+
+#contimggran{
+    width: 100%; margin-top: 80px;
+}
+.contimgg{
+    width: 100%;margin-bottom: 70px;
+    padding: 0;
+}
+.imggrande{
+    width: 100%;height: 500px;object-fit: cover;position: relative;
+}
+.imgsobre{
+    width: 90%;height: 400px;margin: -180px auto 0 auto;display: flex;
+    z-index: 1000;position: relative;border-radius: 4px;
+}
+.imgsobreblok{
+    width: 30%;padding-top: 200px;
+}
+.imgsobreblokimge{
+    width: 70%;
+}
+.imgsobreblokimge{
+    display: flex;justify-content: space-between;
+}
+.imgprodblok{
+    width: 24%;
+}
+.imgprodblok:hover{
+    background-color: white;border-radius: 8px;transition: all 0.4s;border-bottom: 1px solid orangered;
+}
+
+.imgproduct{
+    width: 80%;height: 150px;margin: 60px auto 0 auto;
+}
+.imgcarterblock{
+    width: 100%;height: 100%;
+}
+
+
+.lon{
+    font-size: 18px;margin-left: 30px;margin-bottom: 10px;
+}
+.tituuu{
+    margin-left: 30px;font-size: 28px;font-weight: bold;margin-bottom: 10px;
+}
+.descrip{
+    font-size: 13px; margin-left: 30px;
+}
+
+
+.nomprod{
+    text-align: center;font-size: 13px;margin: 20px 0 30px 0;
+}
+.califi{
+    text-align: center;font-size: 13px;margin-bottom: 10px;
+}
+.verprod{
+    text-align: center;font-size: 13px;
+}
+
+/*********** contenedor de categorias ********************/
+
+#contsectioncate{
+    width: 100%;margin-top: 80px;
+}
+.letracate{
+    text-align: center;padding: 20px;
+    color: black;
+    font-size: 25px;
+}
+
+#contenGaleriaCategoria{
+    width: 100%;margin: auto;display: flex;
+}
+.cate{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 400px;width: 25%;
+}
+.categoriasimg{
+    height: 400px;width: 100%;position: relative;
+}
+.categoriasimg img{
+    width: 100%;height: 100%;
+}
+
+.botom{
+    display: flex;justify-content: center;position: relative;margin-top: -110px;
+}
+.btn-neon{
+    background-color: black;
+    display: block;
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 28px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 3px;
+}
+.btn-neon:hover{
+    background-color: orangered;
+    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px; #a945c7;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: 0;
+    right: 0%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+        transition-delay: 0.25s;
+
+}
+
+/**************galeria para ultimos videos***************/
+#contvideos{
+    width: 100%;margin-top:80px;
+}
+.tituvid{
+    text-align: center;padding-bottom: 20px;
+}
+#contenGaleriaVideo{
+    width: 80%;margin: auto;display: flex; justify-content: space-between;
+}
+.galeriavideo{
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 350px;width: 250px;
+}
+.video{
+    height: 200px;width: 100%;
+}
+.video img{
+    width: 100%;height: 100%;
+}
+
+.abajo{
+    height: 100px;width: 100%;text-align: center;color: black;
+}
+.abajo p{
+    padding: 20px;
+}
+
+
+/******Footer ********/
+
+
+footer{
+    background-color: black;width: 100%;
+
+}
+
+.contenedorFOOTER{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    color: orange;padding: 50px 0 70px 0;
+}
+.col1, .col2, .col3{
+    width: 33.3%;
+
+}
+.col1 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+
+}
+.col1 p{
+    color: white;font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ig, .ws, .fb{
+    color: white;
+    display: flex;
+}
+.ico{
+    font-size: 20px;margin-right: 5px;
+}
+
+.col2 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+
+.col3 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+.col3 p{
+    color: #fff;
+}
+
+footer hr{
+    width: 70%; margin: auto;
+}
+.final{
+    margin:auto;padding: 10px 0;
+    color:white;
+    width: 70%;
+    display: flex;
+}
+.copy{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.contcopy{
+    width:33.3%;display: flex;
+}
+.contcopy p{
+    font-size: 12px;padding-top: 5px;margin-left: 3px;
+}
+
+.politic{
+    display: flex;
+    width: 50%;
+}
+
+.politic p{
+    color: white;padding-top: 5px;margin-right: 5px;
+    font-size: 12px;
+}
+
+.politic img{
+    height: 22px;margin-right: 15px;
+}

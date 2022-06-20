@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilosprin.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+          <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--iconcandado-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--fontastic-->
+    <link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
+
+
+
+    <style type="text/css">
+        .productos {
+            background-color: white;
+        }
+
+        .contenedorFOOTERProduc {
+            margin: auto;
+            width: 1050px;
+            display: flex;
+            color: orange;
+        }
+
+        .col1Pro {
+
+            width: 150px;
+            height: 600px;
+
+        }
+
+        .col1Pro img {
+
+            border: 1px solid rgba(0, 0, 0, .2);
+            padding: 8px;
+            margin: 10px 10px 15px;
+            cursor: pointer;
+
+            width: 100px;
+            height: 150px;
+        }
+
+        .col2Pro {
+
+            width: 450px;
+            height: 600px;
+            display: flex;
+
+
+
+        }
+
+        .col2Pro img {
+
+            border: 0px;
+
+            width: 360px;
+            height: 380px;
+
+        }
+
+        .col2Pro img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+
+
+
+        .col3Pro {
+
+            width: 500px;
+        }
+
+        .col3Pro h1 {
+            color: black;
+            margin-bottom: 15px;
+            font-size: 33px;
+            font-weight: bold;
+
+        }
+
+        .col3Pro .detallesProduc {
+            color: black;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .col3Pro p {
+            color: black;
+            line-height: 28px;
+        }
+
+        .reseña {
+            background-color: antiquewhite;
+        }
+
+        .reseña h1 {
+            font-size: 38px;
+            text-align: left;
+            padding: 85px;
+        }
+
+
+        .testimonios {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .testimonios_header {
+            margin: 50px 0px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonios_header h1 {
+            font-size: 2.9rem;
+            font-weight: 500;
+            background-color: #202020;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .testimonios_header span {
+            font-size: 0.7rem;
+            color: #252525;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .testimonios_contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .testimonios_caja {
+            width: 500px;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        .perfil-img {
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+        }
+
+        .perfil-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: center;
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+        }
+
+        .name-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-user strong {
+            color: #3d3d3d;
+            font-size: 1.3rem;
+        }
+
+        .name-user span {
+            color: #979797;
+            font-size: 1.1rem;
+        }
+
+        .reseñas {
+            color: #f9d71c;
+
+        }
+
+        .caja-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .comentarios_clientes {
+            color: #4b4b4b;
+
+        }
+
+        ::selection {
+            color: white;
+            background-color: #252525;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="rectprincipal">
+        <p>consultas gratis</p>
+    </div>
+    <div id="contenedor">
+        <header id="header">
+            <div class="blokhead"></div>
+            <div class="blokhead">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="blokheadredes">
+                <div id="contredesup">
+                    <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
+                    <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
+                    <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--navegacion-->
+
+    <nav id="navegacion">
+        <ul class="menu">
+            <li><a class="colorr" href="#">Carteras</a></li>
+            <li><a class="colorr" href="#">Cuidado facial</a></li>
+            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
+            <li><a class="colorr" href="#">Maquillaje</a></li>
+            <li><a class="colorr" href="#">Personalizable</a></li>
+            <li><a class="colorn" href="#">|</a></li>
+            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+            <li><a class="colorn" href="#">Catálogo</a></li>
+
+        </ul>
+        <hr color="#E5E8EC" size="1px">
+    </nav>
+    <br><br><br>
+
+    <footer class="productos">
+
+
+        <div class="contenedorFOOTERProduc">
+            <div class="col1Pro">
+                <img src="img/MAQUILLAJE/sombras/SOMBRAS%20CHANLEEVI%20UND.png" onclick="myFuction(this)">
+
+            </div>
+            <div class="col2Pro">
+
+                <img id="imageBox" src="img/MAQUILLAJE/sombras/SOMBRAS%20CHANLEEVI%20UND.png"s>
+
+
+            </div>
+
+            <div class="col3Pro">
+
+                <h1>Cartera 1</h1>
+                <br>
+                <p>★★★★★</p>
+                <br><br>
+                <h1 class="detallesProduc">▼Descripcion</h1>
+                <p>
+                    Estuche de aretes x3 bañados en oro 24k con mas de 20 cristales traslucidos y tralucidos con efecto tarnosal.</p>
+                <br><br>
+
+
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">▼Medidas</h1>
+                <p>Aretes mas largo de 3.5 cm. </p>
+                <br><br>
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">▼Material</h1>
+                <p>Piexas bañadas en oro 24k y mas de 20 cristales tralucidos y traslucidos con efecto tarnosal. </p>
+                <br><br>
+                <hr>
+                <br><br>
+                <h1 class="detallesProduc">▼Conbinalo con</h1>
+                <p>Completa tu look con la pulsera More Luck. </p>
+            </div>
+        </div>
+    </footer>
+    <br><br><br><br>
+
+    <div class="reseña">
+
+        <h1> En general<br>
+            <br>
+            ★★★★★ 5
+        </h1>
+
+    </div>
+
+
+
+    <section class="testimonios">
+        <div class="testimonios_header">
+            <h1>Testimonios</h1>
+            <br>
+            <br>
+            <br>
+            <div class="testimonios_contenedor">
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/tendencia.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Armando Perez</strong>
+                                <span>@Perez@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                             <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Muy bonito el producto me encanto</p>
+                    </div>
+                </div>
+
+
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/aretes.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Kenny Iman</strong>
+                                <span>@kennyIman</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Demasiado Genial</p>
+                    </div>
+                </div>
+
+
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/collares.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Joel Yman</strong>
+                                <span>@Joel Yman</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                             <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Lorem Impus dolor sit emet adisce elt nill,contnet</p>
+                    </div>
+                </div>
+                <div class="testimonios_caja">
+                    <div class="caja-top">
+                        <div class="perfil">
+                            <div class="perfil-img">
+                                <img src="img/joreriaPrincipal/especiales.jpg" alt="">
+                            </div>
+
+                            <div class="name-user">
+                                <strong>Armando Perez</strong>
+                                <span>@Perezdo</span>
+                            </div>
+                        </div>
+                        <div class="reseñas">
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
+                        </div>
+                    </div>
+                    <div class="comentarios_clientes">
+                        <p>Lorem Impus dolor sit emet adisce elt nill,contnet</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  <footer>
+            <div class="contenedorFOOTER">
+                <div class="col1">
+                    <h1> CONTACTO </h1>
+                    <p>Telf: 982025167</p>
+                    <p>Email: kenny4602@gmail.com</p>
+                    <p></p>
+                </div>
+                <div class="col2">
+                    <h1>REDES SOCIALES</h1>
+                    <div class="ig">
+                        <p class="icon-instagrem ico"></p>
+                        <p class="nomempre">@empresa</p>
+                    </div>
+                    <div class="ws">
+                        <p class="icon-what ico"></p>
+                        <p class="nomempre">@empresa</p>
+                    </div>
+                    <div class="fb">
+                        <p class="icon-facebook ico"></p>
+                        <p class="nomempre">@empresa</p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <h1>EXPLORAR MÁS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
+                </div>
+            </div>
+            <br> <br>
+            <hr>
+            <div class="final">
+                <div class="copy">
+                    <div class="contcopy">
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                        <p>Pagos 100 % Seguros</p>
+                    </div>
+                    <div class="contcopy">
+                        <span class="material-symbols-outlined">
+                            local_shipping
+                        </span>
+                        <p>Pagos 100 % Seguros</p>
+                    </div>
+                    <div class="contcopy">
+                        <span class="material-symbols-outlined">
+                            grade
+                        </span>
+                        <p>Pagos 100 % Seguros</p>
+                    </div>
+                </div>
+                <div class="politic">
+                    <p>Operamos Con:</p>
+                    <img src="img/MetodoDePago/yape.png">
+                    <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
+                </div>
+            </div>
+        </footer>
+
+    <script type="text/javascript">
+        function myFuction(smallImg) {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+
+    </script>
+</body>
+
+</html>

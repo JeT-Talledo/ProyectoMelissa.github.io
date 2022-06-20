@@ -117,7 +117,89 @@ section{
     border: 1px solid black;
 }
 
+/******Footer ********/
 
+
+footer{
+    background-color: black;width: 100%;
+
+}
+.contenedorFOOTER{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    color: orange;
+    padding: 50px 0 70px 0;
+}
+.col1, .col2, .col3{
+    width: 33.3%;
+
+}
+.col1 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+
+}
+.col1 p{
+    color: white;font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ig, .ws, .fb{
+    color: white;
+    display: flex;
+}
+.ico{
+    font-size: 20px;margin-right: 5px;
+}
+
+.col2 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+
+.col3 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+.col3 p{
+    color: #fff;
+}
+
+footer hr{
+    width: 70%; margin: auto;
+}
+.final{
+    margin:auto;padding: 10px 0;
+    color:white;
+    width: 70%;
+    display: flex;
+}
+.copy{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.contcopy{
+    width:33.3%;display: flex;
+}
+.contcopy p{
+    font-size: 12px;padding-top: 5px;margin-left: 3px;
+}
+
+.politic{
+    display: flex;
+    width: 50%;
+}
+
+.politic p{
+    color: white;padding-top: 5px;margin-right: 5px;
+    font-size: 12px;
+}
+
+.politic img{
+    height: 22px;margin-right: 15px;
+}
 
 
 

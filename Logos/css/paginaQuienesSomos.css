@@ -1,0 +1,136 @@
+.banner {
+    background-image: url("QuienesSomosImg/quienessomos.png");
+    width: 100%;
+    height: 77vh;
+}
+
+.banner h1 {
+
+    text-align: center;
+    font-size: 75px;
+}
+
+.section {
+
+
+    height: 400px;
+
+}
+
+.nuestrahisto h1 {
+
+    text-align: center;
+
+    font-size: 32px;
+}
+
+.nuestrahisto p {
+    height: 200px;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuestrahisto img {
+    display: flex;
+    padding: 0px 150px;
+    margin: 0px;
+    border: 0px solid black;
+    float: right;
+    width: 550px;
+
+}
+
+.section1 {
+
+
+    height: 400px;
+
+}
+
+.nuestrasomosalma h1 {
+
+    text-align: center;
+
+    font-size: 32px;
+}
+
+.nuestrasomosalma p {
+    height: 200px;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuestrasomosalma img {
+    display: flex;
+    padding: 0px 150px;
+    margin: 0px;
+    border: 0px solid black;
+    float: left;
+    width: 550px;
+
+}
+
+
+.section2 {
+
+
+    height: 400px;
+
+}
+
+.nuestrasomossoste h1 {
+
+    text-align: center;
+
+    font-size: 32px;
+}
+
+.nuestrasomossoste p {
+    height: 200px;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nuestrasomossoste img {
+    display: flex;
+    padding: 0px 150px;
+    margin: 0px;
+    border: 0px solid black;
+    float: right;
+    width: 550px;
+
+}
+
+
+
+#contenGaleria{
+
+
+    width: 70%;margin: auto;display: flex; justify-content: space-between;
+
+}
+
+.galeria{
+
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.0);
+    height: 250px;width: 250px;
+}
+.foto{
+     align-content: center;
+
+        background-color: white;
+    height: 36px;width: 36px;
+}
+.foto img{
+    width: 100%;height: 100%;
+}
+
+.pie{
+    height: 0px;width: 100%;text-align: center;color: black;
+}
+.pie p{
+    padding: 8px;
+}
