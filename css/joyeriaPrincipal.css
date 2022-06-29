@@ -1,78 +1,119 @@
-.banner {
-    background-image: url("joyoreriaPrinci/joyeriaBanner.jpg");
-    display: flex;
-    width: 100%;
-    height: 77vh;
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    margin: 0;padding: 0;
+}
+/*************************************/
+#header{
+    width: 90%;height: 90px;display: flex;margin:auto;font-family: 'Open Sans', sans-serif;
+}
+.blokhead, .blokheadredes, .blokheada{
+    width: 33.3%;
+}
+.blokheada {
+    display: flex;align-items: center;justify-content: center;
+}
+.blokheada a{
+    text-decoration: none;color:black;font-size: 13px;
+}
+.blokhead img{
+    height: 100%;display: block;margin: auto;
+}
+/*********estilos de redes logos ***************/
+.blokheadredes{
+    display: flex;justify-content: space-around;
+}
+#contredesup{
+    width: 30%;margin: auto;justify-content: space-between;display: flex;
+}
+.imgredes img{
+    width: 25px;
 }
 
 
-.bannerTexto p {
-    border: 1px solid black;
-    text-decoration: inherit;
+/************Menu estilos***************/
+#navegacion{
+    width: 100%;font-family: 'Open Sans', sans-serif;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: white;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+.colorr{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 13px;
+    color: black;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.colorn{
+    color: orangered;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+
+/**********************************************/
+.banner {
+    width: 100%;height: 100%;margin-bottom: 50px;
+}
+.contimgbaner{
+    background-image: url('/css/joyoreriaPrinci/joyeriaBanner.jpg');
+    background-repeat: no-repeat;
+    width: 100%;height: 400px;position: relative;
+    background-size: cover;
+}
+
+.pebaner {
+    border: 0px solid black;width: 60%;display: block;margin: auto;
+    position: relative; z-index: 10;
+    text-decoration: inherit;margin-top: -180px;
     text-decoration-style: dashed;
     background-color: white;
-    padding: 60px 75px;
-    position: absolute;
-    left: 23%;
-    top: 40%;
+    padding: 50px 60px;
     text-align: left;
     font-size: 25px;
+    box-shadow: 0px 5px 10px -1px orangered;
 }
 
-.p p {
-    text-align: center;
-    font-size: 30px;
-    font-family: sans-serif;
+/*************************************/
+.subtitudescubre{
+    width: 100%;
 }
-
+.subtitudescubre p{
+    text-align: center;font-size: 20px;color: orangered;padding: 20px 0;
+}
 
 .section {
     height: 500px;
-
+    width: 80%;margin:40px auto;display: flex;
 }
-
-.nuestrahisto h1 {
-    text-align: center;
-
-    font-size: 32px;
+.contimgart1{
+    background-image: url('/img/joreriaPrincipal/aretes.jpg');
+    width: 40%;padding-top: 20%;background-repeat: no-repeat;position: relative;
+    background-size: cover;
 }
-
-.nuestrahisto p {
-    height: 200px;
-    padding: 0px 180px;
-    text-align: center;
-    font-size: 18px;
+.contpe{
+    width: 90%;margin: auto;
 }
-
-.nuestrahisto img {
-    display: flex;
-    padding: 0px 200px;
-    margin: 0px;
-    border: 0px solid black;
-    float: left;
-    width: 430px;
-
-}
-
-.nuestrahisto p {
-    text-align: left;
-}
-
-.nuestrahisto .pe p {
-    background-color: transparent;
-    font-family: sans-serif;
-    padding: 5px 2px;
-    color: white;
-    position: absolute;
-    top: 1080px;
-    left: 240px;
-    text-align: center;
+.contpe p{
+    text-align: center;color: white;font-size: 20px;
 }
 
 .boton {
-    position: absolute;
-    top: 1200px;
-    left: 290px;
+    margin: 20px auto 0 auto;justify-content: center;display: flex;
 }
 
 .btn-neon {
@@ -95,10 +136,9 @@
 }
 
 .btn-neon:hover {
-    color: black;
+    color: orangered;
     background-color: white;
     box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px;
-    #a945c7;
     transition-delay: 1s;
 }
 
@@ -170,44 +210,33 @@
     transition-delay: 0.25s;
 
 }
-
-
-
-#contenGaleria {
-
-    padding: 10px 40px;
-    position: absolute;
-    top: 780px;
-    left: 650px;
-    width: 260px;
-    margin: auto;
-    display: block;
-    justify-content: space-between;
-
+.argollasinfo{
+    display: flex;justify-content: space-evenly;width: 60%;
 }
 
+
 .galeria {
-    padding: 20px 20px;
     height: 400px;
     width: 250px;
+    border: 1px solid gray;
+    border-radius: 4px;
 }
 
 .foto {
-    padding: 10px 0px;
     height: 225px;
-    width: 250px;
+    width: 100%;
 }
 
 .foto img {
 
     padding: 0px 0px;
-    width: 250px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
 }
 
 .pie {
     padding: 1px 0px;
-    height: 120px;
+    height: 170px;
     width: 260px;
     text-align: center;
     color: black;
@@ -233,41 +262,46 @@
     /*border: 1px solid black;*/
     text-decoration: none;
 }
+/********mira hacia otro lado********/
 
-
-
-
-
-#contenGaleria1 {
-    padding: 10px 30px;
-    position: absolute;
-    top: 780px;
-    left: 970px;
-
+.section1{
+    height: 500px;
+    width: 80%;margin:40px auto;display: block;display: flex;
 }
-
-.galeria1 {
-    padding: 20px 20px;
+.contimgart2{
+    background-image: url('/img/joreriaPrincipal/collares.jpg');
+    width: 40%;padding-top: 20%;background-repeat: no-repeat;position: relative;
+    background-size: cover;
+}
+.contpecollares{
+    width: 90%;margin: auto;
+}
+.contpecollares p{
+    text-align: center;color: white;font-size: 20px;
+}
+.argollasinfo1{
+    display: flex;justify-content: space-evenly;width: 60%;
+}
+.galeria1{
     height: 400px;
     width: 250px;
+    border: 1px solid gray;
+    border-radius: 4px;
 }
-
 .foto1 {
-
-    padding: 10px 0px;
     height: 225px;
-    width: 250px;
+    width: 100%;
 }
 
 .foto1 img {
     padding: 0px 0px;
-    width: 250px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
 }
 
 .pie1 {
     padding: 1px 0px;
-    height: 120px;
+    height: 170px;
     width: 260px;
     text-align: center;
     color: black;
@@ -295,1094 +329,56 @@
 }
 
 
-
-
-.section1 {
+/********section3*****/
+.section3{
     height: 500px;
-
+    width: 80%;margin:40px auto;display: block;display: flex;
+}
+.contimgart3{
+    background-image: url('/img/joreriaPrincipal/pulseras.jpg');
+    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
+    background-size: cover;
 }
 
-.nuestrahisto1 h1 {
-    text-align: center;
-    font-size: 32px;
-}
-
-.nuestrahisto1 p {
-    height: 200px;
-    padding: 0px 180px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nuestrahisto1 img {
-
-    display: flex;
-    padding: 0px 200px;
-    margin: 0px;
-    border: 0px solid black;
-    float: right;
-    width: 430px;
-
-}
-
-.nuestrahisto1 p {
-    text-align: left;
-}
-
-.nuestrahisto1 .pe1 p {
-
-    background-color: transparent;
-    font-family: sans-serif;
-    padding: 5px 2px;
-    color: white;
-    position: absolute;
-    top: 1656px;
-    left: 940px;
-    text-align: center;
-}
-
-.boton1 {
-    position: absolute;
-    top: 1780px;
-    left: 980px;
-}
-
-.btn-neon1 {
-
-    background-color: transparent;
-    display: block;
-    position: relative;
-    right: auto;
-    top: 5px;
-    left: 5px;
-    display: inline-block;
-    padding: 15px 15px;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    border: 1px solid white;
-}
-
-.btn-neon1:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px;
-    #a945c7;
-    transition-delay: 1s;
-}
-
-.btn-neon1 span {
-    position: absolute;
-    display: block;
-}
-
-#span1 {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #a945c7);
-
-}
-
-.btn-neon1:hover #span1 {
-    left: 100%;
-    transition: 1s;
-}
-
-#span3 {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #a945c7);
-
-}
-
-.btn-neon1:hover #span3 {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-#span2 {
-    top: 0;
-    right: 0%;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #a945c7);
-
-}
-
-.btn-neon1:hover #span2 {
-
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#span4 {
-
-    bottom: -100%;
-    left: 0;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #a945c7);
-
-}
-
-.btn-neon1:hover #span4 {
-
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#contenGaleria11 {
-
-    padding: 10px 40px;
-    position: absolute;
-    top: 1350px;
-    left: 190px;
-    width: 260px;
-    margin: auto;
-    display: block;
-    justify-content: space-between;
-
-}
-
-.galeria11 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto11 {
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto11 img {
-
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie11 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie11 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn11 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-#contenGaleria111 {
-    padding: 10px 30px;
-    position: absolute;
-    top: 1350px;
-    left: 480px;
-
-}
-
-.galeria111 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto111 {
-
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto111 img {
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie111 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie111 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn111 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-
-.section3 {
+/******section4***/
+.section4{
     height: 500px;
-
+    width: 80%;margin:40px auto;display: block;display: flex;
 }
-
-.nuestrahisto3 h1 {
-    text-align: center;
-
-    font-size: 32px;
+.contimgart4{
+    background-image: url('/img/joreriaPrincipal/anillos.jpg');
+    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
+    background-size: cover;
 }
-
-.nuestrahisto3 p {
-    height: 200px;
-    padding: 0px 180px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nuestrahisto3 img {
-    display: flex;
-    padding: 0px 200px;
-    margin: 0px;
-    border: 0px solid black;
-    float: left;
-    width: 430px;
-
-}
-
-.nuestrahisto3 p {
-    text-align: left;
-}
-
-.nuestrahisto3 .pe3 p {
-    background-color: transparent;
-    font-family: sans-serif;
-    padding: 5px 2px;
-    color: white;
-    position: absolute;
-    top: 2230;
-    left: 240px;
-    text-align: center;
-}
-
-.boton3 {
-    position: absolute;
-    top: 2355px;
-    left: 290px;
-}
-
-.btn-neon3 {
-
-    background-color: transparent;
-    display: block;
-    position: relative;
-    right: auto;
-    top: 5px;
-    left: 5px;
-    display: inline-block;
-    padding: 15px 15px;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    border: 1px solid white;
-}
-
-.btn-neon3:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px;
-    #a945c7;
-    transition-delay: 1s;
-}
-
-.btn-neon3 span {
-    position: absolute;
-    display: block;
-}
-
-#span1 {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #a945c7);
-
-}
-
-.btn-neon:hover #span1 {
-    left: 100%;
-    transition: 1s;
-}
-
-#span3 {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #a945c7);
-
-}
-
-.btn-neon3:hover #span3 {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-#span2 {
-    top: 0;
-    right: 0%;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #a945c7);
-
-}
-
-.btn-neon3:hover #span2 {
-
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#span4 {
-
-    bottom: -100%;
-    left: 0;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #a945c7);
-
-}
-
-.btn-neon3:hover #span4 {
-
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-
-
-#contenGaleria3 {
-
-    padding: 10px 40px;
-    position: absolute;
-    top: 1935px;
-    left: 650px;
-    width: 260px;
-    margin: auto;
-    display: block;
-    justify-content: space-between;
-
-}
-
-.galeria3 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto3 {
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto3 img {
-
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie3 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie3 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn3 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-
-
-#contenGaleria31 {
-    padding: 10px 30px;
-    position: absolute;
-    top: 1935px;
-    left: 970px;
-
-}
-
-.galeria31 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto31 {
-
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto31 img {
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie31 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie31 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn31 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-.section4 {
+/*****section5*****/
+.section5{
     height: 500px;
-
-}
-
-.nuestrahisto4 h1 {
-    text-align: center;
-    font-size: 32px;
-}
-
-.nuestrahisto4 p {
-    height: 200px;
-    padding: 0px 180px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nuestrahisto4 img {
-    display: flex;
-    padding: 0px 200px;
-    margin: 0px;
-    border: 0px solid black;
-    float: right;
-    width: 430px;
-
-}
-
-.nuestrahisto4 p {
-    text-align: left;
-}
-
-.nuestrahisto4 .pe4 p {
-    color: white;
-    background-color: transparent;
-    font-family: sans-serif;
-    padding: 5px 2px;
-    position: absolute;
-    top: 2810px;
-    left: 940px;
-    text-align: center;
-}
-
-.boton4 {
-    position: absolute;
-    top: 2940px;
-    left: 980px;
-}
-
-.btn-neon4 {
-
-    background-color: transparent;
-    display: block;
-    position: relative;
-    right: auto;
-    top: 5px;
-    left: 5px;
-    display: inline-block;
-    padding: 15px 15px;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    border: 1px solid white;
-}
-
-.btn-neon4:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px;
-    #a945c7;
-    transition-delay: 1s;
-}
-
-.btn-neon4 span {
-    position: absolute;
-    display: block;
-}
-
-#span1 {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #a945c7);
-
-}
-
-.btn-neon4:hover #span1 {
-    left: 100%;
-    transition: 1s;
-}
-
-#span3 {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #a945c7);
-
-}
-
-.btn-neon4:hover #span3 {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-#span2 {
-    top: 0;
-    right: 0%;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #a945c7);
-
-}
-
-.btn-neon4:hover #span2 {
-
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#span4 {
-
-    bottom: -100%;
-    left: 0;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #a945c7);
-
-}
-
-.btn-neon4:hover #span4 {
-
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#contenGaleria4 {
-
-    padding: 10px 40px;
-    position: absolute;
-    top: 2530px;
-    left: 190px;
-    width: 260px;
-    margin: auto;
-    display: block;
-    justify-content: space-between;
-
-}
-
-.galeria4 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto4 {
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto4 img {
-
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie4 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie4 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn4 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-#contenGaleria41 {
-    padding: 10px 30px;
-    position: absolute;
-    top: 2530px;
-    left: 480px;
-
-}
-
-.galeria41 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto41 {
-
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto41 img {
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie41 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie41 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn41 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-.section5 {
-    height: 500px;
-
-}
-
-.nuestrahisto5 h1 {
-    text-align: center;
-
-    font-size: 32px;
-}
-
-.nuestrahisto5 p {
-    height: 200px;
-    padding: 0px 180px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.nuestrahisto5 img {
-    display: flex;
-    padding: 0px 200px;
-    margin: 0px;
-    border: 0px solid black;
-    float: left;
-    width: 430px;
-
-}
-
-.nuestrahisto5 p {
-    text-align: left;
-}
-
-.nuestrahisto5 .pe5 p {
-    background-color: transparent;
-    font-family: sans-serif;
-    padding: 5px 2px;
-    color: white;
-    position: absolute;
-    top: 3370px;
-    left: 240px;
-    text-align: center;
-}
-
-.boton5 {
-    position: absolute;
-    top: 3500px;
-    left: 290px;
-}
-
-.btn-neon5 {
-
-    background-color: transparent;
-    display: block;
-    position: relative;
-    right: auto;
-    top: 5px;
-    left: 5px;
-    display: inline-block;
-    padding: 15px 15px;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    border: 1px solid white;
-}
-
-.btn-neon5:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 2px #a945c7, 0 0 0px #a945c7, 0 0 0px;
-    #a945c7;
-    transition-delay: 1s;
-}
-
-.btn-neon5 span {
-    position: absolute;
-    display: block;
-}
-
-#span1 {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #a945c7);
-
-}
-
-.btn-neon5:hover #span1 {
-    left: 100%;
-    transition: 1s;
-}
-
-#span3 {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #a945c7);
-
-}
-
-.btn-neon5:hover #span3 {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-#span2 {
-    top: 0;
-    right: 0%;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #a945c7);
-
-}
-
-.btn-neon5:hover #span2 {
-
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-#span4 {
-
-    bottom: -100%;
-    left: 0;
-    width: 2%;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #a945c7);
-
-}
-
-.btn-neon3:hover #span4 {
-
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-
-}
-
-
-
-#contenGaleria5 {
-
-    padding: 10px 40px;
-    position: absolute;
-    top: 3040px;
-    left: 650px;
-    width: 260px;
-    margin: auto;
-    display: block;
-    justify-content: space-between;
-
-}
-
-.galeria5 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto5 {
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto5 img {
-
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie5 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie5 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
-}
-
-
-.btn5 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
-}
-
-
-
-
-
-#contenGaleria51 {
-    padding: 10px 30px;
-    position: absolute;
-    top: 3040px;
-    left: 970px;
-
-}
-
-.galeria51 {
-    padding: 20px 20px;
-    height: 400px;
-    width: 250px;
-}
-
-.foto51 {
-
-    padding: 10px 0px;
-    height: 225px;
-    width: 250px;
-}
-
-.foto51 img {
-    padding: 0px 0px;
-    width: 250px;
-    height: 230px;
-}
-
-.pie51 {
-    padding: 1px 0px;
-    height: 120px;
-    width: 260px;
-    text-align: center;
-    color: black;
-}
-
-.pie51 p {
-    font-size: 15px;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    padding: 0px 10px;
+    width: 80%;margin:40px auto;display: block;display: flex;
 }
-
-
-.btn51 {
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: orangered;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin: 15px 21px;
-    color: white;
-    /*border: 1px solid black;*/
-    text-decoration: none;
+.contimgart5{
+    background-image: url('/img/joreriaPrincipal/aretes.jpg');
+    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
+    background-size: cover;
 }
-
 
 
 
+/************* banner compra ********************/
 .BannerComprar {
     display: block;
     margin: auto;
     background: url(joyoreriaPrinci/porque-comprar.jpg);
-    width: 77.8%;
-    height: 77vh;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 500px;
+    margin-top: 170px;
+    position: relative;
+    background-size: cover;
 }
 
 .banner-contentCompras {
-    color: #fff;
+    color: #fff;padding-top: 200px;
     width: 100%;
-    padding-top: 170px;
 }
 
 .banner-contentCompras h1 {
@@ -1396,7 +392,7 @@
 .banner-contentCompras p {
     text-align: center;
     font-size: 20px;
-
+    margin-bottom: 10px;
     font-style: normal;
     font-family: serif;
 }
@@ -1501,12 +497,17 @@
 
 }
 
-.conocemas .letra1 {
+
+/************* conoce mas *******************/
+
+.conocemas{
+    margin-top: 50px;
+}
+.letra1 {
     text-align: center;
     font-family: inherit;
 }
-
-.conocemas .letra2 {
+.letra2 {
     line-height: 26px;
     text-align: center;
     font-size: 20px;
@@ -1526,13 +527,20 @@
     height: 60%;
 }
 
-.letradescrubre .letra1 {
-    text-align: center;
-    font-size: 30px;
 
+/************* descubra **********/
+.contendescu{
+    width: 90%;margin: 20px auto;
 }
 
-.letradescrubre .letra2 {
+.letradescrubre{
+    width: 100%;margin-bottom: 40px;
+}
+.letra1 {
+    text-align: center;
+    font-size: 30px;
+}
+.letra2 {
     text-align: center;
     line-height: 25px;
     font-size: 18px;
@@ -1540,12 +548,9 @@
 }
 
 #contenGaleria6 {
-
-    width: 80%;
-    margin: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    justify-content: space-around;
 }
 
 .galeria6 {
@@ -1606,9 +611,93 @@
     transition-delay: 0s;
 }
 
+/************************/
 .ultimo img {
     display: block;
     margin: auto;
     width: 100%;
     height: 100%;
+}
+
+
+/*****footer*********/
+footer{
+    background-color: black;width: 100%;
+
+}
+.contenedorFOOTER{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    color: orange;
+    padding: 50px 0 100px 0;
+}
+.col1, .col2, .col3{
+    width: 33.3%;
+
+}
+.col1 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+
+}
+.col1 p{
+    color: white;font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ig, .ws, .fb{
+    color: white;margin-bottom: 10px;
+    display: flex;
+}
+.ico{
+    font-size: 20px;margin-right: 5px;
+}
+
+.col2 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+
+.col3 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+.col3 p{
+    color: #fff;line-height: 20px;
+}
+
+footer hr{
+    width: 70%; margin: auto;
+}
+.final{
+    margin:auto;padding: 10px 0;
+    color:white;
+    width: 70%;
+    display: flex;
+}
+.copy{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.contcopy{
+    width:33.3%;display: flex;
+}
+.contcopy p{
+    font-size: 12px;padding-top: 5px;margin-left: 3px;
+}
+
+.politic{
+    display: flex;
+    width: 50%;
+}
+
+.politic p{
+    color: white;padding-top: 5px;margin-right: 5px;
+    font-size: 12px;
+}
+
+.politic img{
+    height: 22px;margin-right: 15px;
 }

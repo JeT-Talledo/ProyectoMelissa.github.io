@@ -240,7 +240,7 @@ body{
 }
 .imgsobre{
     width: 90%;height: 400px;margin: -180px auto 0 auto;display: flex;
-    z-index: 1000;position: relative;border-radius: 4px;
+    z-index: 1;position: relative;border-radius: 4px;
 }
 .imgsobreblok{
     width: 30%;padding-top: 200px;
@@ -299,11 +299,11 @@ body{
 }
 
 #contenGaleriaCategoria{
-    width: 100%;margin: auto;display: flex;
+    width: 100%;margin: auto;display: flex;justify-content: space-between;
 }
 .cate{
     box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 rgba(0,0,0,0.19);
-    height: 400px;width: 25%;
+    height: 400px;width: 23%;
 }
 .categoriasimg{
     height: 600px;width: 100%;position: relative;
@@ -437,7 +437,7 @@ footer{
     width: 70%;
     display: flex;
     color: orange;
-    padding: 50px 0 70px 0;
+    padding: 50px 0 100px 0;
 }
 .col1, .col2, .col3{
     width: 33.3%;
@@ -454,7 +454,7 @@ footer{
 }
 
 .ig, .ws, .fb{
-    color: white;
+    color: white;margin-bottom: 10px;
     display: flex;
 }
 .ico{
@@ -471,7 +471,7 @@ footer{
     margin-bottom: 15px;
 }
 .col3 p{
-    color: #fff;
+    color: #fff;line-height: 20px;
 }
 
 footer hr{
