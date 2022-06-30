@@ -1,4 +1,74 @@
-img{
+*{
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*************************************/
+#header{
+    width: 90%;height: 90px;display: flex;margin:auto;font-family: 'Open Sans', sans-serif;
+}
+.blokhead, .blokheadredes, .blokheada{
+    width: 33.3%;
+}
+.blokheada {
+    display: flex;align-items: center;justify-content: center;
+}
+.blokheada a{
+    text-decoration: none;color:black;font-size: 13px;
+}
+.blokhead img{
+    height: 100%;display: block;margin: auto;
+}
+/*********estilos de redes logos ***************/
+.blokheadredes{
+    display: flex;justify-content: space-around;
+}
+#contredesup{
+    width: 30%;margin: auto;justify-content: space-between;display: flex;
+}
+.imgredes img{
+    width: 25px;
+}
+
+
+/************Menu estilos***************/
+#navegacion{
+    width: 100%;font-family: 'Open Sans', sans-serif;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: white;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+.colorr{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 13px;
+    color: black;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.colorn{
+    color: orangered;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+
+.imgee img{
     display: flex;
     margin: auto;
     width: 75%;
@@ -7,7 +77,7 @@ img{
 .letraArriba{
     text-align: center;
 }
-p{
+.pepe p{
     line-height: 24px;
     text-align: center;
 }
@@ -101,3 +171,89 @@ section{
     background-color: transparent;
     border: 1px solid black;
 }
+
+/******Footer ********/
+
+
+footer{
+    margin-top: 40px;
+    background-color: black;width: 100%;
+
+}
+.contenedorFOOTER{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    color: orange;
+    padding: 50px 0 100px 0;
+}
+.col1, .col2, .col3{
+    width: 33.3%;
+
+}
+.col1 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+
+}
+.col1 p{
+    color: white;font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ig, .ws, .fb{
+    color: white;margin-bottom: 10px;
+    display: flex;
+}
+.ico{
+    font-size: 20px;margin-right: 5px;
+}
+
+.col2 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+
+.col3 h1{
+    color: white;font-size: 20px;text-align: left;
+    margin-bottom: 15px;
+}
+.col3 p{
+    color: #fff;line-height: 20px;
+}
+
+footer hr{
+    width: 70%; margin: auto;
+}
+.final{
+    margin:auto;padding: 10px 0;
+    color:white;
+    width: 70%;
+    display: flex;
+}
+.copy{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.contcopy{
+    width:33.3%;display: flex;
+}
+.contcopy p{
+    font-size: 12px;padding-top: 5px;margin-left: 3px;
+}
+
+.politic{
+    display: flex;
+    width: 50%;
+}
+
+.politic p{
+    color: white;padding-top: 5px;margin-right: 5px;
+    font-size: 12px;
+}
+
+.politic img{
+    height: 22px;margin-right: 15px;
+}
+
