@@ -31,8 +31,7 @@
 
 <body>
 
-
-
+    <!-- del whatssap-->
     <div class="nav-bottom">
 
         <div class="popup-whatsapp fadeIn">
@@ -62,10 +61,7 @@
         </button>
         <div class="circle-anime"></div>
     </div>
-
-    <div id="rectprincipal">
-        <p>consultas gratis</p>
-    </div>
+    <!--*******************-->
 
     <div id="contenedor">
         <header id="header">
@@ -87,130 +83,109 @@
 
         <nav id="navegacion">
             <ul class="menu">
-                <li><a class="colorr" href="principal.html">Inicio</a></li>
+                <li><a class="colorr select" href="principal.html">Inicio</a></li>
                 <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
                 <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-                <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
-                <li><a class="colorr" href="productosMaquillaje.html">Maquillaje</a></li>
-                <li><a class="colorn" href="#">|</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+                <li><a class="colornn" href="#">|</a></li>
                 <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
                 <li><a class="colorn" href="#">Catálogo</a></li>
             </ul>
         </nav>
 
-        <!--Banner-->
+        <!-- **********************muestra categorias de joyeria***************************** -->
+        <div id="opcate3">
+            <p>°</p>
+            <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+            <a href="" class="pocates">Accesorio escolar</a>
+            <a href="" class="pocates">Manualidades</a>
+            <a href="" class="pocates">Papelería</a>
+            <a href="" class="pocates">Otros</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
+        <!-- **********************muestra categorias de Maquillaje***************************** -->
+        <div id="opcate4">
+            <p>°</p>
+            <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+            <a href="" class="pocates">Accesorio escolar</a>
+            <a href="" class="pocates">Manualidades</a>
+            <a href="" class="pocates">Papelería</a>
+            <a href="" class="pocates">Otros</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
 
-        <div id="baner">
-            <ul>
-                <li><img src="img/banner/banner1.jpeg" alt=""></li>
-                <li><img src="img/banner/bannercarteras.png" alt=""></li>
-                <li><img src="img/banner/bannerwsp.png" alt=""></li>
-                <li><img src="img/banner/bannercarteras.png" alt=""></li>
-            </ul>
+        <!-- ****************************************************************************** -->
+
+        <!--Banner-->
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="img/banner/banner1.jpeg" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="img/banner/bannercarteras.png" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="img/banner/bannerwsp.png" alt="" class="slider__img">
+                </div>
+                <div class="slider__section">
+                    <img src="img/banner/bannercarteras.png" alt="" class="slider__img">
+                </div>
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
         </div>
 
         <!--Novedades y Favoritos LETRA-->
-
-        <div id="contenNovFav">
+        <div id="contenidonovfav">
             <ul class=noveyfavo>
-                <li><a id="titunoveyfavn" class="colororange" href="">novedades</a></li>
-                <li><a class="titunoveyfav" href="#">|</a></li>
-                <li><a id="titunoveyfavf" href="" onclick="mostrar();">los favoritos</a></li>
+                <li id="titunoveyfavn">Nuestras novedades</li>
             </ul>
-            <!--Galeria de 4 fotos-->
-            <div id="contenGaleria">
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/JOYERIA/aretes/aretesrosaplata.jpg" alt="">
+            <div id="segcontnovfav">
+                <!--Galeria de 4 fotos-->
+                <div class="contenGaleria">
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="img/JOYERIA/aretes/aretesrosaplata.jpg" alt="">
+                        </div>
+                        <div class="pie">
+                            <p class="descripie">Aretes Rosa Plata</p>
+                            <p class="prepie">S/80.00</p>
+                            <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                        </div>
                     </div>
-                    <div class="pie">
-                        <p class="descripie">Aretes Rosa Plata</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="img/JOYERIA/collares/collaatrapasue%C3%B1osplata.jpg" alt="">
+                        </div>
+                        <div class="pie">
+                            <p class="descripie">Collar Atrapasueño Plata</p>
+                            <p class="prepie">S/80.00</p>
+                            <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                        </div>
                     </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/JOYERIA/collares/collaatrapasue%C3%B1osplata.jpg" alt="">
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="img/MAQUILLAJE/brochas/brochasneonturquesa.jpg" alt="">
+                        </div>
+                        <div class="pie">
+                            <p class="descripie">Brocha Neon</p>
+                            <p class="prepie">S/80.00</p>
+                            <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                        </div>
                     </div>
-                    <div class="pie">
-                        <p class="descripie">Collar Atrapasueño Plata</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
-                    </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/MAQUILLAJE/brochas/brochasneonturquesa.jpg" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Brocha Neon</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
-                    </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/MAQUILLAJE/corrector/CorrectorChanleevi.png" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Corrector Chanlevi</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--segundo bloque-->
-        <div id="contenNovFavdos">
-            <ul class=noveyfavo>
-                <li><a id="titunoveyfavn" href="" onclick="mostraras();">novedades</a></li>
-                <li><a class="titunoveyfav" href="#">|</a></li>
-                <li><a id="titunoveyfavf" class="colororange" href="">los favoritos</a></li>
-            </ul>
-            <!--Galeria de 4 fotos-->
-            <div id="contenGaleria">
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/JOYERIA/aretes/aretesrosaplata.jpg" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Aretes Rosa Plata</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar</a>
-                    </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/JOYERIA/collares/collaatrapasue%C3%B1osplata.jpg" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Collar Atrapasueño Plata</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
-                    </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/MAQUILLAJE/brochas/brochasneonturquesa.jpg" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Brocha Neon</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
-                    </div>
-                </div>
-                <div class="galeria">
-                    <div class="foto">
-                        <img src="img/MAQUILLAJE/corrector/CorrectorChanleevi.png" alt="">
-                    </div>
-                    <div class="pie">
-                        <p class="descripie">Corrector Chanlevi</p>
-                        <p class="prepie">S/80.00</p>
-                        <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                    <div class="galeria">
+                        <div class="foto">
+                            <img src="img/MAQUILLAJE/corrector/CorrectorChanleevi.png" alt="">
+                        </div>
+                        <div class="pie">
+                            <p class="descripie">Corrector Chanlevi</p>
+                            <p class="prepie">S/80.00</p>
+                            <a class="btn" href="https://www.google.com" target="_blank">Consultar Compra</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,7 +256,7 @@
             </div>
 
             <div class="contimgg">
-                <img class="imggrande" src="img/PRINCIPALGRANDE/caterasprincipalgrande.jpg" alt="">
+                <img class="imggrande" src="img/PRINCIPALGRANDE/cuidadofacialprincipagrande.jpg" alt="">
                 <div class="imgsobre">
                     <div class="imgsobreblok">
                         <h2 class="lon">NUEVO</h2>
@@ -326,7 +301,7 @@
             </div>
 
             <div class="contimgg">
-                <img class="imggrande" src="img/PRINCIPALGRANDE/caterasprincipalgrande.jpg" alt="">
+                <img class="imggrande" src="img/PRINCIPALGRANDE/maquillajeprincipalgrande.jpg" alt="">
                 <div class="imgsobre">
                     <div class="imgsobreblok">
                         <h2 class="lon">NUEVO</h2>
@@ -371,7 +346,7 @@
             </div>
 
             <div class="contimgg">
-                <img class="imggrande" src="img/PRINCIPALGRANDE/caterasprincipalgrande.jpg" alt="">
+                <img class="imggrande" src="img/PRINCIPALGRANDE/joyeriaprincipalgrande.jpg" alt="">
                 <div class="imgsobre">
                     <div class="imgsobreblok">
                         <h2 class="lon">NUEVO</h2>
@@ -580,6 +555,7 @@
     </div>
 </body>
 <script src="js/codigo.js"></script>
+<script src="js/carrusel.js"></script>
 <script src="js/script2.js"></script>
 
 </html>

@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Carteras</title>
     <link rel="stylesheet" href="css/estilosprin.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-          <!--google fonts-->
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -21,6 +21,186 @@
 
 
     <style type="text/css">
+        /*roboto condensed*/
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+        /**/
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        #rectprincipal {
+            background-color: orangered;
+            width: 100%;
+            height: 25px;
+            color: white;
+            text-align: center;
+        }
+
+        /***************header*****************/
+        #contenedor {
+            width: 100%;
+        }
+
+        #header {
+            width: 90%;
+            height: 90px;
+            display: flex;
+            margin: auto;
+        }
+
+        .blokhead,
+        .blokheadredes,
+        .blokheada {
+            width: 33.3%;
+        }
+
+        .blokheada {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blokheada a {
+            text-decoration: none;
+            font-size: 13px;
+            color: black;
+        }
+
+        .blokheada a:hover {
+            text-decoration: underline;
+        }
+
+        .blokhead img {
+            height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        /*********estilos de redes logos ***************/
+        .blokheadredes {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #contredesup {
+            width: 30%;
+            margin: auto;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .imgredes img {
+            width: 25px;
+        }
+
+
+        /************Menu estilos***************/
+        #navegacion {
+            width: 100%;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            background: white;
+            width: 70%;
+            margin: 0 auto 10px auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .colorr {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            font-size: 13px;
+            color: black;
+            transition: all 0.4s;
+        }
+
+        .colorr:hover {
+            background-color: orangered;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .menu li {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .colorn,
+        .colornn {
+            color: orangered;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: all 0.4s;
+            font-size: 13px;
+        }
+
+        .colornn {
+            cursor: default;
+        }
+
+        .colorn:hover {
+            background-color: orangered;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .select {
+            background-color: orangered;
+            color: white;
+            border-radius: 3px;
+        }
+
+        /********** estilos categorias carteras********/
+        #opcate3,
+        #opcate4 {
+            background-color: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 11;
+            top: 0;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #opcate3 p,
+        #opcate4 p {
+            color: white;
+            font-size: 30px;
+        }
+
+        .pocates {
+            padding: 10px 0;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .pocates:hover {
+            color: orangered;
+        }
+
+        #iconcerrarop {
+            width: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
         .productos {
             background-color: white;
         }
@@ -226,40 +406,58 @@
 
 <body>
 
-    <div id="rectprincipal">
-        <p>consultas gratis</p>
-    </div>
-    <div id="contenedor">
-        <header id="header">
-            <div class="blokhead"></div>
-            <div class="blokhead">
-                <img src="img/logo.png" alt="">
+    <header id="header">
+        <div class="blokheada">
+            <a href="#">Encuentranos por aquí</a>
+        </div>
+        <div class="blokhead">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="blokheadredes">
+            <div id="contredesup">
+                <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
             </div>
-            <div class="blokheadredes">
-                <div id="contredesup">
-                    <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
-                </div>
-            </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <!--navegacion-->
 
     <nav id="navegacion">
         <ul class="menu">
-            <li><a class="colorr" href="#">Carteras</a></li>
-            <li><a class="colorr" href="#">Cuidado facial</a></li>
-            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
-            <li><a class="colorr" href="#">Maquillaje</a></li>
-            <li><a class="colorr" href="#">Personalizable</a></li>
-            <li><a class="colorn" href="#">|</a></li>
+            <li><a class="colorr" href="principal.html">Inicio</a></li>
+            <li><a class="colorr select" href="productosCartera.html">Carteras</a></li>
+            <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+            <li><a class="colornn" href="#">|</a></li>
             <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
             <li><a class="colorn" href="#">Catálogo</a></li>
-
         </ul>
-        <hr color="#E5E8EC" size="1px">
     </nav>
+
+    <!-- **********************muestra categorias de joyeria***************************** -->
+    <div id="opcate3">
+        <p>°</p>
+        <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+        <a href="" class="pocates">Accesorio escolar</a>
+        <a href="" class="pocates">Manualidades</a>
+        <a href="" class="pocates">Papelería</a>
+        <a href="" class="pocates">Otros</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
+    <!-- **********************muestra categorias de Maquillaje***************************** -->
+    <div id="opcate4">
+        <p>°</p>
+        <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+        <a href="" class="pocates">Accesorio escolar</a>
+        <a href="" class="pocates">Manualidades</a>
+        <a href="" class="pocates">Papelería</a>
+        <a href="" class="pocates">Otros</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
     <br><br><br>
 
     <footer class="productos">
@@ -344,7 +542,7 @@
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
-                             <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
                         </div>
                     </div>
                     <div class="comentarios_clientes">
@@ -396,7 +594,7 @@
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
-                             <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
                         </div>
                     </div>
                     <div class="comentarios_clientes">
@@ -436,64 +634,64 @@
     </section>
 
 
-  <footer>
-            <div class="contenedorFOOTER">
-                <div class="col1">
-                    <h1> CONTACTO </h1>
-                    <p>Telf: 982025167</p>
-                    <p>Email: kenny4602@gmail.com</p>
-                    <p></p>
+    <footer>
+        <div class="contenedorFOOTER">
+            <div class="col1">
+                <h1> CONTACTO </h1>
+                <p>Telf: 982025167</p>
+                <p>Email: kenny4602@gmail.com</p>
+                <p></p>
+            </div>
+            <div class="col2">
+                <h1>REDES SOCIALES</h1>
+                <div class="ig">
+                    <p class="icon-instagrem ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
-                <div class="col2">
-                    <h1>REDES SOCIALES</h1>
-                    <div class="ig">
-                        <p class="icon-instagrem ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
-                    <div class="ws">
-                        <p class="icon-what ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
-                    <div class="fb">
-                        <p class="icon-facebook ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
+                <div class="ws">
+                    <p class="icon-what ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
-                <div class="col3">
-                    <h1>EXPLORAR MÁS</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
+                <div class="fb">
+                    <p class="icon-facebook ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
             </div>
-            <br> <br>
-            <hr>
-            <div class="final">
-                <div class="copy">
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            local_shipping
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            grade
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
+            <div class="col3">
+                <h1>EXPLORAR MÁS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
+            </div>
+        </div>
+        <br> <br>
+        <hr>
+        <div class="final">
+            <div class="copy">
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
                 </div>
-                <div class="politic">
-                    <p>Operamos Con:</p>
-                    <img src="img/MetodoDePago/yape.png">
-                    <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
+                </div>
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        grade
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
                 </div>
             </div>
-        </footer>
+            <div class="politic">
+                <p>Operamos Con:</p>
+                <img src="img/MetodoDePago/yape.png">
+                <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript">
         function myFuction(smallImg) {
@@ -503,5 +701,5 @@
 
     </script>
 </body>
-
+<script src="js/codigo.js"></script>
 </html>
