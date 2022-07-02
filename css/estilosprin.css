@@ -208,6 +208,7 @@ body{
     padding: 15px 20px;
     margin: 0 21px;
     color: white;
+    text-align: center;
     /*border: 1px solid black;*/
     text-decoration: none;
 }
@@ -304,7 +305,7 @@ body{
 /*********** contenedor de categorias ********************/
 
 #contsectioncate{
-    width: 100%;margin-top: 80px;
+    width: 100%;margin-top: 20px;
 }
 .letracate{
     text-align: center;padding: 20px;
