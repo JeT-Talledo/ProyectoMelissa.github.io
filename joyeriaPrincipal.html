@@ -14,10 +14,48 @@
     <!--fontastic-->
     <link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
 
+
+
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <header id="header">
+     <!-- para el whatssappii-->
+    <div class="nav-bottom">
+
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/operador.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+
+   <header id="header">
             <div class="blokheada">
                 <a href="#">Encuentranos por aquí</a>
             </div>
@@ -34,12 +72,12 @@
         </header>
         <!--navegacion-->
 
-        <nav id="navegacion">
+        <nav id="navegacion" data-aos="fade-down-right">
             <ul class="menu">
-                <li><a class="colorr" href="principal.html">Inicio</a></li>
+                <li><a class="colorr select" href="principal.html">Inicio</a></li>
                 <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
                 <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-                <li><a class="colorr select" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
                 <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
                 <li><a class="colornn" href="#">|</a></li>
                 <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
@@ -51,10 +89,11 @@
         <div id="opcate3">
             <p>°</p>
             <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
-            <a href="" class="pocates">Accesorio escolar</a>
-            <a href="" class="pocates">Manualidades</a>
-            <a href="" class="pocates">Papelería</a>
-            <a href="" class="pocates">Otros</a>
+            <a href="paginaAnillos.html" class="pocates">Anillos</a>
+            <a href="PaginaAretes.html" class="pocates">Aretes</a>
+            <a href="paginaCollares.html" class="pocates">Collares</a>
+            <a href="PaginaDijes.html" class="pocates">Dijes</a>
+            <a href="paginaPulsera.html" class="pocates">Pulseras</a>
             <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
             <p>°</p>
         </div>
@@ -62,10 +101,13 @@
         <div id="opcate4">
             <p>°</p>
             <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
-            <a href="" class="pocates">Accesorio escolar</a>
-            <a href="" class="pocates">Manualidades</a>
-            <a href="" class="pocates">Papelería</a>
-            <a href="" class="pocates">Otros</a>
+            <a href="paginabrochas.html" class="pocates">Brochas</a>
+            <a href="paginacejas.html" class="pocates">Cejas</a>
+            <a href="paginacorrector.html" class="pocates">Corrector</a>
+            <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
+            <a href="paginaesponjas.html" class="pocates">Esponjas</a>
+            <a href="paginaLabiales.html" class="pocates">Labiales</a>
+            <a href="paginasombras.html" class="pocates">sombras</a>
             <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
             <p>°</p>
         </div>
@@ -445,4 +487,5 @@
 <script>
   AOS.init();
     </script>
+    <script src="js/script2.js"></script>
 </html>

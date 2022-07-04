@@ -20,7 +20,126 @@
 
 
 
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
     <style type="text/css">
+        /*roboto condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+/**/
+
+*{
+    margin: 0;padding: 0;
+}
+body{
+    margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#rectprincipal{
+    background-color: orangered;width: 100%;height: 25px;
+    color: white;text-align: center;
+}
+/***************header*****************/
+#contenedor{
+    width: 100%;
+}
+#header{
+    width: 90%;height: 90px;display: flex;margin:auto;
+}
+.blokhead, .blokheadredes, .blokheada{
+    width: 33.3%;
+}
+.blokheada {
+    display: flex;align-items: center;justify-content: center;
+}
+.blokheada a{
+    text-decoration: none;font-size: 13px;color: black;
+}
+.blokheada a:hover{
+    text-decoration: underline;
+}
+.blokhead img{
+    height: 100%;display: block;margin: auto;
+}
+/*********estilos de redes logos ***************/
+.blokheadredes{
+    display: flex;justify-content: space-around;
+}
+#contredesup{
+    width: 30%;margin: auto;justify-content: space-between;display: flex;
+}
+.imgredes img{
+    width: 25px;
+}
+
+
+/************Menu estilos***************/
+#navegacion{
+    width: 100%;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: white;
+    width: 70%;
+    margin: 0 auto 10px auto;
+    justify-content: center;
+    display: flex;
+}
+.colorr{
+    text-decoration: none;
+    padding:10px 20px;
+    display: block;
+    font-size: 13px;
+    color: black;transition: all 0.4s;
+}
+.colorr:hover{
+    background-color: orangered;color: white;border-radius: 3px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.colorn, .colornn{
+    color: orangered;
+    text-decoration: none;
+    padding:10px 20px;
+    display: block;transition: all 0.4s;
+    font-size: 13px;
+}
+.colornn{
+    cursor: default;
+}
+.colorn:hover{
+    background-color: orangered;color: white;border-radius: 3px;
+}
+.select{
+    background-color: orangered;color: white;border-radius: 3px;
+}
+
+/********** estilos categorias carteras********/
+#opcate3, #opcate4{
+	background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 11;
+	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;
+}
+#opcate3 p, #opcate4 p{
+	color:white; font-size: 30px;
+}
+.pocates{
+	padding: 10px 0;text-decoration: none;color: #fff;
+}
+.pocates:hover{
+	color:orangered;
+}
+#iconcerrarop{
+	width: 20px;cursor: pointer;margin-bottom: 10px;
+}
+
+
         .productos {
             background-color: white;
         }
@@ -226,12 +345,41 @@
 
 <body>
 
-    <div id="rectprincipal">
-        <p>consultas gratis</p>
+    <!-- para el whatssappii-->
+    <div class="nav-bottom">
+
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/operador.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
     </div>
-    <div id="contenedor">
-        <header id="header">
-            <div class="blokhead"></div>
+
+   <header id="header">
+            <div class="blokheada">
+                <a href="#">Encuentranos por aquí</a>
+            </div>
             <div class="blokhead">
                 <img src="img/logo.png" alt="">
             </div>
@@ -243,23 +391,49 @@
                 </div>
             </div>
         </header>
-    </div>
-    <!--navegacion-->
+        <!--navegacion-->
 
-    <nav id="navegacion">
-        <ul class="menu">
-            <li><a class="colorr" href="#">Carteras</a></li>
-            <li><a class="colorr" href="#">Cuidado facial</a></li>
-            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
-            <li><a class="colorr" href="#">Maquillaje</a></li>
-            <li><a class="colorr" href="#">Personalizable</a></li>
-            <li><a class="colorn" href="#">|</a></li>
-            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-            <li><a class="colorn" href="#">Catálogo</a></li>
+        <nav id="navegacion" data-aos="fade-down-right">
+            <ul class="menu">
+                <li><a class="colorr select" href="principal.html">Inicio</a></li>
+                <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
+                <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+                <li><a class="colornn" href="#">|</a></li>
+                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+                <li><a class="colorn" href="#">Catálogo</a></li>
+            </ul>
+        </nav>
 
-        </ul>
-        <hr color="#E5E8EC" size="1px">
-    </nav>
+        <!-- **********************muestra categorias de joyeria***************************** -->
+        <div id="opcate3">
+            <p>°</p>
+            <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+            <a href="paginaAnillos.html" class="pocates">Anillos</a>
+            <a href="PaginaAretes.html" class="pocates">Aretes</a>
+            <a href="paginaCollares.html" class="pocates">Collares</a>
+            <a href="PaginaDijes.html" class="pocates">Dijes</a>
+            <a href="paginaPulsera.html" class="pocates">Pulseras</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
+        <!-- **********************muestra categorias de Maquillaje***************************** -->
+        <div id="opcate4">
+            <p>°</p>
+            <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+            <a href="paginabrochas.html" class="pocates">Brochas</a>
+            <a href="paginacejas.html" class="pocates">Cejas</a>
+            <a href="paginacorrector.html" class="pocates">Corrector</a>
+            <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
+            <a href="paginaesponjas.html" class="pocates">Esponjas</a>
+            <a href="paginaLabiales.html" class="pocates">Labiales</a>
+            <a href="paginasombras.html" class="pocates">sombras</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
+
+        <!-- ****************************************************************************** -->
     <br><br><br>
 
     <footer class="productos">
@@ -503,5 +677,7 @@
 
     </script>
 </body>
+<script src="js/codigo.js"></script>
+<script src="js/script2.js"></script>
 
 </html>
