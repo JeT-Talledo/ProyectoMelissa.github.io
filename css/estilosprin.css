@@ -147,7 +147,7 @@ body{
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 10px;
+    padding: 10px 0 20px 0;
     width: 300px;
     margin: auto;
 }
@@ -155,21 +155,12 @@ body{
     display: inline-block;
     text-align: center;
 }
-#titunoveyfavn, #titunoveyfavf{
+#titunoveyfavn{
     text-decoration: none;
     padding: 0px;transition: all 0.4s;
-    display: block;cursor: pointer;
-    font-size: 25px;
+    display: block;
+    font-size: 25px;color: orangered;
     font-weight: bolder;
-}
-#titunoveyfavf{
-    color: black;
-}
-#titunoveyfavf:hover{
-    color: orangered;
-}
-#titunoveyfavn:hover{
-    color: orangered;
 }
 .colororange{
     color: orangered;
@@ -205,15 +196,16 @@ body{
 .btn{
     display: block;
     font-weight: 700;background-color: orangered;border-radius: 3px;
-    padding: 15px 20px;
+    padding: 15px 20px;transition: all 0.4s;
     margin: 0 21px;
     color: white;
     text-align: center;
     /*border: 1px solid black;*/
     text-decoration: none;
 }
-
-
+.btn:hover{
+    background-color: #E12D06;
+}
 
 
 
@@ -267,7 +259,7 @@ body{
     display: flex;justify-content: space-between;
 }
 .imgprodblok{
-    width: 24%;
+    width: 24%;border: 1px solid transparent;
 }
 .imgprodblok:hover{
     background-color: white;border-radius: 8px;transition: all 0.4s;border-bottom: 1px solid orangered;

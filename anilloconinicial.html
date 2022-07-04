@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilosprin.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
-          <!--google fonts-->
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -226,41 +226,59 @@
 </head>
 
 <body>
-
-    <div id="rectprincipal">
-        <p>consultas gratis</p>
-    </div>
-    <div id="contenedor">
-        <header id="header">
-            <div class="blokhead"></div>
-            <div class="blokhead">
-                <img src="img/logo.png" alt="">
+    <header id="header">
+        <div class="blokheada">
+            <a href="#">Encuentranos por aquí</a>
+        </div>
+        <div class="blokhead">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="blokheadredes">
+            <div id="contredesup">
+                <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
             </div>
-            <div class="blokheadredes">
-                <div id="contredesup">
-                    <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
-                </div>
-            </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <!--navegacion-->
 
-    <nav id="navegacion">
+    <nav id="navegacion" data-aos="fade-down-right">
         <ul class="menu">
-            <li><a class="colorr" href="#">Carteras</a></li>
-            <li><a class="colorr" href="#">Cuidado facial</a></li>
-            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
-            <li><a class="colorr" href="#">Maquillaje</a></li>
-            <li><a class="colorr" href="#">Personalizable</a></li>
-            <li><a class="colorn" href="#">|</a></li>
+            <li><a class="colorr select" href="principal.html">Inicio</a></li>
+            <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
+            <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+            <li><a class="colornn" href="#">|</a></li>
             <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
             <li><a class="colorn" href="#">Catálogo</a></li>
-
         </ul>
-        <hr color="#E5E8EC" size="1px">
     </nav>
+
+    <!-- **********************muestra categorias de joyeria***************************** -->
+    <div id="opcate3">
+        <p>°</p>
+        <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+        <a href="" class="pocates">Accesorio escolar</a>
+        <a href="" class="pocates">Manualidades</a>
+        <a href="" class="pocates">Papelería</a>
+        <a href="" class="pocates">Otros</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
+    <!-- **********************muestra categorias de Maquillaje***************************** -->
+    <div id="opcate4">
+        <p>°</p>
+        <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+        <a href="" class="pocates">Accesorio escolar</a>
+        <a href="" class="pocates">Manualidades</a>
+        <a href="" class="pocates">Papelería</a>
+        <a href="" class="pocates">Otros</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
+
     <br><br><br>
 
     <footer class="productos">
@@ -345,7 +363,7 @@
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
-                             <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
                         </div>
                     </div>
                     <div class="comentarios_clientes">
@@ -397,7 +415,7 @@
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
                             <i class="fas fa-star">★</i>
-                             <i class="fas fa-star">★</i>
+                            <i class="fas fa-star">★</i>
                         </div>
                     </div>
                     <div class="comentarios_clientes">
@@ -437,64 +455,64 @@
     </section>
 
 
-     <footer>
-            <div class="contenedorFOOTER">
-                <div class="col1">
-                    <h1> CONTACTO </h1>
-                    <p>Telf: 982025167</p>
-                    <p>Email: kenny4602@gmail.com</p>
-                    <p></p>
+    <footer>
+        <div class="contenedorFOOTER">
+            <div class="col1">
+                <h1> CONTACTO </h1>
+                <p>Telf: 982025167</p>
+                <p>Email: kenny4602@gmail.com</p>
+                <p></p>
+            </div>
+            <div class="col2">
+                <h1>REDES SOCIALES</h1>
+                <div class="ig">
+                    <p class="icon-instagrem ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
-                <div class="col2">
-                    <h1>REDES SOCIALES</h1>
-                    <div class="ig">
-                        <p class="icon-instagrem ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
-                    <div class="ws">
-                        <p class="icon-what ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
-                    <div class="fb">
-                        <p class="icon-facebook ico"></p>
-                        <p class="nomempre">@empresa</p>
-                    </div>
+                <div class="ws">
+                    <p class="icon-what ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
-                <div class="col3">
-                    <h1>EXPLORAR MÁS</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
+                <div class="fb">
+                    <p class="icon-facebook ico"></p>
+                    <p class="nomempre">@empresa</p>
                 </div>
             </div>
-            <br> <br>
-            <hr>
-            <div class="final">
-                <div class="copy">
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            local_shipping
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
-                    <div class="contcopy">
-                        <span class="material-symbols-outlined">
-                            grade
-                        </span>
-                        <p>Pagos 100 % Seguros</p>
-                    </div>
+            <div class="col3">
+                <h1>EXPLORAR MÁS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
+            </div>
+        </div>
+        <br> <br>
+        <hr>
+        <div class="final">
+            <div class="copy">
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
                 </div>
-                <div class="politic">
-                    <p>Operamos Con:</p>
-                    <img src="img/MetodoDePago/yape.png">
-                    <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
+                </div>
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        grade
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
                 </div>
             </div>
-        </footer>
+            <div class="politic">
+                <p>Operamos Con:</p>
+                <img src="img/MetodoDePago/yape.png">
+                <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript">
         function myFuction(smallImg) {
@@ -504,5 +522,6 @@
 
     </script>
 </body>
+<script src="js/codigo.js"></script>
 
 </html>
