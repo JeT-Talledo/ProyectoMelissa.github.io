@@ -30,7 +30,11 @@
         /*roboto condensed*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 /**/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
+      @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Nunito&family=Raleway:wght@200&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;padding: 0;
 }
@@ -204,6 +208,7 @@ body{
             margin-bottom: 15px;
             font-size: 33px;
             font-weight: bold;
+            font-family: 'Gentium Book Plus', serif;
 
         }
 
@@ -212,12 +217,15 @@ body{
             margin-bottom: 15px;
             font-size: 20px;
             font-weight: bold;
-
+font-family: 'Gentium Book Plus', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
         }
 
         .col3Pro p {
             color: black;
             line-height: 28px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .reseña {
@@ -225,6 +233,7 @@ body{
         }
 
         .reseña h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 38px;
             text-align: left;
             padding: 85px;
@@ -249,6 +258,7 @@ body{
         }
 
         .testimonios_header h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 2.9rem;
             font-weight: 500;
             background-color: #202020;
@@ -302,6 +312,7 @@ body{
         }
 
         .name-user {
+            font-family: 'Poppins', sans-serif;
             display: flex;
             flex-direction: column;
         }
@@ -329,6 +340,7 @@ body{
         }
 
         .comentarios_clientes {
+            font-family: 'Poppins', sans-serif;
             color: #4b4b4b;
 
         }
@@ -343,12 +355,39 @@ body{
 
 <body>
 
-    <div id="rectprincipal">
-        <p>consultas gratis</p>
+   <div class="nav-bottom">
+
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/operador.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
     </div>
-    <div id="contenedor">
-        <header id="header">
-            <div class="blokhead"></div>
+ <header id="header">
+            <div class="blokheada">
+                <a href="#">Encuentranos por aquí</a>
+            </div>
             <div class="blokhead">
                 <img src="img/logo.png" alt="">
             </div>
@@ -360,23 +399,49 @@ body{
                 </div>
             </div>
         </header>
-    </div>
-    <!--navegacion-->
+        <!--navegacion-->
 
-    <nav id="navegacion">
-        <ul class="menu">
-            <li><a class="colorr" href="#">Carteras</a></li>
-            <li><a class="colorr" href="#">Cuidado facial</a></li>
-            <li><a class="colorr" href="joyeriaPrincipal.html">Joyeria</a></li>
-            <li><a class="colorr" href="#">Maquillaje</a></li>
-            <li><a class="colorr" href="#">Personalizable</a></li>
-            <li><a class="colorn" href="#">|</a></li>
-            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-            <li><a class="colorn" href="#">Catálogo</a></li>
+        <nav id="navegacion" data-aos="fade-down-right">
+            <ul class="menu">
+                <li><a class="colorr select" href="principal.html">Inicio</a></li>
+                <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
+                <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+                <li><a class="colornn" href="#">|</a></li>
+                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+                <li><a class="colorn" href="#">Catálogo</a></li>
+            </ul>
+        </nav>
 
-        </ul>
-        <hr color="#E5E8EC" size="1px">
-    </nav>
+        <!-- **********************muestra categorias de joyeria***************************** -->
+        <div id="opcate3">
+            <p>°</p>
+            <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+            <a href="paginaAnillos.html" class="pocates">Anillos</a>
+            <a href="PaginaAretes.html" class="pocates">Aretes</a>
+            <a href="paginaCollares.html" class="pocates">Collares</a>
+            <a href="PaginaDijes.html" class="pocates">Dijes</a>
+            <a href="paginaPulsera.html" class="pocates">Pulseras</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
+        <!-- **********************muestra categorias de Maquillaje***************************** -->
+        <div id="opcate4">
+            <p>°</p>
+            <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+            <a href="paginabrochas.html" class="pocates">Brochas</a>
+            <a href="paginacejas.html" class="pocates">Cejas</a>
+            <a href="paginacorrector.html" class="pocates">Corrector</a>
+            <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
+            <a href="paginaesponjas.html" class="pocates">Esponjas</a>
+            <a href="paginaLabiales.html" class="pocates">Labiales</a>
+            <a href="paginasombras.html" class="pocates">sombras</a>
+            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+            <p>°</p>
+        </div>
+
+        <!-- ****************************************************************************** -->
     <br><br><br>
 
     <footer class="productos">
@@ -384,19 +449,19 @@ body{
 
         <div class="contenedorFOOTERProduc">
             <div class="col1Pro">
-                <img src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png" onclick="myFuction(this)">
+                <img src="img/JOYERIA/pulsera/pulsera%20tejida%20corazon%20calado.jpg" onclick="myFuction(this)">
 
             </div>
             <div class="col2Pro">
 
-                <img id="imageBox" src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png">
+                <img id="imageBox" src="img/JOYERIA/pulsera/pulsera%20tejida%20corazon%20calado.jpg">
 
 
             </div>
 
             <div class="col3Pro">
 
-                <h1>Cartera 1</h1>
+                <h1>Pulsera tejida corazon calado</h1>
                 <br>
                 <p>★★★★★</p>
                 <br><br>

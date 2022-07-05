@@ -18,13 +18,22 @@
     <!--fontastic-->
     <link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
 
+     <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/whats2.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
     <style type="text/css">
         /*roboto condensed*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 /**/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
+      @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Nunito&family=Raleway:wght@200&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;padding: 0;
 }
@@ -199,6 +208,7 @@ body{
             margin-bottom: 15px;
             font-size: 33px;
             font-weight: bold;
+            font-family: 'Gentium Book Plus', serif;
 
         }
 
@@ -207,12 +217,16 @@ body{
             margin-bottom: 15px;
             font-size: 20px;
             font-weight: bold;
+            font-family: 'Gentium Book Plus', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
 
         }
 
         .col3Pro p {
             color: black;
             line-height: 28px;
+             font-family: 'Poppins', sans-serif;
         }
 
         .reseña {
@@ -223,6 +237,7 @@ body{
             font-size: 38px;
             text-align: left;
             padding: 85px;
+            font-family: 'Poppins', sans-serif;
         }
 
 
@@ -249,6 +264,7 @@ body{
             background-color: #202020;
             color: white;
             padding: 10px 20px;
+            font-family: 'Poppins', sans-serif;
         }
 
         .testimonios_header span {
@@ -299,6 +315,7 @@ body{
         .name-user {
             display: flex;
             flex-direction: column;
+            font-family: 'Poppins', sans-serif;
         }
 
         .name-user strong {
@@ -325,6 +342,7 @@ body{
 
         .comentarios_clientes {
             color: #4b4b4b;
+            font-family: 'Poppins', sans-serif;
 
         }
 
@@ -337,7 +355,35 @@ body{
 </head>
 
 <body>
+<div class="nav-bottom">
 
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/operador.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
     <header id="header">
             <div class="blokheada">
                 <a href="#">Encuentranos por aquí</a>
@@ -403,19 +449,19 @@ body{
 
         <div class="contenedorFOOTERProduc">
             <div class="col1Pro">
-                <img src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png" onclick="myFuction(this)">
+                <img src="img/JOYERIA/dijes/dije%20ni%C3%B1o%20con%20gorro%20plata%20950.jpg" onclick="myFuction(this)">
 
             </div>
             <div class="col2Pro">
 
-                <img id="imageBox" src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png">
+                <img id="imageBox" src="img/JOYERIA/dijes/dije%20ni%C3%B1o%20con%20gorro%20plata%20950.jpg">
 
 
             </div>
 
             <div class="col3Pro">
 
-                <h1>Cartera 1</h1>
+                <h1>Dije con niño gorro plata</h1>
                 <br>
                 <p>★★★★★</p>
                 <br><br>
@@ -640,4 +686,5 @@ body{
     </script>
 </body>
 <script src="js/codigo.js"></script>
+<script src="js/script2.js"></script>
 </html>

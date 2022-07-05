@@ -1,7 +1,9 @@
 /*roboto condensed*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
-/**/
 
+/*roboto mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 *{
     margin: 0;padding: 0;
 }
@@ -24,7 +26,7 @@ body{
     width: 33.3%;
 }
 .blokheada {
-    display: flex;align-items: center;justify-content: center;
+    display: flex;align-items: center;justify-content: center;font-family: 'Ubuntu', sans-serif;
 }
 .blokheada a{
     text-decoration: none;font-size: 13px;color: black;
@@ -49,7 +51,7 @@ body{
 
 /************Menu estilos***************/
 #navegacion{
-    width: 100%;
+    width: 100%;font-family: 'Roboto Mono', monospace;
 }
 .menu{
     list-style: none;
