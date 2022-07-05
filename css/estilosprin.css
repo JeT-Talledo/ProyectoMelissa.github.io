@@ -1,3 +1,4 @@
+/******************************/
 /*roboto mono*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
@@ -8,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;padding: 0;
@@ -97,6 +100,16 @@ body{
     background-color: orangered;color: white;border-radius: 3px;
 }
 
+#contmapa{
+    background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 21;
+	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;
+}
+.mapa{
+    display: block;margin: auto;
+}
+#cerrarmap{
+    width: 40px;cursor: pointer;display: block;margin:6% auto 20px auto;
+}
 /********** estilos categorias carteras********/
 #opcate3, #opcate4{
 	background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 11;
@@ -193,7 +206,7 @@ body{
     height: 100px;width: 100%;text-align: center;
 }
 .descripie{
-    padding: 5px;font-size: 10px;margin-bottom: 40px;font-family: 'Rubik', sans-serif;
+    padding: 5px;font-size: 10px;margin-bottom: 40px;font-family: 'Poppins', sans-serif;
 }
 .prepie{
     font-size: 11px;font-weight: bold;margin-bottom: 10px;font-family: 'Rubik', sans-serif;
@@ -445,7 +458,7 @@ body{
 
 
 footer{
-    background-color: black;width: 100%;
+    background-color: black;width: 100%;font-family: 'Poppins', sans-serif;
 }
 .contenedorFOOTER{
     margin: auto;

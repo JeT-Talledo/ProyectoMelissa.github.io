@@ -13,3 +13,12 @@ function cerrarop(){
     document.getElementById('opcate3').style.display = 'none';
     document.getElementById('opcate4').style.display = 'none';
 }
+
+
+/** para el mapa mundi ****/
+function muestramapa(){
+    document.getElementById('contmapa').style.display = 'block';
+}
+function cerrarmap(){
+    document.getElementById('contmapa').style.display = 'none';
+}
