@@ -1,13 +1,19 @@
-/*roboto condensed*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
-/**/
+/*roboto mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
 
 *{
     margin: 0;padding: 0;
 }
 body{
-    margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;padding: 0;
 }
 #rectprincipal{
     background-color: orangered;width: 100%;height: 25px;
@@ -24,7 +30,7 @@ body{
     width: 33.3%;
 }
 .blokheada {
-    display: flex;align-items: center;justify-content: center;
+    display: flex;align-items: center;justify-content: center;font-family: 'Ubuntu', sans-serif;
 }
 .blokheada a{
     text-decoration: none;font-size: 13px;color: black;
@@ -49,7 +55,7 @@ body{
 
 /************Menu estilos***************/
 #navegacion{
-    width: 100%;
+    width: 100%;font-family: 'Roboto Mono', monospace;
 }
 .menu{
     list-style: none;
@@ -94,7 +100,7 @@ body{
 /********** estilos categorias carteras********/
 #opcate3, #opcate4{
 	background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 11;
-	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;
+	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;font-family: 'Roboto Mono', monospace;
 }
 #opcate3 p, #opcate4 p{
 	color:white; font-size: 30px;
@@ -153,7 +159,7 @@ body{
 }
 .noveyfavo li{
     display: inline-block;
-    text-align: center;
+    text-align: center;font-family: 'Merriweather', serif;
 }
 #titunoveyfavn{
     text-decoration: none;
@@ -187,17 +193,17 @@ body{
     height: 100px;width: 100%;text-align: center;
 }
 .descripie{
-    padding: 5px;font-size: 11px;margin-bottom: 40px;
+    padding: 5px;font-size: 10px;margin-bottom: 40px;font-family: 'Rubik', sans-serif;
 }
 .prepie{
-    font-size: 12px;font-weight: bold;margin-bottom: 10px;
+    font-size: 11px;font-weight: bold;margin-bottom: 10px;font-family: 'Rubik', sans-serif;
 }
 
 .btn{
     display: block;
-    font-weight: 700;background-color: orangered;border-radius: 3px;
-    padding: 15px 20px;transition: all 0.4s;
-    margin: 0 21px;
+    background-color: orangered;border-radius: 3px;
+    padding: 15px 0;transition: all 0.4s;font-family: 'Rubik', sans-serif;
+    margin: 0 15px;
     color: white;
     text-align: center;
     /*border: 1px solid black;*/
@@ -234,7 +240,9 @@ body{
 }
 
 /**************estilos para las fotos grandes***************/
-
+.punteroimgprod{
+    text-decoration: none;color: black;
+}
 #contimggran{
     width: 100%; margin-top: 80px;
 }
@@ -253,16 +261,14 @@ body{
     width: 30%;padding-top: 200px;
 }
 .imgsobreblokimge{
-    width: 70%;
-}
-.imgsobreblokimge{
-    display: flex;justify-content: space-between;
+    width: 70%;font-family: 'Rubik', sans-serif;display: flex;justify-content: space-between;
 }
 .imgprodblok{
-    width: 24%;border: 1px solid transparent;
+    width: 24%;border: 1px solid transparent;transition: all 0.4s;
 }
 .imgprodblok:hover{
-    background-color: white;border-radius: 8px;transition: all 0.4s;border-bottom: 1px solid orangered;
+    background-color: white;border-radius: 15px;transition: all 0.4s;
+    box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.11);
 }
 
 .imgproduct{
@@ -274,13 +280,13 @@ body{
 
 
 .lon{
-    font-size: 18px;margin-left: 30px;margin-bottom: 10px;
+    font-size: 18px;margin-left: 25px;margin-bottom: 10px;font-family: 'Trispace', sans-serif;
 }
 .tituuu{
-    margin-left: 30px;font-size: 28px;font-weight: bold;margin-bottom: 10px;
+    margin-left: 25px;font-size: 35px;font-weight: bold;margin-bottom: 10px;font-family: 'Rubik', sans-serif;
 }
 .descrip{
-    font-size: 13px; margin-left: 30px;
+    font-size: 13px; margin-left: 30px;font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -289,6 +295,9 @@ body{
 }
 .califi{
     text-align: center;font-size: 13px;margin-bottom: 10px;
+}
+.califi span{
+    color: orangered;
 }
 .verprod{
     text-align: center;font-size: 13px;
@@ -302,7 +311,7 @@ body{
 .letracate{
     text-align: center;padding: 20px;
     color: black;
-    font-size: 25px;
+    font-size: 25px;font-family: 'Merriweather', serif;
 }
 
 #contenGaleriaCategoria{
@@ -320,7 +329,7 @@ body{
 }
 
 .botom{
-    display: flex;justify-content: center;position: relative;margin-top: -110px;
+    display: flex;justify-content: center;position: relative;margin-top: -110px;font-family: 'Ubuntu', sans-serif;
 }
 .btn-neon{
     background-color: black;
@@ -408,7 +417,7 @@ body{
     width: 100%;margin-top:80px;
 }
 .tituvid{
-    text-align: center;padding-bottom: 20px;
+    text-align: center;padding-bottom: 20px;font-family: 'Merriweather', serif;
 }
 #contenGaleriaVideo{
     width: 80%;margin: auto;display: flex; justify-content: space-between;
@@ -425,7 +434,7 @@ body{
 }
 
 .abajo{
-    height: 100px;width: 100%;text-align: center;color: black;
+    height: 100px;width: 100%;text-align: center;color: black;font-family: 'Rubik', sans-serif;
 }
 .abajo p{
     padding: 20px;
@@ -437,7 +446,6 @@ body{
 
 footer{
     background-color: black;width: 100%;
-
 }
 .contenedorFOOTER{
     margin: auto;
