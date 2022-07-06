@@ -3,42 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilosprin.css">
+    <title>Quienes somos</title>
 
     <link rel="stylesheet" href="css/paginaQuienesSomos.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!--iconcandado-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--fontastic-->
+    <link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- para el whatssappii-->
+    <div class="nav-bottom">
+
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="img/operador.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <!--*******************-->
     <div id="rectprincipal">
-        <p></p>
+
     </div>
     <header id="header">
-            <div class="blokhead"></div>
-            <div class="blokhead">
-                <img src="img/logo.png" alt="">
+        <div class="blokheada">
+            <a href="#" onclick="muestramapa();">Encuentranos por aquí</a>
+        </div>
+        <div class="blokhead">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="blokheadredes">
+            <div id="contredesup">
+                <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
+                <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
             </div>
-            <div class="blokheadredes">
-                <div id="contredesup">
-                    <a class="imgredes" href="https://www.facebook.com/" target="_blank"><img src="img/redes/facebook.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/instagram.png" alt=""></a>
-                    <a class="imgredes" href="#"><img src="img/redes/whatsapp.png" alt=""></a>
-                </div>
-            </div>
-        </header>
-        <!--navegacion-->
+        </div>
+    </header>
+    <div id="contmapa">
+        <img id="cerrarmap" src="img/cerrarop.png" onclick="cerrarmap();">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2041073480736!2d-76.97765698510295!3d-12.098175091433069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a4ca20a65b%3A0x4a087d6f3411886a!2sPuerta%204%20Jockey%20Club!5e0!3m2!1ses-419!2spe!4v1657054450679!5m2!1ses-419!2spe" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!--navegacion-->
 
+    <nav id="navegacion" data-aos="fade-down-right">
         <ul class="menu">
-            <li><a href="principal.html">Carteras</a></li>
-            <li><a href="#">Cuidado facial</a></li>
-            <li><a href="#">Joyeria</a></li>
-            <li><a href="#">Maquillaje</a></li>
-            <li><a href="#">Personalizable</a></li>
-            <li><a id="colorn" href="#">|</a></li>
-            <li><a id="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-            <li><a id="colorn" href="#">Catálogo</a></li>
+            <li><a class="colorr" href="principal.html">Inicio</a></li>
+            <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
+            <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+            <li><a class="colornn" href="#">|</a></li>
+            <li><a class="colorn select" href="quienesSomos.html">Quiénes somos</a></li>
+            <li><a class="colorn" href="#">Catálogo</a></li>
         </ul>
+    </nav>
+
+    <!-- **********************muestra categorias de joyeria***************************** -->
+    <div id="opcate3">
+        <p>°</p>
+        <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+        <a href="paginaAnillos.html" class="pocates">Anillos</a>
+        <a href="PaginaAretes.html" class="pocates">Aretes</a>
+        <a href="paginaCollares.html" class="pocates">Collares</a>
+        <a href="PaginaDijes.html" class="pocates">Dijes</a>
+        <a href="paginaPulsera.html" class="pocates">Pulseras</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
+    <!-- **********************muestra categorias de Maquillaje***************************** -->
+    <div id="opcate4">
+        <p>°</p>
+        <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+        <a href="paginabrochas.html" class="pocates">Brochas</a>
+        <a href="paginacejas.html" class="pocates">Cejas</a>
+        <a href="paginacorrector.html" class="pocates">Corrector</a>
+        <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
+        <a href="paginaesponjas.html" class="pocates">Esponjas</a>
+        <a href="paginaLabiales.html" class="pocates">Labiales</a>
+        <a href="paginasombras.html" class="pocates">sombras</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
     <div class="banner">
         <div class="container">
             <div class="banner-container">
@@ -54,8 +131,6 @@
                 <br>
                 <br>
                 <br><br><br>
-
-                <br><br><br><br>
                 <h1>¿Quienes Somos?</h1>
 
             </div>
@@ -69,13 +144,13 @@
 
             <div class="historia">
 
-                <img src="img/QuienesSomos/nuestrahistoria.png">
+                <img src="img/QuienesSomos/nuestrahistoria.png" alt="nuestra-historia-melissa">
                 <br>
                 <br>
                 <br>
 
                 <h1>Nuestra Historia</h1>
-                 <br>
+                <br>
                 <p>Somos Shalom Shadai, una joyería <br>peruana con 25 años de experiencia especializada <br>en crear historias a través de las joyas que realizamos<br>
                     Cada una de nuestras joyas es realizada a mano <br>con pasión y dedicación, <br>buscando crear momentos especiales y únicos <br>para nuestros clientes.<br>
 
@@ -96,13 +171,13 @@
 
             <div class="somosalma">
 
-                <img src="img/QuienesSomos/almalatina.png">
+                <img src="img/QuienesSomos/almalatina.png" alt="alma-latina-melissa">
                 <br>
                 <br>
                 <br>
 
                 <h1>Somos Alma Latina</h1>
-     <br>
+                <br>
                 <p>Estamos orgullosos de ser Latinos. Disfrutamos de<br> la diversidad de esta región, del carácter de su<br>
                     gente, del color que le dan a la vida y la pasión que<br>los caracteriza. Compartimos esa valentía,<br>superación y optimismo.<br>
 
@@ -121,13 +196,13 @@
 
             <div class="somossoste">
 
-                <img src="img/QuienesSomos/sostenibilidad.png">
+                <img src="img/QuienesSomos/sostenibilidad.png" alt="sostenibilidad-melissa">
                 <br>
                 <br>
                 <br>
 
                 <h1>Somos sostenibilidad</h1>
-     <br>
+                <br>
                 <p>La esencia de nuestros procesos y productos está<br> en cuidar el medio ambiente y sus recursos<br>
                     naturales. Además, el centro de nuestras<br>decisiones siempre serán las personas, la ética y la<br>transparencia.<br>
 
@@ -136,129 +211,120 @@
         </div>
     </section>
 
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-<div class="color">
-    <div id="contenGaleria">
-        <div class="galeria">
-            <div class="foto">
-                <img src="img/QuienesSomos/altacalidad.png" alt="">
+    <div class="color">
+        <div id="contenGaleria">
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/QuienesSomos/altacalidad.png" alt="">
+                </div>
+                <div class="pie">
+                    <p>Calidad</p>
+                    <p>Contamos con los <br>productos de mejor <br> calidad del mercado</p>
+                </div>
             </div>
-            <div class="pie">
-                <p>Calidad</p>
-                <p>Contamos con los  <br>productos de mejor <br> calidad del mercado</p>
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/QuienesSomos/personas.png">
+                </div>
+                <div class="pie">
+                    <p>A tu servicio</p>
+                    <p>Atención personalizada y <br>asesoría directa todo el <br>tiempo</p>
+                </div>
             </div>
-        </div>
-        <div class="galeria">
-            <div class="foto">
-                <img src="img/QuienesSomos/personas.png">
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/QuienesSomos/entrega.png" alt="">
+                </div>
+                <div class="pie">
+                    <p>Delivery</p>
+
+
+
+
+                    <p>Envíos seguros <br>cumpliendo con los <br> protocolos de seguridad</p>
+                </div>
             </div>
-            <div class="pie">
-                <p>A tu servicio</p>
-                <p>Atención personalizada y  <br>asesoría directa todo el  <br>tiempo</p>
-            </div>
-        </div>
-        <div class="galeria">
-            <div class="foto">
-                <img src="img/QuienesSomos/entrega.png" alt="">
-            </div>
-            <div class="pie">
-                <p>Delivery</p>
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/QuienesSomos/pagoenefectivo.png" alt="">
+                </div>
+                <div class="pie">
+                    <p>Pagos</p>
 
 
 
+                    <p>Aceptamos diferentes <br>medios de pago
 
-                <p>Envíos seguros  <br>cumpliendo con los <br> protocolos de seguridad</p>
-            </div>
-        </div>
-        <div class="galeria">
-            <div class="foto">
-                <img src="img/QuienesSomos/pagoenefectivo.png" alt="">
-            </div>
-            <div class="pie">
-                <p>Pagos</p>
+                    </p>
 
 
-
-                <p>Aceptamos diferentes  <br>medios de pago
-
-</p>
-
-
+                </div>
             </div>
         </div>
     </div>
-    </div>
-<br><br><br>
 
- <footer>
-
-        <!--<div class="logoFOOTER"><img src="img/logo.png"></div>-->
-        <br>
-        <br>
-        <br>
+    <!--footer-->
+    <footer>
         <div class="contenedorFOOTER">
             <div class="col1">
                 <h1> CONTACTO </h1>
-                <p>Tel.. 982025167</p>
+                <p>Telf: 982025167</p>
                 <p>Email: kenny4602@gmail.com</p>
                 <p></p>
             </div>
             <div class="col2">
-
-                <h1>Nuestras Redes Sociales</h1>
-                <div class="yt"><img src="img/redes/whatsapp.png">
-                    <p>Youtube/empresa</p>
+                <h1>REDES SOCIALES</h1>
+                <div class="ig">
+                    <p class="icon-instagrem ico"></p>
+                    <p class="nomempre">@Melissa</p>
                 </div>
-                <div class="ig"><img src="img/redes/instagram.png">
-                    <p>@empresa</p>
+                <div class="ws">
+                    <p class="icon-what ico"></p>
+                    <p class="nomempre">@Melissa</p>
                 </div>
-                <div class="fb"><img src="img/MetodoDePago/facebookk.png">
-                    <p>Facebook/empresa</p>
+                <div class="fb">
+                    <p class="icon-facebook ico"></p>
+                    <p class="nomempre">@Melissa</p>
                 </div>
             </div>
-
             <div class="col3">
-
-                <h1>Explorar Mas</h1>
-                <h1>Nuestro Catalogo</h1>
-
-
+                <h1>EXPLORAR MÁS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde a perspiciatis voluptatum esse, quaerat non tenetur in, repellat error officiis architecto nemo eveniet. Numquam aperiam magnam vitae blanditiis iusto.</p>
             </div>
-
         </div>
-        <br>
-        <br>
-        <br>
-
+        <br> <br>
+        <hr>
         <div class="final">
-            <hr>
             <div class="copy">
-                <img src="img/MetodoDePago/efectivo.png">
-                <p>Pagos 100 % Seguros</p>
-
-                <img src="img/MetodoDePago/candado.png">
-
-                <img src="img/MetodoDePago/favorito.png">
-
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
+                </div>
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
+                </div>
+                <div class="contcopy">
+                    <span class="material-symbols-outlined">
+                        grade
+                    </span>
+                    <p>Pagos 100 % Seguros</p>
+                </div>
             </div>
-            <br>
             <div class="politic">
-                <p>Operamos Con    </p>
-                <img src="img/MetodoDePago/visa.png">
-
+                <p>Operamos Con:</p>
+                <img src="img/MetodoDePago/yape.png">
+                <img src="img/MetodoDePago/operamos-con-v2.png" alt="">
             </div>
-
         </div>
     </footer>
 
 </body>
+<script src="js/codigo.js"></script>
+<script src="js/script2.js"></script>
 
 </html>
