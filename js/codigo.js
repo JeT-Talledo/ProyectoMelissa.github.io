@@ -22,3 +22,6 @@ function muestramapa(){
 function cerrarmap(){
     document.getElementById('contmapa').style.display = 'none';
 }
+
+
+/** casads **/

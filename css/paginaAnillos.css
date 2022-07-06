@@ -1,16 +1,21 @@
 
-/*roboto condensed*/
-/*roboto mono*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;padding: 0;
 }
 body{
-    margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;padding: 0;
 }
 #rectprincipal{
     background-color: orangered;width: 100%;height: 25px;
@@ -126,7 +131,7 @@ body{
 }
 .pepe p{
     line-height: 24px;
-    text-align: center;
+    text-align: center;font-family: 'Poppins', sans-serif;
 }
 img:hover {filter: saturate(180%);}
 
@@ -137,6 +142,9 @@ section{
     flex-wrap: wrap;
 
 }
+.rating{
+    color: orangered;font-size: 20px;
+}
 
 
 /** Estilo C **/
@@ -145,7 +153,7 @@ section{
     border-radius: 15px;
     padding: 15px;
 
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 18%;
 }
 
@@ -209,14 +217,14 @@ section{
     color: white;
     background-color: black;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid orangered;
     border-radius: 25px;
 }
 
 .estilo-c .add-cart:hover{
     text-decoration: none;
 
-    color: black;
+    color: orangered;
     background-color: transparent;
     border: 1px solid black;
 }
@@ -226,7 +234,7 @@ section{
     border-radius: 15px;
     padding: 15px;
 
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     width: 18%;
 }
 
@@ -290,14 +298,14 @@ section{
     color: white;
     background-color: black;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid orangered;
     border-radius: 25px;
 }
 
 .estilo-cb .add-cart:hover{
     text-decoration: none;
 
-    color: black;
+    color: orangered;
     background-color: transparent;
     border: 1px solid black;
 }
@@ -306,7 +314,7 @@ section{
 
 
 footer{
-    margin-top: 40px;
+    margin-top: 40px;font-family: 'Poppins', sans-serif;
     background-color: black;width: 100%;
 
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Joyeria</title>
+    <title>Cuidado Facial</title>
     <link rel="stylesheet" href="css/estilosprin.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
@@ -24,11 +24,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
-        /**/
-        @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+        /*roboto condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Nunito&family=Raleway:wght@200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Nunito&family=Raleway:wght@200&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -239,8 +240,8 @@
 
         .col2Pro {
 
-            width: 450px;
-            height: 600px;
+            width: 420px;
+            height: 402px;
             display: flex;
 
 
@@ -256,10 +257,7 @@
 
         }
 
-        .col2Pro img:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-        }
+
 
 
 
@@ -274,15 +272,17 @@
             margin-bottom: 15px;
             font-size: 33px;
             font-weight: bold;font-family: 'Gentium Book Plus', serif;
+
         }
 
         .col3Pro .detallesProduc {
             color: black;
             margin-bottom: 15px;
             font-size: 20px;
-            font-weight: bold;font-family: 'Gentium Book Plus', serif;
-            font-family: 'Nunito', sans-serif;
-            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+  font-family: 'Gentium Book Plus', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
         }
 
         .col3Pro p {
@@ -315,11 +315,11 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;font-family: 'Poppins', sans-serif;
+            align-items: center;
         }
 
         .testimonios_header h1 {
-            font-size: 2.9rem;
+            font-size: 2.9rem;font-family: 'Poppins', sans-serif;
             font-weight: 500;
             background-color: #202020;
             color: white;
@@ -372,8 +372,8 @@
         }
 
         .name-user {
-            display: flex;
-            flex-direction: column;font-family: 'Poppins', sans-serif;
+            display: flex;font-family: 'Poppins', sans-serif;
+            flex-direction: column;
         }
 
         .name-user strong {
@@ -399,13 +399,48 @@
         }
 
         .comentarios_clientes {
-            color: #4b4b4b;font-family: 'Poppins', sans-serif;
+            color: #4b4b4b;
+font-family: 'Poppins', sans-serif;
         }
 
         ::selection {
             color: white;
             background-color: #252525;
         }
+
+
+        /*******************  fasf **********/
+
+        /*Some CSS*/
+* {margin: 0; padding: 0;}
+.magnify {width: 400px; margin: 10px auto; position: relative;}
+
+/*Lets create the magnifying glass*/
+.large {
+	width: 200px; height: 200px;
+	position: absolute;
+	border-radius: 100%;
+
+	/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+	0 0 7px 7px rgba(0, 0, 0, 0.25),
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+	/*Lets load up the large image first*/
+	background: url('img/JOYERIA/aretes/argolas%20peque%C3%B1as%20plata%20950.jpg') no-repeat;
+
+	/*hide the glass by default*/
+	display: none;
+}
+
+/*To solve overlap bug at the edges during magnification*/
+.small { display: block; }
+
+
+
+
+
+
 
     </style>
 </head>
@@ -441,10 +476,14 @@
         </button>
         <div class="circle-anime"></div>
     </div>
+    <div id="rectprincipal">
+
+    </div>
+
+
     <!--*******************-->
     <header id="header">
         <div class="blokheada">
-            <a href="#">Encuentranos por aquí</a>
         </div>
         <div class="blokhead">
             <img src="img/logo.png" alt="">
@@ -461,10 +500,10 @@
 
     <nav id="navegacion" data-aos="fade-down-right">
         <ul class="menu">
-            <li><a class="colorr select" href="principal.html">Inicio</a></li>
+            <li><a class="colorr" href="principal.html">Inicio</a></li>
             <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
             <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-            <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+            <li><a class="colorr select" href="#" onclick="aparecerjo();">Joyeria</a></li>
             <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
             <li><a class="colornn" href="#">|</a></li>
             <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
@@ -498,6 +537,7 @@
         <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
         <p>°</p>
     </div>
+     <hr color= "#E5E8EC" size= "1px">
     <br><br><br>
 
     <footer class="productos">
@@ -505,13 +545,14 @@
 
         <div class="contenedorFOOTERProduc">
             <div class="col1Pro">
-                <img src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png" onclick="myFuction(this)">
+                <img src="img/JOYERIA/aretes/argolas%20peque%C3%B1as%20plata%20950.jpg" onclick="myFuction(this)">
 
             </div>
             <div class="col2Pro">
-
-                <img id="imageBox" src="img/MAQUILLAJE/brochas/Brochas%20ruby%20face%20crystal%20rosa.png">
-
+            <div class="magnify">
+               <div class="large"></div>
+                <img class="small" src="img/JOYERIA/aretes/argolas%20peque%C3%B1as%20plata%20950.jpg">
+            </div>
 
             </div>
 
@@ -743,5 +784,81 @@
 </body>
 <script src="js/codigo.js"></script>
 <script src="js/script2.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	var native_width = 0;
+	var native_height = 0;
+
+	//Now the mousemove function
+	$(".magnify").mousemove(function(e){
+		//When the user hovers on the image, the script will first calculate
+		//the native dimensions if they don't exist. Only after the native dimensions
+		//are available, the script will show the zoomed version.
+		if(!native_width && !native_height)
+		{
+			//This will create a new image object with the same image as that in .small
+			//We cannot directly get the dimensions from .small because of the
+			//width specified to 200px in the html. To get the actual dimensions we have
+			//created this image object.
+			var image_object = new Image();
+			image_object.src = $(".small").attr("src");
+
+			//This code is wrapped in the .load function which is important.
+			//width and height of the object would return 0 if accessed before
+			//the image gets loaded.
+			native_width = image_object.width;
+			native_height = image_object.height;
+		}
+		else
+		{
+			//x/y coordinates of the mouse
+			//This is the position of .magnify with respect to the document.
+			var magnify_offset = $(this).offset();
+			//We will deduct the positions of .magnify from the mouse positions with
+			//respect to the document to get the mouse positions with respect to the
+			//container(.magnify)
+			var mx = e.pageX - magnify_offset.left;
+			var my = e.pageY - magnify_offset.top;
+
+			//Finally the code to fade out the glass if the mouse is outside the container
+			if(mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0)
+			{
+				$(".large").fadeIn(100);
+			}
+			else
+			{
+				$(".large").fadeOut(100);
+			}
+			if($(".large").is(":visible"))
+			{
+				//The background position of .large will be changed according to the position
+				//of the mouse over the .small image. So we will get the ratio of the pixel
+				//under the mouse pointer with respect to the image and use that to position the
+				//large image inside the magnifying glass
+				var rx = Math.round(mx/$(".small").width()*native_width - $(".large").width()/2)*-1;
+				var ry = Math.round(my/$(".small").height()*native_height - $(".large").height()/2)*-1;
+				var bgp = rx + "px " + ry + "px";
+
+				//Time to move the magnifying glass with the mouse
+				var px = mx - $(".large").width()/2;
+				var py = my - $(".large").height()/2;
+				//Now the glass moves with the mouse
+				//The logic is to deduct half of the glass's width and height from the
+				//mouse coordinates to place it with its center at the mouse coordinates
+
+				//If you hover on the image now, you should see the magnifying glass in action
+				$(".large").css({left: px, top: py, backgroundPosition: bgp});
+			}
+		}
+	})
+})
+</script>
+
+
 
 </html>
