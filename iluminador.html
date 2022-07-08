@@ -183,18 +183,10 @@ body{
 
         }
 
-        .col2Pro img {
-
+        .col2Pro #img_01 {
             border: 0px;
-
             width: 360px;
             height: 380px;
-
-        }
-
-        .col2Pro img:hover {
-            transform: scale(1.2);
-            cursor: pointer;
         }
 
 
@@ -459,7 +451,7 @@ font-family: 'Raleway', sans-serif;
             </div>
             <div class="col2Pro">
 
-                <img id="imageBox" src="img/MAQUILLAJE/iluminador/iluminador%20DODO%20unidad%20II.png">
+                <img src="img/MAQUILLAJE/iluminador/iluminador%20DODO%20unidad%20II.png" id="img_01">
 
 
             </div>
@@ -692,5 +684,11 @@ font-family: 'Raleway', sans-serif;
 </body>
 <script src="js/codigo.js"></script>
 <script src="js/script2.js"></script>
-
+<script src="js/jquery.js"></script>
+     <script src="js/jquery.imageLens.js"></script>
+     <script>
+         $(document).ready(function(){
+             $('#img_01').imageLens();
+         })
+    </script>
 </html>
