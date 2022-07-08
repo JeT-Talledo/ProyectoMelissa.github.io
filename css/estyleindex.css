@@ -155,25 +155,28 @@ body {
 
 /******Navegacion****/
 #navegacion {
-    width: 100%;
+    width: 100%;height: 100%;
     font-family: 'Roboto Mono', monospace;
     background: white;
-    display: none;
+    display: none;position: fixed;
+    z-index: 21;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
-    list-style: none;
-    width: 100%;
+    list-style: none;width: 100%;
     margin: 0 auto 10px auto;
     justify-content: center;
     display: block;
 }
-
 .colorr {
     text-decoration: none;
     padding: 20px 0;
     display: block;
-    font-size: 50px;
+    font-size: 35px;
     color: black;
     transition: all 0.4s;
     text-align: center;
@@ -193,10 +196,12 @@ body {
     padding: 20px 0;
     display: block;
     transition: all 0.4s;
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
 }
-
+#cerrnav{
+    position: absolute;top:30%;
+}
 .colornn {
     cursor: default;
     display: none;
@@ -221,7 +226,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 11;
+    z-index: 22;
     top: 0;
     display: none;
     flex-direction: column;
@@ -233,13 +238,14 @@ body {
 #opcate3 p,
 #opcate4 p {
     color: white;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .pocates {
     padding: 10px 0;
     text-decoration: none;
     color: #fff;
+    font-size: 40px;
 }
 
 .pocates:hover {
@@ -247,9 +253,9 @@ body {
 }
 
 #iconcerrarop {
-    width: 20px;
+    width: 60px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 /*****banner*****/

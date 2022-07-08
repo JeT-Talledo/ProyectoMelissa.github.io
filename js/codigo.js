@@ -1,3 +1,11 @@
+/******* para mostrar el menu **********/
+function mostrar(){
+    document.getElementById('navegacion').style.display = 'flex';
+}
+function cerrnav(){
+    document.getElementById('navegacion').style.display = 'none';
+}
+
 
 /******* para mostrar y no mostrar categorias ******/
 function aparecerjo(){
