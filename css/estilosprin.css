@@ -1205,19 +1205,19 @@ footer hr {
     padding-top: 5px;
 }
 .blokhead{
-    display: flex;
+    display: block;margin-top: 10px;
     }
-.blokhead img {
+.imglogo {
     height: auto;width: 130px;
     display: block;
     margin-right: auto;margin-left: 0;
 }
 
 .contmenu {
-    display: block;width: 30px;
+    display: block;width: 30px;position: absolute;top: 97px;
 }
     .contmenu img{
-    display: block;width: 30px;
+    display: block;width: 30px;cursor: pointer;
 }
 
 /*********estilos de redes logos ***************/
@@ -1227,18 +1227,14 @@ footer hr {
 
 /************Menu estilos***************/
 #navegacion {
-    width: 100%;display: none;
-    font-family: 'Roboto Mono', monospace;
+    width: -100%;display: none;background: white;height: 100%;position: fixed;
+    z-index: 23;top: 0;flex-direction: column;justify-content: center;align-items: center;
 }
-
 .menu {
-    list-style: none;
-    padding: 0;
-    background: transparent;
-    width: 70%;
-    margin: 0 auto 10px auto;
+    width: 100%;
+    margin: auto;
     justify-content: center;
-    display: flex;
+    display: block;
 }
 
 .colorr {
@@ -1258,7 +1254,7 @@ footer hr {
 
 .menu li {
     display: inline-block;
-    text-align: center;
+    text-align: center;width: 100%;
 }
 
 .colorn,
@@ -1272,7 +1268,7 @@ footer hr {
 }
 
 .colornn {
-    cursor: default;
+    display: none;
 }
 
 .colorn:hover {
@@ -1287,30 +1283,118 @@ footer hr {
     border-radius: 3px;
 }
 
-#contmapa {
-    background-color: rgba(0, 0, 0, .8);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 21;
-    top: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /***********baner*******/
+.slider {
+    height: 300px;
 }
+    /**************Estilos las 3 fotos que estan abajo de los 3 productos***************/
 
-.mapa {
+.favo {
+    width: 100%;
+}
+/**********imagenes grandes**********/
+    .imgsobre {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 0 auto;
     display: block;
-    margin: auto;
+}
+.imgsobreblok {
+    width: 100%;
+    padding-top: 0;
 }
 
 #cerrarmap {
     width: 40px;
-    cursor: pointer;
-    display: block;
-    margin: 6% auto 20px auto;
+    cursor: pointer;}
+.imgsobreblokimge {
+    width: 90%;
+    margin-top: 15px;margin-left: auto;margin-right: auto;
+    justify-content: space-between;display: flex;flex-direction: row;
+    flex-flow: wrap;
 }
+
+.imgprodblok {
+box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.11);background-color: white;border-radius: 15px;width: 45%;
+    margin-bottom: 15px;
+}
+
+    /*********** contenedor de categorias ********************/
+.letracate {
+    font-size: 15px;
+}
+.cate {
+    height: 500px;margin-bottom: 30px;
+    width: 100%;
+}
+
+    /**************galeria para ultimos videos***************/
+    #contvideos {
+    width: 100%;
+    margin-top: 0;
+}
+
+.tituvid {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+    #contenGaleriaVideo {
+        width: 80%;display: flex;flex-direction: row;
+    flex-flow: wrap;
+    }
+
+    .videopubli {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .abajo {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .abajo p {
+        padding: 20px;
+    }
+/******Footer ********/
+.contenedorFOOTER {
+    width: 90%;display: block;text-align: center;padding-bottom: 0;margin-bottom: 0;
+}
+.col1, .col2, .col3{
+    width: 100%;margin-bottom: 20px;
+    }
+.col1 h1, .col2 h1, .col3 h1{
+    width: 100%;text-align: center;
+    }
+.ig, .ws, .fb{
+    width: 100%;display: flex; justify-content: center;
+    }
+
+.final {
+    width: 90%;
+}
+    .politic {
+    display: block;
+    width: 100%;
+}
+
+.politic p {
+    color: white;text-align: center;
+    padding-top: 5px;width: 100%;
+    margin-right: 0;
+    font-size: 12px;
+}
+.yape{
+    display: block;margin-left: auto;
+    }
+.politic img {
+    height: 22px;
+    margin-right: auto;
+}
+
 }
 
 
