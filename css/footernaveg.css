@@ -23,10 +23,10 @@
 
 .blokheada a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 13px;
     color: black;
-    border: 5px solid orangered;
-    padding: 10px 20px;
+    border: 2px solid orangered;
+    padding: 8px 15px;
 }
 
 .blokheada a:hover {
@@ -39,7 +39,7 @@
 }
 
 .imglogo {
-    width: 350px;
+    width: 100px;
     height: auto;
     display: block;
     margin: auto;
@@ -50,13 +50,13 @@
     background: transparent;
     position: absolute;
     width: 100%;
-    top: 205px;
+    top: 70px;
 }
 
 .contmenu img {
     display: block;
-    width: 70px;
-    margin-left: 30px;
+    width: 30px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -67,15 +67,15 @@
 }
 
 #contredesup {
-    width: 300px;
+    width: 120px;
     margin: auto;
     justify-content: space-between;
     display: flex;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .imgredes img {
-    width: 70px;
+    width: 25px;
 }
 
 
@@ -96,12 +96,12 @@
 .mapa {
     display: block;
     margin: auto;
-    width: 90%;
-    height: 700px;
+    width: 100%;
+    height: 320px;
 }
 
 #cerrarmap {
-    width: 100px;
+    width: 30px;
     cursor: pointer;
     display: block;
     margin: 40% auto 50px auto;
@@ -133,9 +133,9 @@
 
 .colorr {
     text-decoration: none;
-    padding: 20px 0;
+    padding: 10px 0;
     display: block;
-    font-size: 35px;
+    font-size: 13px;
     color: black;
     transition: all 0.4s;
     text-align: center;
@@ -152,17 +152,18 @@
 .colornn {
     color: orangered;
     text-decoration: none;
-    padding: 20px 0;
+    padding: 10px 0;
     display: block;
     transition: all 0.4s;
-    font-size: 35px;
+    font-size: 13px;
     text-align: center;
 }
 
 #cerrnav {
     position: relative;
     display: block;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
+    width: 20px;
 }
 
 .colornn {
@@ -201,14 +202,14 @@
 #opcate3 p,
 #opcate4 p {
     color: white;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .pocates {
     padding: 10px 0;
     text-decoration: none;
     color: #fff;
-    font-size: 40px;
+    font-size: 13px;
 }
 
 .pocates:hover {
@@ -216,7 +217,7 @@
 }
 
 #iconcerrarop {
-    width: 60px;
+    width: 25px;
     cursor: pointer;
     margin: 20px 0;
 }
@@ -236,7 +237,7 @@ footer {
     width: 90%;
     display: flex;
     color: orange;
-    padding: 100px 0 100px 0;
+    padding: 30px 0 20px 0;
     justify-content: space-around;
     flex-direction: row;
     flex-flow: wrap;
@@ -251,14 +252,14 @@ footer {
 
 .col1 h1 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .col1 p {
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -272,24 +273,24 @@ footer {
 }
 
 .nomempre {
-    font-size: 45px;
+    font-size: 15px;
 }
 
 .ico {
-    font-size: 50px;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .col2 h1 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .col3 h1 {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -297,12 +298,11 @@ footer {
 .col3 p {
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 footer hr {
     width: 100%;
-    height: 5px;
     background-color: white;
     margin: auto;
 }
@@ -321,23 +321,125 @@ footer hr {
 .copy {
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom:15px;
 }
 
 .contcopy {
-    width: 300px;
     display: flex;
     justify-content: space-between;
 }
 
 .contcopy span {
-    font-size: 80px;
+    font-size: 20px;
 }
 
 .contcopy p {
-    font-size: 30px;
+    font-size: 11px;
+    padding-top: 0;
+}
+
+.politic {
+    display: block;
+    width: 100%;
+}
+
+.politic p {
+    color: white;
     padding-top: 5px;
-    margin-left: 10px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.contimgpoli {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.yape{
+    display: block; margin: 0 auto 10px auto;
+}
+.politic img {
+    height: 20px;
+}
+
+
+/*****************425px**************/
+@media (min-width: 425px) {
+
+    .imglogo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+    .contmenu {
+    top: 90px;
+}
+    .contmenu img {
+    display: block;
+    width: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+    /** redes logos **/
+#contredesup {
+    width: 150px;
+}
+
+.imgredes img {
+    width: 30px;
+}
+
+    .colorr {
+    font-size: 15px;
+}
+
+    .colorn,
+.colornn {
+    font-size: 15px;
+}
+
+    .pocates {
+    font-size: 15px;
+}
+
+    /*********footer******/
+
+.col1 h1 {
+    font-size: 18px;
+}
+
+.col1 p {
+    font-size: 15px;
+}
+
+.col2 h1 {
+    font-size: 18px;
+}
+
+.col3 h1 {
+    font-size: 18px;
+}
+
+.col3 p {
+    font-size: 15px;
+}
+
+.contcopy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contcopy span {
+    font-size: 25px;
+}
+
+.contcopy p {
+    font-size: 13px;
+    padding-top: 0;
 }
 
 .politic {
@@ -359,168 +461,11 @@ footer hr {
     justify-content: center;
 }
 
+.yape{
+    display: block; margin: 0 10px 0 0;
+}
 .politic img {
-    height: 60px;
-    margin-right: 15px;
-}
-
-
-/************************375px*********/
-@media (min-width: 375px) {
-    .contmenu {
-        display: block;
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        top: 185px;
-    }
-
-    /***footer**/
-    .col1 h1 {
-        font-size: 18px;
-    }
-
-    .col1 p {
-        font-size: 15px;
-    }
-
-    .nomempre {
-        font-size: 40px;
-    }
-
-    .col2 h1 {
-        font-size: 18px;
-    }
-
-    .col3 h1 {
-        font-size: 18px;
-    }
-
-    .col3 p {
-        font-size: 15px;
-    }
-
-    footer hr {
-        height: 2px;
-    }
-
-    .copy {
-        margin-bottom: 30px;
-        justify-content: space-between;
-    }
-
-    .contcopy {
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .contcopy span {
-        font-size: 70px;
-    }
-
-    .contcopy p {
-        font-size: 25px;
-    }
-
-    .contimgpoli {
-        margin-top: 15px;
-    }
-
-}
-
-
-/*****************425px**************/
-@media (min-width: 425px) {
-
-    .blokheada {
-        padding-top: 20px;
-    }
-
-    .blokheada a {
-        font-size: 25px;
-    }
-
-    .blokhead {
-        padding: 10px 0;
-    }
-
-    .imglogo {
-        width: 300px;
-    }
-    .contmenu {
-        display: block;
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        top: 170px;
-    }
-
-    .contmenu img {
-        width: 65px;
-    }
-
-    /** redes logos **/
-    #contredesup {
-        width: 280px;
-    }
-
-    .imgredes img {
-        width: 60px;
-    }
-
-
-    /**** mapa *****/
-    .mapa {
-        width: 100%;
-    }
-
-    #cerrarmap {
-        width: 70px;
-    }
-
-    /*********footer******/
-    .contenedorFOOTER {
-    padding: 100px 0 50px 0;
-}
-    .col1 h1 {
-        font-size: 17px;
-    }
-
-    .nomempre {
-        font-size: 35px;
-    }
-
-    .col2 h1 {
-        font-size: 17px;
-    }
-
-    .col3 h1 {
-        font-size: 17px;
-    }
-
-    .col3 p {
-        font-size: 15px;
-    }
-
-    footer hr {
-        height: 1px;
-    }
-
-    .contcopy span {
-        font-size: 60px;
-    }
-
-    .contcopy p {
-        font-size: 25px;
-    }
-
-    .contimgpoli {
-        margin-top: 15px;
-    }
-    .politic img {
-    height: 50px;
-    margin-right: 15px;
+    height: 20px;
 }
 }
 
@@ -549,22 +494,13 @@ footer hr {
     }
 
     .blokheada a {
-        text-decoration: none;
         font-size: 13px;
-        color: black;
-        border: 1px solid orangered;
-        padding: 10px 20px;
     }
-
-    .blokheada a:hover {
-        text-decoration: underline;
-    }
-
     .blokhead{
         padding: 0;
     }
     .imglogo {
-        width: 200px;
+        width: 180px;
         display: block;
         margin: auto;
     }
@@ -575,28 +511,23 @@ footer hr {
     /*********estilos de redes logos ***************/
     .blokheadredes {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
     }
 
     #contredesup {
-        width: 150px;
+        width: 130px;
         margin: 0 0 0 auto;
         justify-content: space-between;
         display: flex;
     }
-
-    .imgredes img {
-        width: 35px;
-    }
-
     /**** mapa *****/
     .mapa {
-        width: 100%;
-        height: 500px;
+        width: 90%;
+        height: 400px;
     }
 
     #cerrarmap {
-        width: 40px;
         margin: 10% auto 50px auto;
     }
 
@@ -608,7 +539,7 @@ footer hr {
     background: transparent;
     display: block;
     position: relative;
-    z-index: 21;
+    z-index: 11;
     top: 0;
     flex-direction: column;
     justify-content: center;
@@ -620,16 +551,16 @@ footer hr {
         padding: 0;
         background: transparent;
         width: 100%;
-        margin: 0 auto 10px auto;
+        margin: 0 auto 0 auto;
         justify-content: center;
         display: flex;
 }
 
 .colorr {
     text-decoration: none;
-        padding: 10px 20px;
+        padding: 8px 15px;
         display: block;
-        font-size: 15px;
+        font-size: 13px;
         color: black;
         transition: all 0.4s;
 }
@@ -640,15 +571,14 @@ footer hr {
     border-radius: 3px;
 }
 
-
 .colorn,
 .colornn {
     color: orangered;
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 8px 15px;
         display: block;
         transition: all 0.4s;
-        font-size: 15px;
+        font-size: 13px;
 }
 
 #cerrnav {
@@ -674,42 +604,210 @@ footer hr {
     border-radius: 3px;
 }
 
-/********** estilos categorias carteras********/
-#opcate3,
-#opcate4 {
-    background-color: rgba(0, 0, 0, .8);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: 22;
-        top: 0;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto Mono', monospace;
+    /****footer***/
+    .col1,
+.col2,
+.col3 {
+    width: 200px;
+    margin-bottom: 30px;
+}
+    .col1 h1 {
+    text-align: left;
 }
 
-#opcate3 p,
-#opcate4 p {
-    color: white;
+.col1 p {
+    text-align: left;
+}
+
+.ig,
+.ws,
+.fb {
+    justify-content: flex-start;
+}
+.col2 h1 {
+    text-align: left;
+}
+.col3 h1 {
+    text-align: left;
+}
+
+.col3 p {
+    text-align: left;
+}
+    footer hr {
+    width: 90%;
+}
+
+    .copy {
+    display: flex;
+    width: 100%;
+    margin-bottom:15px;
+        justify-content: space-around;
+}
+.contcopy {
+    display: flex;
+    justify-content: center;
+}
+.contcopy p {
+    font-size: 13px;
+    padding-top: 0;
+}
+
+.politic {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.politic p {
+    padding-top: 0;
+    text-align: center;margin-top: 10px;
+    font-size: 13px;
+}
+
+.contimgpoli {
+    width: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.yape{
+    display: block;
+}
+.politic img {
+    height: 25px;
+}
+}
+
+/********1024**********/
+@media (min-width: 1024px){
+    .colorr {
+        font-size: 15px;
+}
+.colorn,
+.colornn {
+        font-size: 15px;
+}
+
+        /****footer***/
+    .final{
+        margin-top: 0;
+    }
+    .copy {
+    display: flex;
+    width: 70%;
+    margin-bottom:0;justify-content: space-around;
+}
+
+    .politic {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.politic p {
+    padding-top: 0;
+    text-align: center;margin-top: 10px;
+    font-size: 13px;
+}
+
+.contimgpoli {
+    width: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.yape{
+    display: block;
+}
+.politic img {
+    height: 25px;
+}
+}
+
+
+/********** 1440px**********************/
+@media (min-width: 1440px){
+
+    /****footer***/
+
+    .contenedorFOOTER {
+    width: 80%;
+    padding: 50px 0 80px 0;
+}
+    .col1,
+.col2,
+.col3 {
+    width: 300px;
+}
+
+        .col1 h1 {
+    font-size: 30px;
+}
+
+.col1 p {
+    font-size: 18px;
+}
+
+.col2 h1 {
+    font-size: 30px;
+}
+
+    .nomempre {
+    font-size: 18px;
+}
+
+.ico {
+    font-size: 25px;
+    margin-right: 5px;
+}
+.col3 h1 {
+    font-size: 30px;
+}
+
+.col3 p {
+    font-size: 18px;
+}
+
+    footer hr {
+    width: 80%;
+}
+    .final{
+        width: 80%;
+    }
+    .copy {
+    display: flex;
+    width: 50%;
+        justify-content: space-around;
+}
+.contcopy {
+    display: flex;
+    justify-content: center;
+}
+.contcopy p {
+    padding-top: 2px;
+}
+
+.politic {
+    display: flex;
+    width: 50%;margin-top: 0;padding-top: 0;
+    justify-content: space-around;
+}
+
+.politic p {
+    padding-top: 0;margin-top: 0;
+    text-align: center;
     font-size: 15px;
 }
 
-.pocates {
-    padding: 20px 0;
-        text-decoration: none;
-        color: #fff;
-    font-size: 20px;
+.contimgpoli {
+    width: auto;
+    margin-top: 0;
+    justify-content: center;
 }
 
-.pocates:hover {
-    color: orangered;
+.yape{
+    display: block;margin-right: 15px;
 }
 
-#iconcerrarop {
-    width: 30px;
-        cursor: pointer;
-        margin-bottom: 10px;
-}
 }
