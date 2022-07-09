@@ -831,6 +831,10 @@ body {
         width: 33.3%;
 
     }
+.col2 a{
+    text-decoration: none;
+    color: white;
+}
 
     .col1 h1 {
         color: white;
