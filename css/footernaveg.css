@@ -1,0 +1,715 @@
+/*******navegacion******/
+
+#header {
+    height: auto;
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+.blokhead,
+.blokheadredes,
+.blokheada {
+    width: 100%;
+}
+
+.blokheada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 10px;
+}
+
+.blokheada a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    border: 5px solid orangered;
+    padding: 10px 20px;
+}
+
+.blokheada a:hover {
+    text-decoration: underline;
+}
+
+.blokhead {
+    width: 100%;
+    padding: 8px 0;
+}
+
+.imglogo {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contmenu {
+    display: block;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 205px;
+}
+
+.contmenu img {
+    display: block;
+    width: 70px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/** redes logos **/
+.blokheadredes {
+    width: 100%;
+    display: flex;
+}
+
+#contredesup {
+    width: 300px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 30px;
+}
+
+.imgredes img {
+    width: 70px;
+}
+
+
+/**** mapa *****/
+#contmapa {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 700px;
+}
+
+#cerrarmap {
+    width: 100px;
+    cursor: pointer;
+    display: block;
+    margin: 40% auto 50px auto;
+}
+
+
+/******Navegacion****/
+#navegacion {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    background: white;
+    display: none;
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    justify-content: center;
+    display: block;
+}
+
+.colorr {
+    text-decoration: none;
+    padding: 20px 0;
+    display: block;
+    font-size: 35px;
+    color: black;
+    transition: all 0.4s;
+    text-align: center;
+}
+
+.colorr:hover {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+
+.colorn,
+.colornn {
+    color: orangered;
+    text-decoration: none;
+    padding: 20px 0;
+    display: block;
+    transition: all 0.4s;
+    font-size: 35px;
+    text-align: center;
+}
+
+#cerrnav {
+    position: relative;
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+.colornn {
+    cursor: default;
+    display: none;
+}
+
+.colorn:hover {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+.select {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+/********** estilos categorias carteras********/
+#opcate3,
+#opcate4 {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#opcate3 p,
+#opcate4 p {
+    color: white;
+    font-size: 60px;
+}
+
+.pocates {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+.pocates:hover {
+    color: orangered;
+}
+
+#iconcerrarop {
+    width: 60px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+
+
+
+/******Footer ********/
+footer {
+    background-color: black;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedorFOOTER {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    color: orange;
+    padding: 100px 0 100px 0;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.col1,
+.col2,
+.col3 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.col1 h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.col1 p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.ig,
+.ws,
+.fb {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nomempre {
+    font-size: 45px;
+}
+
+.ico {
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.col2 h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.col3 h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.col3 p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer hr {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: auto;
+}
+
+.final {
+    margin: auto;
+    padding: 30px 0;
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.copy {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contcopy {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contcopy span {
+    font-size: 80px;
+}
+
+.contcopy p {
+    font-size: 30px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+.politic {
+    display: block;
+    width: 100%;
+}
+
+.politic p {
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.contimgpoli {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.politic img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+
+/************************375px*********/
+@media (min-width: 375px) {
+    .contmenu {
+        display: block;
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        top: 185px;
+    }
+
+    /***footer**/
+    .col1 h1 {
+        font-size: 18px;
+    }
+
+    .col1 p {
+        font-size: 15px;
+    }
+
+    .nomempre {
+        font-size: 40px;
+    }
+
+    .col2 h1 {
+        font-size: 18px;
+    }
+
+    .col3 h1 {
+        font-size: 18px;
+    }
+
+    .col3 p {
+        font-size: 15px;
+    }
+
+    footer hr {
+        height: 2px;
+    }
+
+    .copy {
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    .contcopy {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contcopy span {
+        font-size: 70px;
+    }
+
+    .contcopy p {
+        font-size: 25px;
+    }
+
+    .contimgpoli {
+        margin-top: 15px;
+    }
+
+}
+
+
+/*****************425px**************/
+@media (min-width: 425px) {
+
+    .blokheada {
+        padding-top: 20px;
+    }
+
+    .blokheada a {
+        font-size: 25px;
+    }
+
+    .blokhead {
+        padding: 10px 0;
+    }
+
+    .imglogo {
+        width: 300px;
+    }
+    .contmenu {
+        display: block;
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        top: 170px;
+    }
+
+    .contmenu img {
+        width: 65px;
+    }
+
+    /** redes logos **/
+    #contredesup {
+        width: 280px;
+    }
+
+    .imgredes img {
+        width: 60px;
+    }
+
+
+    /**** mapa *****/
+    .mapa {
+        width: 100%;
+    }
+
+    #cerrarmap {
+        width: 70px;
+    }
+
+    /*********footer******/
+    .contenedorFOOTER {
+    padding: 100px 0 50px 0;
+}
+    .col1 h1 {
+        font-size: 17px;
+    }
+
+    .nomempre {
+        font-size: 35px;
+    }
+
+    .col2 h1 {
+        font-size: 17px;
+    }
+
+    .col3 h1 {
+        font-size: 17px;
+    }
+
+    .col3 p {
+        font-size: 15px;
+    }
+
+    footer hr {
+        height: 1px;
+    }
+
+    .contcopy span {
+        font-size: 60px;
+    }
+
+    .contcopy p {
+        font-size: 25px;
+    }
+
+    .contimgpoli {
+        margin-top: 15px;
+    }
+    .politic img {
+    height: 50px;
+    margin-right: 15px;
+}
+}
+
+
+/***********768px*******************/
+@media (min-width: 768px){
+    #header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .blokhead,
+    .blokheadredes,
+    .blokheada {
+        width: 30%;
+    }
+
+    .blokheada {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .blokheada a {
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        border: 1px solid orangered;
+        padding: 10px 20px;
+    }
+
+    .blokheada a:hover {
+        text-decoration: underline;
+    }
+
+    .blokhead{
+        padding: 0;
+    }
+    .imglogo {
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .contmenu {
+        display: none;
+    }
+    /*********estilos de redes logos ***************/
+    .blokheadredes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #contredesup {
+        width: 150px;
+        margin: 0 0 0 auto;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .imgredes img {
+        width: 35px;
+    }
+
+    /**** mapa *****/
+    .mapa {
+        width: 100%;
+        height: 500px;
+    }
+
+    #cerrarmap {
+        width: 40px;
+        margin: 10% auto 50px auto;
+    }
+
+    /******Navegacion****/
+#navegacion {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto Mono', monospace;
+    background: transparent;
+    display: block;
+    position: relative;
+    z-index: 21;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+        padding: 0;
+        background: transparent;
+        width: 100%;
+        margin: 0 auto 10px auto;
+        justify-content: center;
+        display: flex;
+}
+
+.colorr {
+    text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        font-size: 15px;
+        color: black;
+        transition: all 0.4s;
+}
+
+.colorr:hover {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+
+.colorn,
+.colornn {
+    color: orangered;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: all 0.4s;
+        font-size: 15px;
+}
+
+#cerrnav {
+    position: relative;
+    display: none;
+    margin: 0 auto 40px auto;
+}
+
+.colornn {
+    cursor: default;
+    display: block;
+}
+
+.colorn:hover {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+.select {
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+}
+
+/********** estilos categorias carteras********/
+#opcate3,
+#opcate4 {
+    background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 22;
+        top: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+}
+
+#opcate3 p,
+#opcate4 p {
+    color: white;
+    font-size: 15px;
+}
+
+.pocates {
+    padding: 20px 0;
+        text-decoration: none;
+        color: #fff;
+    font-size: 20px;
+}
+
+.pocates:hover {
+    color: orangered;
+}
+
+#iconcerrarop {
+    width: 30px;
+        cursor: pointer;
+        margin-bottom: 10px;
+}
+}
