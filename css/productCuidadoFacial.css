@@ -18,34 +18,34 @@ body{
 
 /******************************/
 .banner {
-    width: 100%;height: 100%;margin-bottom: 50px;
+    width: 100%;height: 400px;position: relative;
 }
 .contimgbaner{
     background-image: url('joyoreriaPrinci/facialbaner.jpg');
     background-repeat: no-repeat;
-    width: 100%;height: 400px;position: relative;
-    background-size: cover;
+    width: 100%;background-position: right;
+    background-size: cover;height: 100%;
 }
 
 .pe {
-    border: 0px solid black;width: 60%;display: block;margin: auto;
-    position: relative; z-index: 10;
-    text-decoration: inherit;margin-top: -180px;
+    border: 0px solid black;width: 90%;display: block;margin: auto;
+    z-index: 10;position: relative;margin-top: -150px;
+    text-decoration: inherit;
     text-decoration-style: dashed;
     background-color: white;
-    padding: 50px 60px;
+    padding: 20px 10px;border-radius: 5px;
     text-align: left;
-    font-size: 20px;font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 5px 10px -1px orangered;
+    font-size: 15px;font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.29);
 }
 
 
 section{
-    width: 100%;
-    display: flex;
+    width: 100%;margin: 50px 0;
     justify-content: space-around;
-
-
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .rating{
     color: orangered;font-size: 20px;
@@ -56,15 +56,12 @@ section{
     border: 1px solid #D8DCE0;
     border-radius: 15px;
     padding: 15px;
-
     font-family: 'Poppins', sans-serif;
-    width: 18%;
+    width: 200px;margin-bottom: 20px;
 }
 
 .estilo-c:hover{
-
     border: 1px solid red;
-
 }
 .estilo-c .img-container{
     overflow: hidden;
@@ -95,7 +92,6 @@ section{
 
 
 }
-
 
 .estilo-c .info-container{
     display: flex;
@@ -133,7 +129,30 @@ section{
 }
 
 
+/******************** responsive*********/
+/******* 768px *************/
+@media(min-width: 768px){
+    .pe {
+    width: 80%;
+    padding: 20px 20px;
+}
+}
 
+/********** 1024px********/
+@media(min-width: 1024px){
+    .pe {
+    width: 60%;
+    padding: 20px 20px;
+        font-size: 20px;
+}
+}
+
+/******* 1440px *************/
+@media(min-width: 1440px){
+    .estilo-c{
+    width: 300px;
+}
+}
 
 
 

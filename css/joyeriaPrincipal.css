@@ -16,127 +16,28 @@
 body{
     margin: 0;padding: 0;
 }
-#rectprincipal{
-    background-color: orangered;width: 100%;height: 25px;
-    color: white;text-align: center;
-}
-/***************header*****************/
-#contenedor{
-    width: 100%;
-}
-#header{
-    width: 90%;height: 90px;display: flex;margin:auto;
-}
-.blokhead, .blokheadredes, .blokheada{
-    width: 33.3%;
-}
-.blokheada {
-    display: flex;align-items: center;justify-content: center;font-family: 'Ubuntu', sans-serif;
-}
-.blokheada a{
-    text-decoration: none;font-size: 13px;color: black;
-}
-.blokheada a:hover{
-    text-decoration: underline;
-}
-.blokhead img{
-    height: 100%;display: block;margin: auto;
-}
-/*********estilos de redes logos ***************/
-.blokheadredes{
-    display: flex;justify-content: space-around;
-}
-#contredesup{
-    width: 30%;margin: auto;justify-content: space-between;display: flex;
-}
-.imgredes img{
-    width: 25px;
-}
-
-
-/************Menu estilos***************/
-#navegacion{
-    width: 100%;font-family: 'Roboto Mono', monospace;
-}
-.menu{
-    list-style: none;
-    padding: 0;
-    background: white;
-    width: 70%;
-    margin: 0 auto 10px auto;
-    justify-content: center;
-    display: flex;
-}
-.colorr{
-    text-decoration: none;
-    padding:10px 20px;
-    display: block;
-    font-size: 13px;
-    color: black;transition: all 0.4s;
-}
-.colorr:hover{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-.colorn, .colornn{
-    color: orangered;
-    text-decoration: none;
-    padding:10px 20px;
-    display: block;transition: all 0.4s;
-    font-size: 13px;
-}
-.colornn{
-    cursor: default;
-}
-.colorn:hover{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-.select{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-
-/********** estilos categorias carteras********/
-#opcate3, #opcate4{
-	background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 11;
-	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;font-family: 'Roboto Mono', monospace;
-}
-#opcate3 p, #opcate4 p{
-	color:white; font-size: 30px;
-}
-.pocates{
-	padding: 10px 0;text-decoration: none;color: #fff;
-}
-.pocates:hover{
-	color:orangered;
-}
-#iconcerrarop{
-	width: 20px;cursor: pointer;margin-bottom: 10px;
-}
 
 /**********************************************/
 .banner {
-    width: 100%;height: 100%;margin-bottom: 50px;
+    width: 100%;height: 400px;position: relative;
 }
 .contimgbaner{
     background-image: url('/css/joyoreriaPrinci/joyeriaBanner.jpg');
     background-repeat: no-repeat;
-    width: 100%;height: 400px;position: relative;
-    background-size: cover;
+    width: 100%;height: 100%;
+    background-size: cover;background-position: right;
 }
 
 .pebaner {
-    border: 0px solid black;width: 60%;display: block;margin: auto;
-    position: relative; z-index: 10;
-    text-decoration: inherit;margin-top: -180px;
+    border: 0px solid black;width: 90%;display: block;margin: auto;
+    z-index: 10;position: relative;margin-top: -150px;
+    text-decoration: inherit;
     text-decoration-style: dashed;
     background-color: white;
-    padding: 50px 60px;
+    padding: 20px 10px;border-radius: 5px;
     text-align: left;
-    font-size: 25px;
-    box-shadow: 0px 5px 10px -1px orangered;
+    font-size: 15px;font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.29);
 }
 
 /*************************************/
@@ -144,17 +45,19 @@ body{
     width: 100%;
 }
 .subtitudescubre p{
-    text-align: center;font-size: 20px;color: orangered;padding: 20px 0;
+    text-align: center;font-size: 20px;color: orangered;padding: 20px 0;margin-top: 50px;
 }
 
 .section {
-    height: 500px;
-    width: 80%;margin:40px auto;display: flex;
+    width: 100%;margin:20px auto;justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .contimgart1{
     background-image: url('/img/joreriaPrincipal/aretes.jpg');
-    width: 40%;padding-top: 20%;background-repeat: no-repeat;position: relative;
-    background-size: cover;
+    width: 100%;height: 400px;background-repeat: no-repeat;position: relative;
+    background-size: cover;display: flex; align-content: center;
 }
 .contpe{
     width: 90%;margin: auto;
@@ -262,13 +165,15 @@ body{
 
 }
 .argollasinfo{
-    display: flex;justify-content: space-evenly;width: 60%;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
-
-
 .galeria {
     height: 400px;
-    width: 250px;
+    width: 250px;margin: 20px auto;
 }
 
 .foto {
@@ -313,13 +218,15 @@ body{
 /********mira hacia otro lado********/
 
 .section1{
-    height: 500px;
-    width: 80%;margin:40px auto;display: block;display: flex;
+    width: 100%;margin:20px auto;justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .contimgart2{
     background-image: url('/img/joreriaPrincipal/collares.jpg');
-    width: 40%;padding-top: 20%;background-repeat: no-repeat;position: relative;
-    background-size: cover;
+    width: 100%;height: 400px;background-repeat: no-repeat;position: relative;
+    background-size: cover;display: flex; align-content: center;
 }
 .contpecollares{
     width: 90%;margin: auto;
@@ -328,11 +235,14 @@ body{
     text-align: center;color: white;font-size: 20px;
 }
 .argollasinfo1{
-    display: flex;justify-content: space-evenly;width: 60%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;width: 100%;
 }
 .galeria1{
     height: 400px;
-    width: 250px;
+    width: 250px;margin: 20px auto;
 }
 .foto1 {
     height: 225px;
@@ -376,34 +286,40 @@ body{
 
 /********section3*****/
 .section3{
-    height: 500px;
-    width: 80%;margin:40px auto;display: block;display: flex;
+    width: 100%;margin:20px auto;justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .contimgart3{
     background-image: url('/img/joreriaPrincipal/pulseras.jpg');
-    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
-    background-size: cover;
+    width: 100%;height: 400px;background-repeat: no-repeat;position: relative;
+    background-size: cover;display: flex; align-content: center;
 }
 
 /******section4***/
 .section4{
-    height: 500px;
-    width: 80%;margin:40px auto;display: block;display: flex;
+    width: 100%;margin:20px auto;justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .contimgart4{
     background-image: url('/img/joreriaPrincipal/anillos.jpg');
-    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
-    background-size: cover;
+    width: 100%;height: 400px;background-repeat: no-repeat;position: relative;
+    background-size: cover;display: flex; align-content: center;
 }
 /*****section5*****/
 .section5{
-    height: 500px;
-    width: 80%;margin:40px auto;display: block;display: flex;
+    width: 100%;margin:20px auto;justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 .contimgart5{
     background-image: url('/img/joreriaPrincipal/aretes.jpg');
-    width: 40%;padding-top: 25%;background-repeat: no-repeat;position: relative;
-    background-size: cover;
+    width: 100%;height: 400px;background-repeat: no-repeat;position: relative;
+    background-size: cover;display: flex; align-content: center;
 }
 
 
@@ -411,19 +327,18 @@ body{
 /************* banner compra ********************/
 .BannerComprar {
     display: block;
-    margin: auto;
+    margin: auto;background-position: right;
     background: url(joyoreriaPrinci/porque-comprar.jpg);
     background-repeat: no-repeat;
-    width: 80%;
+    width: 100%;
     height: 500px;
-    margin-top: 170px;
-    position: relative;
+    margin-top: 80px;
     background-size: cover;
 }
 
 .banner-contentCompras {
-    color: #fff;padding-top: 200px;
-    width: 100%;
+    color: #fff;padding-top: 150px;
+    width: 90%;margin: auto;
 }
 
 .banner-contentCompras h1 {
@@ -567,8 +482,7 @@ body{
 .conocemas img {
     display: block;
     margin: auto;
-    width: 50%;
-    height: 60%;
+    width: 80%;
 }
 
 
@@ -585,7 +499,7 @@ body{
     font-size: 30px;
 }
 .letra2 {
-    text-align: center;
+    text-align: center;padding-top: 10px;
     line-height: 25px;
     font-size: 18px;
 
@@ -593,13 +507,15 @@ body{
 
 #contenGaleria6 {
     width: 100%;
-    display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 }
 
 .galeria6 {
     height: 450px;
-    width: 280px;
+    width: 280px;margin-bottom: 10px;
 }
 
 .foto6 {
@@ -652,92 +568,82 @@ body{
 }
 
 /************************/
+.ultimo{
+    width: 100%;
+    height: 300px;
+}
 .ultimo img {
     display: block;
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: 100%;object-fit: cover;
 }
 
 
-/*****footer*********/
-footer{
-    background-color: black;width: 100%;
+/********************** responsive **********************/
 
+/******* 768px *************/
+@media(min-width: 768px){
+    .pebaner{
+    width: 80%;
+    padding: 20px 20px;
 }
-.contenedorFOOTER{
-    margin: auto;
-    width: 70%;
-    display: flex;
-    color: orange;
-    padding: 50px 0 100px 0;
-}
-.col1, .col2, .col3{
-    width: 33.3%;
-
-}
-.col1 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
-
-}
-.col1 p{
-    color: white;font-size: 15px;
-    margin-bottom: 10px;
+    .contimgart1, .contimgart2, .contimgart3, .contimgart4, .contimgart5{
+        height: 500px;
+    }
 }
 
-.ig, .ws, .fb{
-    color: white;margin-bottom: 10px;
-    display: flex;
+/******** 425px*********/
+
+@media(min-width: 425px){
+    .contimgart1, .contimgart2, .contimgart3, .contimgart4, .contimgart5{
+    width: 425px;
 }
-.ico{
-    font-size: 20px;margin-right: 5px;
 }
 
-.col2 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
+/************* 853********/
+@media(min-width:853px){
+    .argollasinfo, .argollasinfo1{
+    width: auto;
+}
 }
 
-.col3 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
+/********* 928px***********/
+@media(min-width: 925px){
+    .contimgart2, .contimgart4{
+    order: 2;
 }
-.col3 p{
-    color: #fff;line-height: 20px;
+    .argollasinfo1{
+        order: 1;
 }
-
-footer hr{
-    width: 70%; margin: auto;
-}
-.final{
-    margin:auto;padding: 10px 0;
-    color:white;
-    width: 70%;
-    display: flex;
-}
-.copy{
-    display: flex;
-    width: 50%;
-    float: left;
-}
-.contcopy{
-    width:33.3%;display: flex;
-}
-.contcopy p{
-    font-size: 12px;padding-top: 5px;margin-left: 3px;
 }
 
-.politic{
-    display: flex;
+/********** 1024px********/
+@media(min-width: 1024px){
+    .pebaner {
+    width: 60%;
+    padding: 20px 20px;
+        font-size: 20px;
+}
+    .ultimo{
+    width: 100%;
+    height: 550px;
+}
+    .argollasinfo, .argollasinfo1{
     width: 50%;
 }
-
-.politic p{
-    color: white;padding-top: 5px;margin-right: 5px;
-    font-size: 12px;
 }
 
-.politic img{
-    height: 22px;margin-right: 15px;
+/***********1440px******/
+@media(min-width:1440px){
+    .section, .section3,.section1, .section4, .section5{
+        width: 80%;
+    }
+}
+
+/***********4k******/
+@media(min-width:2560px){
+    .section, .section3,.section1, .section4, .section5{
+        width: 60%;
+    }
 }
