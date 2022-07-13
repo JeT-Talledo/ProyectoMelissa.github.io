@@ -16,136 +16,37 @@
 body{
     margin: 0;padding: 0;
 }
-#rectprincipal{
-    background-color: orangered;width: 100%;height: 25px;
-    color: white;text-align: center;
-}
-/***************header*****************/
-#contenedor{
-    width: 100%;
-}
-#header{
-    width: 90%;height: 90px;display: flex;margin:auto;
-}
-.blokhead, .blokheadredes, .blokheada{
-    width: 33.3%;
-}
-.blokheada {
-    display: flex;align-items: center;justify-content: center;font-family: 'Ubuntu', sans-serif;
-}
-.blokheada a{
-    text-decoration: none;font-size: 13px;color: black;
-}
-.blokheada a:hover{
-    text-decoration: underline;
-}
-.blokhead img{
-    height: 100%;display: block;margin: auto;
-}
-/*********estilos de redes logos ***************/
-.blokheadredes{
-    display: flex;justify-content: space-around;
-}
-#contredesup{
-    width: 30%;margin: auto;justify-content: space-between;display: flex;
-}
-.imgredes img{
-    width: 25px;
-}
-
-
-/************Menu estilos***************/
-#navegacion{
-    width: 100%;font-family: 'Roboto Mono', monospace;
-}
-.menu{
-    list-style: none;
-    padding: 0;
-    background: white;
-    width: 70%;
-    margin: 0 auto 10px auto;
-    justify-content: center;
-    display: flex;
-}
-.colorr{
-    text-decoration: none;
-    padding:10px 20px;
-    display: block;
-    font-size: 13px;
-    color: black;transition: all 0.4s;
-}
-.colorr:hover{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-.colorn, .colornn{
-    color: orangered;
-    text-decoration: none;
-    padding:10px 20px;
-    display: block;transition: all 0.4s;
-    font-size: 13px;
-}
-.colornn{
-    cursor: default;
-}
-.colorn:hover{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-.select{
-    background-color: orangered;color: white;border-radius: 3px;
-}
-
-/********** estilos categorias carteras********/
-#opcate3, #opcate4{
-	background-color: rgba(0, 0, 0, .8);width: 100%;height: 100%;position: fixed;z-index: 11;
-	top: 0;display: none;flex-direction: column;justify-content: center;align-items: center;font-family: 'Roboto Mono', monospace;
-}
-#opcate3 p, #opcate4 p{
-	color:white; font-size: 30px;
-}
-.pocates{
-	padding: 10px 0;text-decoration: none;color: #fff;
-}
-.pocates:hover{
-	color:orangered;
-}
-#iconcerrarop{
-	width: 20px;cursor: pointer;margin-bottom: 10px;
-}
-
-
 
 /******************************/
 .banner {
-    width: 100%;height: 100%;margin-bottom: 50px;
+    width: 100%;height: 400px;position: relative;
 }
 .contimgbaner{
     background-image: url(joyoreriaPrinci/carterasPrincipal.jpg);
     background-repeat: no-repeat;
-    width: 100%;height: 400px;position: relative;
+    width: 100%;height: 100%;
     background-size: cover;
 }
 
 .pe {
-    border: 0px solid black;width: 60%;display: block;margin: auto;
-    position: relative; z-index: 10;
-    text-decoration: inherit;margin-top: -180px;
+    border: 0px solid black;width: 260px;display: block;margin: auto;
+    z-index: 10;position: relative;margin-top: -150px;
+    text-decoration: inherit;
     text-decoration-style: dashed;
     background-color: white;
-    padding: 50px 60px;
+    padding: 20px 20px;border-radius: 5px;
     text-align: left;
-    font-size: 20px;font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 5px 10px -1px orangered;
+    font-size: 15px;font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.29);
 }
 
 
 section{
-    width: 100%;
-    display: flex;
+    width: 100%;margin: 50px 0;
     justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
 
 }
 
@@ -158,7 +59,7 @@ section{
     border-radius: 15px;
     padding: 15px;
     font-family: 'Poppins', sans-serif;
-    width: 18%;
+    width: 200px;margin-bottom: 20px;
 }
 
 .estilo-c:hover{
@@ -169,12 +70,10 @@ section{
 .estilo-c .img-container{
     overflow: hidden;
     height: 260px;
-    position: relative;
     border-radius: 5px;
 }
 .estilo-c .img-container img{
     width: 100%;
-    position: absolute;
     height: 80%;
     transition: all 0.5s;
 }
@@ -183,7 +82,6 @@ section{
 }
 
 .estilo-c .img-container .promo{
-        position: absolute;
     top: 10px;
     left: 0;
     font-size: 20px;
@@ -231,89 +129,7 @@ section{
     border: 1px solid orangered;
 }
 
-/******Footer ********/
 
-
-footer{
-    margin-top: 40px;
-    background-color: black;width: 100%;font-family: 'Poppins', sans-serif;
-}
-.contenedorFOOTER{
-    margin: auto;
-    width: 70%;
-    display: flex;
-    color: orange;
-    padding: 50px 0 100px 0;
-}
-.col1, .col2, .col3{
-    width: 33.3%;
-
-}
-.col1 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
-
-}
-.col1 p{
-    color: white;font-size: 15px;
-    margin-bottom: 10px;
-}
-
-.ig, .ws, .fb{
-    color: white;margin-bottom: 10px;
-    display: flex;
-}
-.ico{
-    font-size: 20px;margin-right: 5px;
-}
-
-.col2 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
-}
-
-.col3 h1{
-    color: white;font-size: 20px;text-align: left;
-    margin-bottom: 15px;
-}
-.col3 p{
-    color: #fff;line-height: 20px;
-}
-
-footer hr{
-    width: 70%; margin: auto;
-}
-.final{
-    margin:auto;padding: 10px 0;
-    color:white;
-    width: 70%;
-    display: flex;
-}
-.copy{
-    display: flex;
-    width: 50%;
-    float: left;
-}
-.contcopy{
-    width:33.3%;display: flex;
-}
-.contcopy p{
-    font-size: 12px;padding-top: 5px;margin-left: 3px;
-}
-
-.politic{
-    display: flex;
-    width: 50%;
-}
-
-.politic p{
-    color: white;padding-top: 5px;margin-right: 5px;
-    font-size: 12px;
-}
-
-.politic img{
-    height: 22px;margin-right: 15px;
-}
 
 
 

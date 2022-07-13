@@ -1,5 +1,11 @@
 /*******navegacion******/
-
+#rectprincipal {
+    background-color: orangered;
+    width: 100%;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
 #header {
     height: auto;
     margin: auto;
