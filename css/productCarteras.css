@@ -148,5 +148,12 @@ section{
 }
 }
 
+/******* 1440px *************/
+@media(min-width: 1440px){
+    .estilo-c{
+    width: 300px;
+}
+}
+
 
 
