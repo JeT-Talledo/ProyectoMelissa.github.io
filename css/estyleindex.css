@@ -552,6 +552,12 @@ body {
     .slider {
     height: 350px;
 }
+    .imgsobreblokimge {
+    width: 70%;
+    flex-direction: row;
+    flex-flow: wrap;
+    display: flex;
+}
 }
 
 /*****425px******/
