@@ -130,7 +130,23 @@ section{
 }
 
 
+/******************** responsive*********/
+/******* 768px *************/
+@media(min-width: 768px){
+    .pe {
+    width: 80%;
+    padding: 20px 20px;
+}
+}
 
+/********** 1024px********/
+@media(min-width: 1024px){
+    .pe {
+    width: 60%;
+    padding: 20px 20px;
+        font-size: 20px;
+}
+}
 
 
 
