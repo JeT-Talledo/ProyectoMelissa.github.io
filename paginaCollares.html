@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Joyeria</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/paginaCollares.css">
+    <link rel="stylesheet" href="css/estiloprinprod.css">
+    <link rel="stylesheet" href="css/footernaveg.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +21,7 @@
     <!--fontastic-->
     <link href="https://file.myfontastic.com/NU5xnQV9U64AAcXeyiibJ7/icons.css" rel="stylesheet">
 
-       <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="css/whats.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/whats2.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +29,7 @@
 </head>
 
 <body>
-   <div class="nav-bottom">
+    <div class="nav-bottom">
 
         <div class="popup-whatsapp fadeIn">
             <div class="content-whatsapp -top"><button type="button" class="closePopup">
@@ -58,93 +61,96 @@
     <div id="rectprincipal">
 
     </div>
-
     <header id="header">
         <div class="blokheada">
+            <a href="#" onclick="muestramapa();">Encuentranos por aquí</a>
         </div>
         <div class="blokhead">
-            <img src="img/logo.png" alt="">
+            <img class="imglogo" src="img/logo.png" alt="logo-melissa">
+            <div class="contmenu">
+                <img src="img/menu.png" alt="" onclick="mostrar();">
+            </div>
         </div>
         <div class="blokheadredes">
             <div id="contredesup">
                 <a class="imgredes" href="https://www.facebook.com/meli.accesorios28" target="_blank"><img src="img/redes/facebook.png" alt="facebook-melissa"></a>
-                <a class="imgredes" href="https://www.instagram.com/accounts/login/?next=/make_up_accesories_/" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
-                <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="wsp-melissa"></a>
+                <a class="imgredes" href="https://www.instagram.com/make_up_accesories" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
+                <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="whatsapp-melissa"></a>
             </div>
         </div>
     </header>
+    <div id="contmapa">
+        <img id="cerrarmap" src="img/cerrarop.png" onclick="cerrarmap();">
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2041073480736!2d-76.97765698510295!3d-12.098175091433069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7a4ca20a65b%3A0x4a087d6f3411886a!2sPuerta%204%20Jockey%20Club!5e0!3m2!1ses-419!2spe!4v1657054450679!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <!--navegacion-->
+    <nav id="navegacion" data-aos="fade-down-right">
 
-   <nav id="navegacion" data-aos="fade-down-right">
-            <ul class="menu">
-                <li><a class="colorr" href="index.html">Inicio</a></li>
-                <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
-                <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-                <li><a class="colorr select" href="#" onclick="aparecerjo();">Joyeria</a></li>
-                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
-                <li><a class="colornn" href="#">|</a></li>
-                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-                <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
-            </ul>
-        </nav>
+        <ul class="menu">
+            <img id="cerrnav" src="img/close.png" onclick="cerrnav();">
+            <li><a class="colorr" href="index.html">Inicio</a></li>
+            <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
+            <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+            <li><a class="colorr select" href="#" onclick="aparecerjo();">Joyeria</a></li>
+            <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+            <li><a class="colornn" href="#">|</a></li>
+            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+            <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
+        </ul>
+    </nav>
 
-        <!-- **********************muestra categorias de joyeria***************************** -->
-        <div id="opcate3">
-            <p>°</p>
-            <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
-            <a href="paginaAnillos.html" class="pocates">Anillos</a>
-            <a href="PaginaAretes.html" class="pocates">Aretes</a>
-            <a href="paginaCollares.html" class="pocates">Collares</a>
-            <a href="PaginaDijes.html" class="pocates">Dijes</a>
-            <a href="paginaPulsera.html" class="pocates">Pulseras</a>
-            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
-            <p>°</p>
-        </div>
-        <!-- **********************muestra categorias de Maquillaje***************************** -->
-        <div id="opcate4">
-            <p>°</p>
-            <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
-            <a href="paginabrochas.html" class="pocates">Brochas</a>
-            <a href="paginacejas.html" class="pocates">Cejas</a>
-            <a href="paginacorrector.html" class="pocates">Corrector</a>
-            <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
-            <a href="paginaesponjas.html" class="pocates">Esponjas</a>
-            <a href="paginaLabiales.html" class="pocates">Labiales</a>
-            <a href="paginasombras.html" class="pocates">sombras</a>
-            <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
-            <p>°</p>
-        </div>
-        <hr color= "#E5E8EC" size= "1px">
-    <br><br>
+    <!-- **********************muestra categorias de joyeria***************************** -->
+    <div id="opcate3">
+        <p>°</p>
+        <a href="joyeriaPrincipal.html" class="pocates">Todas las joyerias</a>
+        <a href="paginaAnillos.html" class="pocates">Anillos</a>
+        <a href="PaginaAretes.html" class="pocates">Aretes</a>
+        <a href="paginaCollares.html" class="pocates">Collares</a>
+        <a href="PaginaDijes.html" class="pocates">Dijes</a>
+        <a href="paginaPulsera.html" class="pocates">Pulseras</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
+    <!-- **********************muestra categorias de Maquillaje***************************** -->
+    <div id="opcate4">
+        <p>°</p>
+        <a href="maquillajePrincipal.html" class="pocates">Todas los maquillajes</a>
+        <a href="paginabrochas.html" class="pocates">Brochas</a>
+        <a href="paginacejas.html" class="pocates">Cejas</a>
+        <a href="paginacorrector.html" class="pocates">Corrector</a>
+        <a href="paginadelineador.html" class="pocates">Delineador de ojos</a>
+        <a href="paginaesponjas.html" class="pocates">Esponjas</a>
+        <a href="paginaLabiales.html" class="pocates">Labiales</a>
+        <a href="paginasombras.html" class="pocates">sombras</a>
+        <img id="iconcerrarop" src="img/cerrarop.png" onclick="cerrarop();">
+        <p>°</p>
+    </div>
 
-    <h1 style="text-align: center;color:orangered;margin-bottom: 5px;" data-aos="fade-down">Collares</h1>
-    <hr style="width: 5%; color: orangered; border: 0px; border-top: 2px solid; padding: 0px;border-radius: 5px;display: block;margin: auto">
+    <!-- ****************************************************************************** -->
+    <hr class="hr" color="#E5E8EC" size="1px">
     <br>
+
+    <h1 class="titulo" data-aos="fade-down">Collares</h1>
+    <hr class="rayita">
     <div class="pepe" data-aos="fade-down">
-        <p>Cada una de nuestras fragancias cuenta una historia, revive una leyenda, canta una canción de la<br>Provenza. Nuestra amplia gama de aromas incluyendo lavanda, verbena, neroli y notas florales son
-            <br>perfectas para adaptarse a diferentes estilos y personalidades, siempre con un toque único que encarna la<br>cautivadora atmósfera de la Provenza. Explora nuestros perfumes para mujeres y hombres, además de
-            <br>cautivadoras fragancias para el hogar.
+        <p>Cada una de nuestras fragancias cuenta una historia, revive una leyenda, canta una canción de la Provenza. Nuestra amplia gama de aromas incluyendo lavanda, verbena, neroli y notas florales sonperfectas para adaptarse a diferentes estilos y personalidades, siempre con un toque único que encarna la cautivadora atmósfera de la Provenza. Explora nuestros perfumes para mujeres y hombres, además decautivadoras fragancias para el hogar.
         </p>
     </div>
-    <br><br>
+
     <div class="imgee">
         <img src="img/MAQUILLAJE/brochas/brochaPrincipal.jpg" alt="">
     </div>
     <br>
     <h1 style="text-align: center">Nuestras Brochas mas Bonitas</h1>
 
-    <hr style="width: 5%; color: orangered; border: 0px; border-top: 2px solid; padding: 0px;border-radius: 5px;display: block;margin: auto">
-    <br>
-    <br>
-
-
+    <hr class="rayita2">
     <section>
         <div class="card estilo-c" data-aos="fade-right">
             <a href="collares1.html">
 
                 <div class="img-container">
                     <img src="img/JOYERIA/collares/collaatrapasue%C3%B1osplata.jpg" alt="producto 1">
-                    <span class="promo">Precio especial</span>
+                    <span style="display: none" class="promo">Precio especial</span>
                 </div>
             </a>
             <div class="info-container">
@@ -163,7 +169,7 @@
                 <div class="img-container">
                     <img src="img/JOYERIA/collares/collar%20angelito%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">Precio especial</span>
+                    <span style="display: none" class="promo">Precio especial</span>
 
                 </div>
             </a>
@@ -177,13 +183,13 @@
             </div>
 
         </div>
-        <div class="card estilo-c" data-aos="fade-left">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collares3.html">
 
                 <div class="img-container">
                     <img src="img/JOYERIA/collares/collar%20arbol%20de%20la%20vida%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">Precio especial</span>
+                    <span style="display: none" class="promo">Precio especial</span>
 
                 </div>
             </a>
@@ -201,17 +207,14 @@
 
 
     </section>
-    <br><br>
-
-    <br><br>
     <section>
-        <div class="card estilo-cb" data-aos="fade-right">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collares4.html">
 
                 <div class="img-container">
                     <img src="img/JOYERIA/collares/collar%20corazon%20calado%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
                 </div>
             </a>
             <div class="info-container">
@@ -224,13 +227,13 @@
             </div>
 
         </div>
-        <div class="card estilo-cb" data-aos="zoom-in">
+        <div class="card estilo-c" data-aos="zoom-in">
             <a href="collares5.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/collar%20de%20incial%20plata%20950.jpg" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20de%20incial%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -244,13 +247,13 @@
             </div>
 
         </div>
-        <div class="card estilo-cb" data-aos="fade-left">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collares6.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/collar%20de%20inicial.jpg" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20de%20inicial.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -267,18 +270,14 @@
 
 
     </section>
-
-    <br><br>
-
-    <br><br>
     <section>
-        <div class="card estilo-cb" data-aos="fade-right">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collares7.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/collar%20infinito%20plata%20950.png" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20infinito%20plata%20950.png" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
                 </div>
             </a>
             <div class="info-container">
@@ -291,13 +290,13 @@
             </div>
 
         </div>
-        <div class="card estilo-cb" data-aos="zoom-in">
+        <div class="card estilo-c" data-aos="zoom-in">
             <a href="collares8.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/Collar%20mini%20corazon%20plata%20950.jpg" alt="producto 1">
+                    <img src="img/JOYERIA/collares/Collar%20mini%20corazon%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -311,13 +310,13 @@
             </div>
 
         </div>
-        <div class="card estilo-cb" data-aos="fade-left">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collares9.html">
 
                 <div class="img-container">
-                                       <img src="img/JOYERIA/collares/collar%20nombre%20corrido%20plata%20950.jpg" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20nombre%20corrido%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -335,7 +334,6 @@
 
 
     </section>
-    <br><br><br><br>
     <section>
         <div class="card estilo-c" data-aos="fade-right">
             <a href="collares10.html">
@@ -343,7 +341,7 @@
                 <div class="img-container">
                     <img src="img/JOYERIA/collares/collar%20con%20nombre%20plata%20950.jpg" alt="producto 1">
 
-                    <span class="promo">Precio especial</span>
+                    <span style="display: none" class="promo">Precio especial</span>
 
                 </div>
             </a>
@@ -357,13 +355,13 @@
             </div>
         </div>
 
-  <div class="card estilo-cb" data-aos="zoom-in">
+        <div class="card estilo-c" data-aos="zoom-in">
             <a href="colares11.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/collar%20infinito%20dos%20nombres%20plata.jpg" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20infinito%20dos%20nombres%20plata.jpg" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -377,13 +375,13 @@
             </div>
         </div>
 
-  <div class="card estilo-cb" data-aos="fade-left">
+        <div class="card estilo-c" data-aos="fade-right">
             <a href="collare12.html">
 
                 <div class="img-container">
-                                        <img src="img/JOYERIA/collares/collar%20nombre%20corrido%20plata%20950.png" alt="producto 1">
+                    <img src="img/JOYERIA/collares/collar%20nombre%20corrido%20plata%20950.png" alt="producto 1">
 
-                    <span class="promo">15% de descuento</span>
+                    <span style="display: none" class="promo">15% de descuento</span>
 
                 </div>
             </a>
@@ -460,7 +458,8 @@
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
+
 </script>
 <script src="js/codigo.js"></script>
 <script src="js/script2.js"></script>

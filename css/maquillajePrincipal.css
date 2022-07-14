@@ -381,14 +381,14 @@ body{
 
 /***********1440px******/
 @media(min-width:1440px){
-    .section, .section1,.section2, .section3, .section4, .section5, .section6{
+    .section, .section1,.section2, .section3, .section4, .section5, .section6, .section7{
         width: 80%;
     }
 }
 
 /***********4k******/
 @media(min-width:2560px){
-    .section, .section1,.section2, .section3, .section4, .section5, .section6{
+    .section, .section1,.section2, .section3, .section4, .section5, .section6, .section7{
         width: 60%;
     }
 }
