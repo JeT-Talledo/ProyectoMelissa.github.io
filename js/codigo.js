@@ -1,9 +1,13 @@
 /******* para mostrar el menu **********/
 function mostrar(){
     document.getElementById('navegacion').style.marginLeft = '0%';
+    document.getElementById('cerrnav').style.display = 'block';
+    document.getElementById('menuu').style.display = 'none';
 }
 function cerrnav(){
     document.getElementById('navegacion').style.marginLeft = '-100%';
+    document.getElementById('menuu').style.display = 'block';
+    document.getElementById('cerrnav').style.display = 'none';
 }
 
 
