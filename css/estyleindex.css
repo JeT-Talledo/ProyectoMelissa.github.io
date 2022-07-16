@@ -42,7 +42,6 @@ body {
 #contenedor {
     width: 100%;
     position: relative;
-    z-index: 19;
 }
 
 /*****banner*****/

@@ -1,9 +1,9 @@
 /******* para mostrar el menu **********/
 function mostrar(){
-    document.getElementById('navegacion').style.display = 'flex';
+    document.getElementById('navegacion').style.marginLeft = '0%';
 }
 function cerrnav(){
-    document.getElementById('navegacion').style.display = 'none';
+    document.getElementById('navegacion').style.marginLeft = '-100%';
 }
 
 
