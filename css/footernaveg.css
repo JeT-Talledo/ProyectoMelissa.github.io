@@ -6,9 +6,8 @@
     color: white;
     text-align: center;
 }
-.contfix{
-    position: sticky;top: 0; z-index: 19;background-color: white;padding-bottom: 10px;
-    border-bottom: 1px solid #E5E8EC;
+#contfix{
+    position: relative;top: 0; z-index: 19;background-color: white;padding-bottom: 10px;
 }
 #header {
     height: auto;
@@ -35,13 +34,13 @@
     text-decoration: none;
     font-size: 13px;
     color: black;
-    border: 2px solid orangered;
-    padding: 8px 15px;
+    padding: 8px 5px;
+    font-weight: bolder;cursor: default;
+}
+.bbimg{
+    width: 20px;
 }
 
-.blokheada a:hover {
-    text-decoration: underline;
-}
 
 .blokhead {
     width: 100%;
@@ -88,34 +87,6 @@
     width: 25px;
 }
 
-
-/**** mapa *****/
-#contmapa {
-    background-color: rgba(0, 0, 0, .8);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 21;
-    top: 0;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mapa {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 320px;
-}
-
-#cerrarmap {
-    width: 30px;
-    cursor: pointer;
-    display: block;
-    margin: 40% auto 50px auto;
-}
 
 
 /******Navegacion****/
@@ -372,6 +343,13 @@ footer hr {
     height: 20px;
 }
 
+.copyr{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;font-size: 13px;padding: 8px 0;
+}
 
 /*****************425px**************/
 @media (min-width: 425px) {
@@ -535,15 +513,6 @@ footer hr {
         margin: 0 0 0 auto;
         justify-content: space-between;
         display: flex;
-    }
-    /**** mapa *****/
-    .mapa {
-        width: 90%;
-        height: 400px;
-    }
-
-    #cerrarmap {
-        margin: 10% auto 50px auto;
     }
 
     /******Navegacion****/

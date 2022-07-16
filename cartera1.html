@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estyleDetalleProduct.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 
+   <link rel="icon" href="img/logo.png">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,44 +59,46 @@
         </button>
         <div class="circle-anime"></div>
     </div>
-    <div id="rectprincipal">
+    <div id="contfix">
+        <div id="rectprincipal">
 
+        </div>
+        <header id="header">
+            <div class="blokheada">
+                <img class="bbimg" src="img/telf.png" alt="">
+                <a href="#">+51 920110338</a>
+            </div>
+            <div class="blokhead">
+                <img class="imglogo" src="img/logo.png" alt="logo-melissa">
+                <div class="contmenu">
+                    <img id="menuu" src="img/menu.png" alt="" onclick="mostrar();">
+                    <img id="cerrnav" src="img/close.png" onclick="cerrnav();">
+                </div>
+            </div>
+            <div class="blokheadredes">
+                <div id="contredesup">
+                    <a class="imgredes" href="https://www.facebook.com/meli.accesorios28" target="_blank"><img src="img/redes/facebook.png" alt="facebook-melissa"></a>
+                    <a class="imgredes" href="https://www.instagram.com/make_up_accesories" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
+                    <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="whatsapp-melissa"></a>
+                </div>
+            </div>
+        </header>
+        <!--navegacion-->
+        <nav id="navegacion" data-aos="fade-down-right">
+
+            <ul class="menu">
+                <!--<img id="cerrnav" src="img/close.png" onclick="cerrnav();">-->
+                <li><a class="colorr" href="index.html">Inicio</a></li>
+                <li><a class="colorr select" href="productosCartera.html">Carteras</a></li>
+                <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+                <li><a class="colornn" href="#">|</a></li>
+                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+                <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
+            </ul>
+        </nav>
     </div>
-    <header id="header">
-        <div class="blokheada">
-
-        </div>
-        <div class="blokhead">
-            <img class="imglogo" src="img/logo.png" alt="logo-melissa">
-            <div class="contmenu">
-                <img src="img/menu.png" alt="" onclick="mostrar();">
-            </div>
-        </div>
-        <div class="blokheadredes">
-            <div id="contredesup">
-                <a class="imgredes" href="https://www.facebook.com/meli.accesorios28" target="_blank"><img src="img/redes/facebook.png" alt="facebook-melissa"></a>
-                <a class="imgredes" href="https://www.instagram.com/make_up_accesories" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
-                <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="whatsapp-melissa"></a>
-            </div>
-        </div>
-    </header>
-
-    <!--navegacion-->
-    <nav id="navegacion" data-aos="fade-down-right">
-
-        <ul class="menu">
-            <img id="cerrnav" src="img/close.png" onclick="cerrnav();">
-            <li><a class="colorr" href="index.html">Inicio</a></li>
-            <li><a class="colorr" href="productosCartera.html">Carteras</a></li>
-            <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-            <li><a class="colorr select" href="#" onclick="aparecerjo();">Joyeria</a></li>
-            <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
-            <li><a class="colornn" href="#">|</a></li>
-            <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-            <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
-        </ul>
-    </nav>
-
     <!-- **********************muestra categorias de joyeria***************************** -->
     <div id="opcate3">
         <p>°</p>
@@ -362,6 +365,9 @@
             </div>
         </div>
     </footer>
+    <div class="copyr">
+        <p class="copyp">© Melissa M&A Copyright 2022. Todos los derechos reservados</p>
+    </div>
 
     <script type="text/javascript">
         function myFuction(smallImg) {

@@ -151,7 +151,7 @@ section{
 /********** 768px **********/
 @media(min-width: 768px){
     .hr{
-    display: block;margin: 10px 0;
+    display: block;
 }
     .imgee{
     width: 90%;margin: auto;
