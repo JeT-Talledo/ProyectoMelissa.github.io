@@ -59,45 +59,45 @@
         <div class="circle-anime"></div>
     </div>
     <div id="contfix">
-            <div id="rectprincipal">
+        <div id="rectprincipal">
 
-            </div>
-            <header id="header">
-                <div class="blokheada">
-                    <img class="bbimg" src="img/telf.png" alt="">
-                    <a href="#">+51 920110338</a>
-                </div>
-                <div class="blokhead">
-                    <img class="imglogo" src="img/logo.png" alt="logo-melissa">
-                    <div class="contmenu">
-                        <img id="menuu" src="img/menu.png" alt="" onclick="mostrar();">
-                        <img id="cerrnav" src="img/close.png" onclick="cerrnav();">
-                    </div>
-                </div>
-                <div class="blokheadredes">
-                    <div id="contredesup">
-                        <a class="imgredes" href="https://www.facebook.com/meli.accesorios28" target="_blank"><img src="img/redes/facebook.png" alt="facebook-melissa"></a>
-                        <a class="imgredes" href="https://www.instagram.com/make_up_accesories" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
-                        <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="whatsapp-melissa"></a>
-                    </div>
-                </div>
-            </header>
-            <!--navegacion-->
-            <nav id="navegacion" data-aos="fade-down-right">
-
-                <ul class="menu">
-                    <!--<img id="cerrnav" src="img/close.png" onclick="cerrnav();">-->
-                    <li><a class="colorr" href="index.html">Inicio</a></li>
-                    <li><a class="colorr select" href="productosCartera.html">Carteras</a></li>
-                    <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
-                    <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
-                    <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
-                    <li><a class="colornn" href="#">|</a></li>
-                    <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
-                    <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
-                </ul>
-            </nav>
         </div>
+        <header id="header">
+            <div class="blokheada">
+                <img class="bbimg" src="img/telf.png" alt="">
+                <a href="#">+51 920110338</a>
+            </div>
+            <div class="blokhead">
+                <img class="imglogo" src="img/logo.png" alt="logo-melissa">
+                <div class="contmenu">
+                    <img id="menuu" src="img/menu.png" alt="" onclick="mostrar();">
+                    <img id="cerrnav" src="img/close.png" onclick="cerrnav();">
+                </div>
+            </div>
+            <div class="blokheadredes">
+                <div id="contredesup">
+                    <a class="imgredes" href="https://www.facebook.com/meli.accesorios28" target="_blank"><img src="img/redes/facebook.png" alt="facebook-melissa"></a>
+                    <a class="imgredes" href="https://www.instagram.com/make_up_accesories" target="_blank"><img src="img/redes/instagram.png" alt="instagram-melissa"></a>
+                    <a class="imgredes" href="https://wa.me/51947322206" target="_blank"><img src="img/redes/whatsapp.png" alt="whatsapp-melissa"></a>
+                </div>
+            </div>
+        </header>
+        <!--navegacion-->
+        <nav id="navegacion" data-aos="fade-down-right">
+
+            <ul class="menu">
+                <!--<img id="cerrnav" src="img/close.png" onclick="cerrnav();">-->
+                <li><a class="colorr" href="index.html">Inicio</a></li>
+                <li><a class="colorr select" href="productosCartera.html">Carteras</a></li>
+                <li><a class="colorr" href="productCuidadoFacial.html">Cuidado facial</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerjo();">Joyeria</a></li>
+                <li><a class="colorr" href="#" onclick="aparecerma();">Maquillaje</a></li>
+                <li><a class="colornn" href="#">|</a></li>
+                <li><a class="colorn" href="quienesSomos.html">Quiénes somos</a></li>
+                <li><a class="colorn" href="https://www.canva.com/design/DAFF2nWaxNE/bF2JhA_Fs9JEiWzBRfGbRw/view?utm_content=DAFF2nWaxNE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Catálogo</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- **********************muestra categorias de joyeria***************************** -->
     <div id="opcate3">
@@ -138,7 +138,8 @@
     </p>
 
     <section>
-        <div class="card estilo-c" data-aos="fade-right">
+        <!-- cartera1-->
+        <div class="card estilo-c" data-aos="fade-right" id="card1">
             <a href="cartera1.html">
 
                 <div class="img-container">
@@ -151,10 +152,49 @@
                 <span class="rating">
                     ★★★★★
                 </span>
-                <a href="cartera1.html" class="add-cart">Consultar Producto</a>
+                <a href="#modal_cartera1" class="add-cart">Consultar Producto 1</a>
             </div>
-
         </div>
+        <div class="modal_cartera1" id="modal_cartera1">
+            <div class="modal_container">
+                <div class="cerrvent">
+                    <a href="#card1"><img class="cerrarprod" src="img/cerrarprod.png" alt="#"></a>
+                </div>
+                <div class="contprodcart">
+                    <div class="col2Pro">
+                        <img class="small" src="img/CARTERASFOTOS/1.png" id="img_01">
+                    </div>
+                    <div class="col3Pro">
+                        <h1>Cartera 1</h1>
+                        <p class="percioprod">S/ 1000</p>
+                        <ul class="contdescri">
+                            <li>Morral con Diversos bolsillos</li>
+                            <li>
+                                <p class="negr">• Medidas: </p>24cm x 26cm
+                            </li>
+                            <li>
+                                <p class="negr">• Material: </p>PU
+                            </li>
+                            <li>
+                                <p class="negr">• Interior: </p>1 bolsillo interno
+                            </li>
+                            <li>
+                                <p class="negr">• Exterior: </p>1 bolsilo frontal
+                            </li>
+                        </ul>
+                        <div class="stokk">
+                            <p>Stock: </p>
+                            <div class="numerr">1</div>
+                        </div>
+                        <div class="redesocit">
+                            <img src="img/redes/faceprod.png" alt="">
+                            <img src="img/redes/instaprod.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--***************************************************-->
         <div class="card estilo-c" data-aos="zoom-in">
             <a href="cartera2.html">
 
@@ -489,8 +529,8 @@
         </div>
     </footer>
     <div class="copyr">
-            <p class="copyp">© Melissa M&A Copyright 2022. Todos los derechos reservados</p>
-        </div>
+        <p class="copyp">© Melissa M&A Copyright 2022. Todos los derechos reservados</p>
+    </div>
 </body>
 <script src="js/codigo.js"></script>
 <script src="js/script2.js"></script>
